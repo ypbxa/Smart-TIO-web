@@ -415,6 +415,7 @@ border-radius: 32px;
  width: 100%;
  background-color: #f7f7f777;
  padding: 4%;
+ border-radius: 16px;
  }
  #aboutproducttwo{
   display: flex;
@@ -902,14 +903,15 @@ label{
 /*Aboutus*/
 
 #logoay{
-  width: 42px;
-  height: 36px;
+  width: 28px;
+  height: 24.35px;
+  margin-right: 4px;
 }
 .logofrase{
   display: flex;
   flex-direction: row;
   align-items: baseline;
-  margin-bottom: 8px;
+  margin-top: 32px;
 }
 .aboutusheadertitle{
   display: flex;
