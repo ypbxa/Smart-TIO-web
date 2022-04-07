@@ -982,15 +982,16 @@ align-items: center;
   height: 24px;
   margin-bottom: 100px;
 }
-.visitourweb{
+.linkintext{
   color:#775591;
   font-weight: 700;
-font-size: 20px;
+
 line-height: 24px;
 text-shadow: 0px 2px 8px rgba(15, 15, 15, 0.16);
-padding-left: 8px;
+margin-left: 8px;
+text-shadow: none;
 }
-.visitourweb:hover{
+.linkintext:hover{
   color: #684B7D;
   text-shadow: 0px 2px 8px rgba(15, 15, 15, 0.25);
   border-bottom: none;
@@ -1034,8 +1035,9 @@ body > div {
 }
 
 details div {
-
-	padding: 1.5em;
+  padding-top: 0.5em;
+	padding-bottom: 2.5em;
+  padding-left: 3.2em;
 }
 
 details div > * + * {
@@ -1079,19 +1081,33 @@ summary:before {
 
 details[open] summary {
 	background-color: #ffffff;
-  color: #684B7D;
+  color: #197C9B;
+  font-weight: 500;
+
+ 
   
 }
 
 details[open] summary:before {
 	content: "↑";
   background-color: #FFFFFF;
+	color: #197C9B;
+  font-weight: 500;
+  
+}
+details[open] summary:hover {
+	content: "↑";
+  background-color: #FFFFFF;
 	color: #684B7D;
-  font-weight: 700;
+  font-weight: 500;
+  
 }
 
 summary:hover {
 	background-color: #ffffff;
+  color: #684B7D;
+  text-shadow: 0px 2px 8px rgba(15, 15, 15, 0.25);
+  font-weight: 500;
 }
 
 
@@ -1105,7 +1121,10 @@ code {
 	font-weight: 600;
 }
 
-
+#faqseparator{
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
 
 
 /*cosas que pueden valerme para el futuro*/
