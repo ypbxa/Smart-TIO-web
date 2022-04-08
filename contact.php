@@ -6,6 +6,12 @@ $formcontent="From: $name \n Message: $message";
 $to = "info@ayeconomics.com";
 $subject = "Contact Form";
 $mailheader = "From: $email \r\n";
-mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
-echo "Thank You!";
+$send=mail($to, $subject, $formcontent, $mailheader) 
+if ($send) {
+    echo '<br>';
+    echo 'Thank You!';
+} else{
+    echo 'error';
+}
+}
 ?>
