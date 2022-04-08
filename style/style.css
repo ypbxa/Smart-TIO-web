@@ -1061,6 +1061,9 @@ summary {
 	cursor: pointer;
 	position: relative;
 	padding-left: calc(1.75rem + .75rem + .75rem);
+  text-align: center;
+  width: 100%;
+  background-color: #FFFFFF;
 }
 
 summary:before {
@@ -1081,17 +1084,14 @@ summary:before {
 
 details[open] summary {
 	background-color: #ffffff;
-  color: #197C9B;
+  color: #684B7D;
   font-weight: 500;
-
- 
-  
 }
 
 details[open] summary:before {
 	content: "↑";
   background-color: #FFFFFF;
-	color: #197C9B;
+	color: #775591;
   font-weight: 500;
   
 }
