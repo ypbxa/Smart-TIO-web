@@ -8,7 +8,6 @@ $subject = "Contact Form";
 $mailheader = "From: $email \r\n";
 $send=mail($to, $subject, $formcontent, $mailheader) 
 if ($send) {
-    echo '<br>';
     echo 'Thank You!';
 } else{
     echo 'error';
