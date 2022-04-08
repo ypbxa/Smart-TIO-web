@@ -1,11 +1,11 @@
-<?php echo $_POST["introducir_nombre"]; ?>
-<?php echo $_POST["introducir_email"]; ?>
-<?php echo $_POST["repeat_email"]; ?>
-<?php echo $_POST["introducir_telefono"]; ?>
-<?php echo $name= $_POST["introducir_website"]; ?>
-<?php echo $_POST["introducir_asunto"]; ?>
-<?php echo $_POST["introducir_mensaje"]; ?>
-<?php $formcontent="From: $name \n Message: $message";
+<?php $_POST["introducir_nombre"]; 
+$_POST["introducir_email"]; 
+ $_POST["repeat_email"];
+ $_POST["introducir_telefono"]; 
+ $name= $_POST["introducir_website"];
+$_POST["introducir_asunto"]; 
+  $_POST["introducir_mensaje"]; 
+ $formcontent="From: $name \n Message: $message";
 $recipient = "info@ayeconomics.com";
 $subject = "Contact Form";
 $mailheader = "From: $email \r\n";
