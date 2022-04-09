@@ -10,17 +10,14 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
-<?php 
-// Form submission script 
-include_once 'submit.php'; 
-?>
+
 <!-- Status message -->
 <?php if(!empty($statusMsg)){ ?>
     <div class="status-msg <?php echo $status; ?>"><?php echo $statusMsg; ?></div>
 <?php } ?>
 
 <!-- Form fields -->
-<form action="" method="post">
+<form action="submit.php" method="post">
     <div class="form-input">
         <label for="name">Name</label>
         <input type="text" name="name" placeholder="Enter your name" value="<?php echo !empty($postData['name'])?$postData['name']:''; ?>" required="">
