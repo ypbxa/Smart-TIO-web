@@ -204,7 +204,21 @@ border: 2px solid #775591;
 color: #775591;
 margin-top: 4%;
 }
+.secondarynomargin{
+  background: #FFFFFF;
+border: 2px solid #775591;
+color: #775591;
+
+}
 .secondary:hover{
+  color: #684B7D;
+  border: 1px solid #684B7D;
+  background: #FFFFFF;
+border: 1px solid #684B7D;
+font-weight: 700;
+font-size: 20px;
+}
+.secondarynomargin:hover{
   color: #684B7D;
   border: 1px solid #684B7D;
   background: #FFFFFF;
@@ -387,7 +401,7 @@ flex-direction: column;
  align-items: center;
  text-align: center;
 
-padding-top: 100px;
+
 padding-bottom: 24px;
 }
 .aboutproducttexttwo{
@@ -620,7 +634,9 @@ padding: 24px;
 .spanpurple{
   color: #775591;
 }
-
+#faqseparator{
+  margin-top: 4%;
+}
 #faqandotherreasons{
   display: flex;
   flex-direction: column;
@@ -1051,7 +1067,7 @@ align-items: center;
   justify-content: space-between;
   width: auto;
   height: auto;
-  margin: 24px;
+  
 }
 .pricecard{
   display: flex;
@@ -1059,8 +1075,9 @@ align-items: center;
   align-items: center;
   padding: 48px;
   margin-top: 24px;
-  margin-right: 24px;
+  
   margin-bottom: 24px;
+  
 
 }
 .usersoptions{
@@ -1123,11 +1140,28 @@ align-items: center;
     line-height: 17px;
     color: #775591;
 }
+/*
+Para arreglar el/los fallos
 .test{
   width: 400px;
   height: 600px;
   background-color: #D47048;
   margin-top: 8px;
+}
+*/
+.pricesbuttons{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+#nomarginbutton{
+  margin-top: none;
+  padding-top: none;
 }
 
 /* Accordion sacado de: https://codepen.io/havardob/pen/abBJgQo Otros en: https://freefrontend.com/css-accordions/ */
@@ -1241,10 +1275,6 @@ code {
 	font-weight: 600;
 }
 
-#faqseparator{
-  margin-top: 16%;
-  margin-bottom: 4%;
-}
 
 
 /*cosas que pueden valerme para el futuro*/
