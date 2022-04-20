@@ -1274,7 +1274,53 @@ code {
 	font-family: "SF-Pro";
 	font-weight: 600;
 }
+/* ----------------------------------------------- trainings ------------------------------------*/
 
+.tutorials{
+  background-color: #F7F7F7;
+  border-radius: 16px; 
+  width: 100%;
+  height: auto;
+  padding: 4%;
+
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.tutorialvideo{
+  display: flex;
+flex-direction: column;
+justify-content: space-between;
+width: 100%;
+background-color: #ffffff;
+margin: 4%;
+filter: drop-shadow(0px 2px 8px rgba(119, 85, 145, 0.16));
+padding: 2%;
+border-radius: 16px;
+}
+.tutorialvideotitle{
+  display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;  
+}
+#downloadhover{
+    display:none;
+    filter: drop-shadow(0px 2px 8px rgba(15, 15, 15, 0.25));
+}
+#downloadactive{
+  display:block;
+  filter: drop-shadow(0px 2px 8px rgba(15, 15, 15, 0.16));
+}
+#downloadactive:hover{
+  display:none;
+}
+#downloadactive:hover ~ #downloadhover{
+  display:block;
+}
 
 
 /*cosas que pueden valerme para el futuro*/
@@ -1351,278 +1397,12 @@ nav{
 #desktop{
   display: none;
 }
+body{
+  padding-left: 16px;
+  padding-right: 16px;
+}
 .homeicon{
   height: 22px;
 }
-.realnav{
-  padding-left: 16px;
-  padding-right: 16px;
-  letter-spacing: 4px;
-  width: 100%;
-padding-top: 24px;
-align-items: flex-end;
-}
-nav{
-  display: flex;
-  flex-direction: column-reverse;
-  width: 375px;
-}
-#lenguage{
-  font-family: "HelveticaNeue";
-font-size: 14px;
-line-height: 20px;
-letter-spacing: 4px;
-padding-right: 16px;
-padding-top: 8px;
-padding-left: 316px;
-}
-.name{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start; 
-}
-h1{
-  font-family: "SF-Pro";
-font-style: normal;
-font-weight: bold;
-font-size: 80px;
-color: #6FEEC3;
-}
-h2{
-  font-family: "SF-Pro";    
-font-size: 24px;
-color: #2d2d2d;
-margin-bottom: 32px;
-}
-h3{
-  font-family: "SF-Pro";
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 39px;
-  color: #2d2d2d;
-}
-p{
-  font-size: 15px;
-line-height: 22px;
-margin-top: 8px;
-font-family: "SF-Pro"
-}
-#surname{
-  font-family: "SF-Pro";
-font-size: 24px;
-line-height: 24px;
-color: #6FEEC3;
-}
-.inbox{
-  width: 300px;
-margin-top: 8px;
-font-size: 15px;
-line-height: 30px;
-margin-bottom: 8px;
-height: auto;
-}
-#presentation{
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  align-content: flex-start;
-  padding-top: 32px;
-  margin-top: 64px;
-  margin-left: 16px;
-}
-#surname{
-  margin-bottom: 16px;
-}
-.designad{
-  font-family: "SF-Pro";
-  display: flex;
-  justify-content: space-around;
-  width: 300px;
-height: 39px;
-font-size: 20px;
-color: #2d2d2d;
-margin-top: 8px;
-}
-.inicio{
-  flex-direction: column;
-}
-#me {
-  width: 225px;
-  height: 300px;
-  margin-right: 16px;
-  margin-top: 16px;
-  margin-left: 64px
-}
-#mechange{
-  width: 225px;
-  height: 300px;
-  margin-right: 16px;
-  margin-top: 16px; 
-  margin-left: 64px
-}
-.photo_and_icons{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.imgcontactlogosize{
-  width: 25px;
-  height: 25px;
-  filter: drop-shadow(0px 4px 4px rgba(39, 39, 39, 0.12));
-}
-button{
-  text-decoration: none;
-  padding: 8px 64px;
-  font-family: "SF-Pro";
-  font-size: 16px;
-  background-color: #2d2d2d;
-color: #ffffff;
-border: none;
-filter: drop-shadow(0px 4px 4px rgba(39, 39, 39, 0.12));
-margin-top: 16px;
-margin-right: 16px;
-}
-.projectTitle{
-  margin-left: 31%;
-  margin-top: 64px;
-  margin-bottom: 32px;
-}
-.maracuyapp_photo{
-  height: 320px; 
-}
-.newDirection{
-  display: flex;
-  flex-direction: column;
-}
-.maracuyapp{
-  flex-direction: column;
-}
-.maracuyappinfo{
-  width: 300px;
-  height: auto;
-}
-.maracuyapp{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: auto;
-}
-.newDirectionKnowmore{
-  display: flex;
-  flex-direction: column;
-}
 
-h4{
-  padding-top: 16px;
-}
-.revoluteinfo{
-  width: 300px;
-  height: auto;
-}
-.revolute{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: auto;
-  margin-top: 48px;
-}
-.revolute_photo{
-  height: 320px; 
-}
-.cakeproject{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 48px;
-  margin-right: 0px;
-  margin-top: 48px;
-}
-.cake_video{
-  height: 300px; 
-  margin-right: 56px;
-}
-.cakeinfo{
-  width: 300px;
-  height: auto;
-}
-.cake_text{
-  margin-top: 16px;
-}
-.skyproject{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 48px;
-  margin-right: auto;
-  margin-top: 48px;
-}
-.sky_video{
-  height: 300px;
-  margin-right: 56px;
-}
-.sky_text{
-  margin-top: 16px;
-}
-.skyinfo{
-  width: 300px;
-  height: auto;
-}
-.contactsection{
-  margin-left: 64px;
-  margin-top: 48px;
-  margin-bottom: 16px;
-}
-.aboutme{
-  margin-top: 0px;
-  margin-left: 0px;
-  padding-right: 0px;
-  width: 300px;
-  height: auto;
-  margin-bottom: 32px;
-}
-.father{
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 64px;
-}
-.realcontact{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-content: flex-start;
-  padding-left: 24px;
-  padding-right: 24px;
-  border-left: none;
-  border-right: none;
-  border-bottom: solid 8px #6FEEC3;
-  width: auto;
-  height: auto;
-  margin: auto;
-}
-.emailicon{
-  height: 32px;
-  margin-bottom: 16px;
-}
-.movilicon{
-  height: 32px;
-  margin-bottom: 16px;
-}
-.whatsappicon{
-  height: 32px;
-  margin-bottom: 16px;
-}
-.contactlogoFooter{
-  height: 24px;
-  margin-left: 24px;
-}
-.footerRRSS{
-  width: auto;
-}
-}
-
-
-video {
-  outline: none;
 }
