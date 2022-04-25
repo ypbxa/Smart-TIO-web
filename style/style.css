@@ -401,6 +401,9 @@ color: #2d2d2d;
 #space{
   padding-top: 8%;
 }
+#space_less{
+  padding-top: 4%;
+}
 
 
 .valueproporsal{
@@ -432,7 +435,7 @@ padding-bottom: 24px;
   flex-direction: column;
   align-items: center;
   text-align: center;
- padding-top: 100px;
+ padding-top: 24px;
  padding-bottom: 24px;
 }
 
@@ -473,7 +476,20 @@ border-radius: 32px;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 4%;
+}
+.aboutproductmodulesproductone{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-right: 2%;
+}
+.aboutproductmodulesproducttwo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-left: 2%;
 }
  .protitle{
    display:flex;
@@ -492,16 +508,26 @@ border-radius: 32px;
    color: #197C9B;
    align-items: center;
    text-align: center;
+   font-weight: 110;
+font-size: 24px;
+line-height: 43px;
  }
  #regional{
   color: #D47048;
   align-items: center;
   text-align: center;
+  font-weight: 110;
+  font-size: 24px;
+  line-height: 43px;;
+
 }
 #social{
   color: #684B7D;
   align-items: center;
   text-align: center;
+  font-weight: 110;
+  font-size: 24px;
+  line-height: 43px;;
 }
 .moresmartmoretiosection{
     width: 100%;
@@ -520,6 +546,19 @@ display: flex;
 flex-direction: row;
 align-items: center;
 justify-content: space-between;
+padding-left: 6%;
+padding-right: 6%;
+padding-top: 6%;
+}
+.morecardsproduct{
+  width: auto;
+height: auto;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+padding-left: 6%;
+padding-right: 6%;
 }
 #modulecard{
   background-color: #ffffff;
@@ -703,6 +742,9 @@ padding: 24px;
 }
 #faqseparator{
   margin-top: 4%;
+}
+.bottomseparator{
+  margin-bottom: 4%;
 }
 #faqandotherreasons{
   display: flex;
@@ -1235,6 +1277,7 @@ Para arreglar el/los fallos
   justify-content: space-between;
   padding-left: 6%;
   padding-right: 6%;
+  padding-top: 6%;
 }
 #nomarginbutton{
   margin-top: none;
@@ -1427,7 +1470,7 @@ justify-content: space-between;
 #downloadactive:hover ~ #downloadhover{
   display:block;
 }
-#noline ~ a:hover{
+.noline ~ a:hover{
   text-decoration: none;
   border-bottom:none
 }
