@@ -1522,15 +1522,7 @@ h6{
     max-width: 1440px;
     margin: auto;
   }
-  .realnav{
-    width: 590px;
-    display: flex;
-justify-content: space-between;
-padding-left: 140px;
-padding-top: 81px;
-line-height: 20px;
-letter-spacing: 6px;
-  }
+  
 }
 @media only screen and (min-width: 416px){
   #movileresponsive{
@@ -1542,8 +1534,10 @@ letter-spacing: 6px;
 }
 @media only screen and (max-width:415px){
 nav{
-  width: 414px;
+  width: 100%;
 }
+
+
 #movileresponsive{
   display: block;
 }
