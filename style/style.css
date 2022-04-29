@@ -1178,7 +1178,7 @@ text-shadow: none;
 }
 .linkintext:hover{
   color: #684B7D;
-  text-shadow: 0px 2px 8px rgba(15, 15, 15, 0.25);
+  text-shadow: 0px 2px 8px rgba(15, 15, 15, 0.25);/*bajar*/
   border-bottom: none;
 }
 
