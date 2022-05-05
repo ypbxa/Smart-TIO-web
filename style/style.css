@@ -927,7 +927,7 @@ input:not([type="radio"]){
   width: 727px;
   justify-content: space-between;
 }
-#phoneandwebformgroup{
+#phoneandnameformgroup{
   display: flex;
   flex-direction: row;
   width: 727px;

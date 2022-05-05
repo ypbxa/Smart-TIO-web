@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-5MWRJTP');</script>
-  <!-- End Google Tag Manager -->
+<script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+      'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-5MWRJTP');</script>
+<!-- End Google Tag Manager -->
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,15 +23,15 @@
 
 <body>
   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5MWRJTP"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5MWRJTP" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   <header>
     <nav>
       <a class="noline" href="index.html"> <img id="logo" src="images/Logo.png" alt="logo"> </a>
       <div class="menu">
         <a id="productnav" href="Product.html">Product</a>
-        <a id="trainingnav"  href="Trainings.html">Trainings</a>
+        <a id="trainingnav" href="Trainings.html">Trainings</a>
         <a id="pricesnav" href="Prices.html">Prices</a>
         <a id="aboutusnav" href="aboutus.html">About us</a>
         <a class="wearehere" href="Contact.html">Contact</a>
@@ -48,7 +52,8 @@
             suitable, provide a demo or directly purchase Smart TIO.
             We will also provide you with all the information regarding invoices, licensing, prices...</p>
         </div>
-        <button onclick="location.href='Contactsales.html#formsection'"  class="contactcardandbutton-button"> Contact Sales</button>
+        <button onclick="location.href='Contactsales.html#formsection'" class="contactcardandbutton-button"> Contact
+          Sales</button>
       </div>
       <div class="contactcardandbutton">
         <div class="contactcard">
@@ -57,7 +62,8 @@
           <p class="contactcardtext">Need help with something? We will be glad to provide you with a solution. Our team
             will be happy to answer any technical questions you may have.</p>
         </div>
-        <button onclick="location.href='Contactsupport.html#formsection'" class="contactcardandbutton-button"> Contact Support</button>
+        <button onclick="location.href='Contactsupport.html#formsection'" class="contactcardandbutton-button"> Contact
+          Support</button>
       </div>
       <div class="contactcardandbutton" id="faqandotherreasons">
         <div id="faqcard">
@@ -95,17 +101,29 @@
 
                   <select name="selector" class="selectdropdown">
                     <option selected value="0"> Select one option </option>
-                      <option value="1">Information</option>
-                      <option value="2"> Smart TIO purchases and upgrades</option>
-                      <option value="3">Trainings</option>
-                      <option value="4">Other</option>
+                    <option value="1">Information</option>
+                    <option value="2"> Smart TIO purchases and upgrades</option>
+                    <option value="3">Trainings</option>
+                    <option value="4">Other</option>
                   </select>
                 </div>
-                <label for="nombre" class="colocar_nombre">Name
-                  <span class="obligatorio">*</span>
-                </label>
-                <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
-                  placeholder="Ex.: Paul Krugman" size="100">
+
+                <div id="phoneandnameformgroup">
+                  <div>
+                    <label for="nombre" class="colocar_nombre">Name
+                      <span class="obligatorio">*</span>
+                    </label>
+                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+                      placeholder="Ex.: Paul Krugman" size="48">
+                  </div>
+                  <div>
+                    <label for="telefone" class="colocar_telefono">Phone number
+                    </label>
+                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Ex.: +34 67927XXX2"
+                      size="48">
+                  </div>
+                </div>
+
                 <div id="emailformgroup">
                   <div>
                     <label for="email" class="enter_email">Email
@@ -122,25 +140,19 @@
                       placeholder="Ex.: Krugman@example.com" minlength="10" size="48">
                   </div>
                 </div>
-                <div id="phoneandwebformgroup">
-                  <div>
-                    <label for="telefone" class="colocar_telefono">Phone number
-                    </label>
-                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Ex.: +34 67927XXX2"
-                      size="48">
-                  </div>
-                  <div>
-                    <label for="website" class="colocar_website">Web site
-                    </label>
-                    <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web"
-                      size="48">
-                  </div>
-                </div>
-                <label for="asunto" class="colocar_asunto">Why do you want to contact us?
+
+
+                <!-- ELIMINADO DEL FORM
+
+    <label for="asunto" class="colocar_asunto">Why do you want to contact us?
                   <span class="obligatorio">*</span>
                 </label>
                 <input type="text" name="introducir_asunto" id="assunto" required="obligatorio"
                   placeholder="Ex.: Info about Pro " size="100">
+ -->
+
+
+
                 <label for="mensaje" class="colocar_mensaje">Let us know as much as possible please
                   <span class="obligatorio">*</span>
                 </label>
@@ -150,7 +162,7 @@
                   <span class="obligatorio"> * </span>The information is mandatory.
                 </p>
                 <div class="radiobutton">
-                  <input type="radio" id="radiobuton" name="aceptlegal" value="aceptlegal" >
+                  <input type="radio" id="radiobuton" name="aceptlegal" value="aceptlegal">
                   <label for="radiobuton" class="radiobuttonlabel">At AYeconomics, we will process the data you provide
                     to us in order to respond to your request. The data provided will be retained for as long as the
                     business relationship is maintained or for the time necessary to comply with legal obligations. The
@@ -191,10 +203,13 @@
   </main>
   <footer>
     <div class="rrssgroup">
-      <a href="https://instagram.com/smart_tio_ayeconomics?igshid=YmMyMTA2M2Y="> <img id="ig" src="images/ig.svg" alt="intagram"></a>
-      <a href="https://twitter.com/SmartTIO_AY" ><img id="twitter" src="images/twitter.svg" alt="twitter" ></a>
-      <a href="https://www.linkedin.com/showcase/smart-tio/" > <img id="linkedin" src="images/linkedin.svg" alt="linkedin" > </a>
-      <a href="https://www.facebook.com/Smart-TIO-105205065516002/" ><img id="facebook" src="images/facebook.svg" alt="facebook" ></a>
+      <a href="https://instagram.com/smart_tio_ayeconomics?igshid=YmMyMTA2M2Y="> <img id="ig" src="images/ig.svg"
+          alt="intagram"></a>
+      <a href="https://twitter.com/SmartTIO_AY"><img id="twitter" src="images/twitter.svg" alt="twitter"></a>
+      <a href="https://www.linkedin.com/showcase/smart-tio/"> <img id="linkedin" src="images/linkedin.svg"
+          alt="linkedin"> </a>
+      <a href="https://www.facebook.com/Smart-TIO-105205065516002/"><img id="facebook" src="images/facebook.svg"
+          alt="facebook"></a>
     </div>
     <div id="footertext">
       <p id="rightsreservedtext">© 2017 AYeconomics Research Centre. All rights reserved</p>
