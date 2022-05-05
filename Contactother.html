@@ -102,11 +102,24 @@
                     </optgroup>
                   </select>
                 </div>
-                <label for="nombre" class="colocar_nombre">Name
-                  <span class="obligatorio">*</span>
-                </label>
-                <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
-                  placeholder="Ex.: Paul Krugman" size="100">
+
+
+                <div id="phoneandnameformgroup">
+                  <div>
+                    <label for="nombre" class="colocar_nombre">Name
+                      <span class="obligatorio">*</span>
+                    </label>
+                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+                      placeholder="Ex.: Paul Krugman" size="48">
+                  </div>
+                  <div>
+                    <label for="telefone" class="colocar_telefono">Phone number
+                    </label>
+                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Ex.: +34 67927XXX2"
+                      size="48">
+                  </div>
+                </div>
+
                 <div id="emailformgroup">
                   <div>
                     <label for="email" class="enter_email">Email
@@ -123,26 +136,19 @@
                       placeholder="Ex.: Krugman@example.com" minlength="10" size="48">
                   </div>
                 </div>
-                <div id="phoneandwebformgroup">
-                  <div>
-                    <label for="telefone" class="colocar_telefono">Phone number
-                    </label>
-                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Ex.: +34 67927XXX2"
-                      size="48">
-                  </div>
-                  <div>
-                    <label for="website" class="colocar_website">Web site
-                    </label>
-                    <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web"
-                      size="48">
-                  </div>
-                </div>
-                <label for="asunto" class="colocar_asunto">Why do you want to contact us?
+
+
+                <!-- ELIMINADO DEL FORM
+
+    <label for="asunto" class="colocar_asunto">Why do you want to contact us?
                   <span class="obligatorio">*</span>
                 </label>
                 <input type="text" name="introducir_asunto" id="assunto" required="obligatorio"
                   placeholder="Ex.: Info about Pro " size="100">
-                <label for="mensaje" class="colocar_mensaje">Let us know as much as possible please
+ -->
+                
+                
+                  <label for="mensaje" class="colocar_mensaje">Let us know as much as possible please
                   <span class="obligatorio">*</span>
                 </label>
                 <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
