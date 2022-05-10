@@ -1877,5 +1877,11 @@ button{
  align-items: center;
  width: 100%;
  }
+ .video{
+  width: 320px;
+  height: 251.17px;
+  border-radius: 16px;
+  margin-top: 4%;
+  }
 
 }
