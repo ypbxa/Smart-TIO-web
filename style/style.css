@@ -1565,7 +1565,9 @@ h6{
     max-width: 1440px;
     margin: auto;
   }
-  
+  #responsivenav{
+    display: none;
+  }
 }
 @media only screen and (min-width: 416px){
   #movileresponsive{
@@ -1581,6 +1583,133 @@ h6{
     max-width: 416px;
     margin: auto;
   }
+
+
+
+  #responsivenav{
+    display: block;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 4%;
+  }
+  #desktopnav{
+    display: none;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  header {
+    height: 64px;
+    background: #ffffff;
+    color: #684B7D;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  #btn-menu {
+    display: none;
+  }
+  
+  header label {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .menu ul {
+    background: #775591;
+    display: flex;
+    list-style: none;
+    border-radius: 16px;
+  }
+  
+  .menu ul ul {
+    display: none;
+  }
+  
+  .menu a {
+    display: block;
+    padding: 15px 20px;
+    color: #FFF;
+    text-decoration: none;
+    line-height: 32px;
+    font-family: 'SF-Pro';
+    font-weight: 700;
+    border-radius: 16px;
+  }
+  
+  .menu a:hover {
+    background: #684B7D;
+  }
+  
+  .menu a i {
+    margin-left: 10px;
+  }
+  
+  .menu ul li:hover ul {
+    transition: all 0.3s ease;
+    display: block;
+    position: absolute;
+  }
+  header label {
+    display: block;
+    padding-top: 16px;
+    padding-right: 16px;
+    transition: all 0.4s ease;
+  }
+  .menu {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 70%;
+    transform: translateX(-100%);
+    transition: all 0.3s;
+  }
+  .menu ul {
+    flex-direction: column;
+    display: block;
+  }
+  .menu ul li:hover ul {
+    display: none;
+    position: static;
+  }
+  
+  
+  .menu a i {
+    position: absolute;
+    right: 16px;
+    line-height: 32px;
+  }
+  
+  #btn-menu:checked ~ .menu {
+    transform: translateX(0%);
+  }
+  #lan-menu:checked ~ .menu {
+    transform: translateX(0%);
+  }
+  
+ 
+
+  
+
+
+  
+
+
+
+
+  
+
+
+
+  
   nav {
     display: flex;
     justify-content: space-between;
@@ -1610,8 +1739,8 @@ h6{
     height: 24px;
     width: auto;
   }
-  .menu{
-    
+
+  .menu{ 
     display: flex;
 justify-content: space-between;
 width: auto;
@@ -1621,7 +1750,7 @@ height: auto;
 
 
   h1 {
-    position: static;
+position: static;
 width: auto;
 height: auto;
 left: 180px;
@@ -1632,18 +1761,13 @@ font-weight: 860;
 font-size: 96px;
 line-height: 115px;
 color: #2d2d2d;
-
-
 font-family: 'SF-Pro';
 font-style: normal;
 font-weight: 700;
 font-size: 40px;
 line-height: 48px;
+}
 
-color: #0A0A0A;
-
-
-  }  
   h2{
     font-family: "SF-Pro";    
 font-size: 48px;
