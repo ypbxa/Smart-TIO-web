@@ -1568,6 +1568,19 @@ h6{
   #responsivenav{
     display: none;
   }
+
+  #contactresponsive{
+    display: none;
+  }
+  #contactdesktop{
+    display: block;
+  }
+  #mapresponsive{
+    display: none;
+  }
+  #mapdesktop{
+    display: block;
+  }
 }
 @media only screen and (min-width: 416px){
   #movileresponsive{
@@ -1575,6 +1588,21 @@ h6{
   }
   #desktop{
     display: block;
+  }
+  #contactresponsive{
+    display: none;
+  }
+  #contactdesktop{
+    display: block;
+  }
+  #mapresponsive{
+    display: none;
+  }
+  #mapdesktop{
+    display: block;
+  }
+  #responsivenav{
+    display: none;
   }
 }
 @media only screen and (max-width:415px){
@@ -1939,4 +1967,52 @@ button{
   border-radius: 16px;
   box-shadow: none;
 }
+/*contact*/
+
+#contactresponsive{
+  display: block;
+}
+#contactdesktop{
+  display: none;
+}
+
+.contactimg{
+  width: 400px;
+  height: auto;
+  }
+  .formarea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact_form{  
+    width: 100%; 
+    height: auto;
+    
+    border-radius: 10px;  
+    padding-top: 24px;
+    padding-bottom: 24px; 
+    padding-right: 24px; 
+    background-color: #ffffff;  
+  }
+
+  
+
+  #mapresponsive{
+    display: block;
+  }
+  #mapdesktop{
+    display: none;
+  }
+  .contactmapmargin{
+    display: flex;
+    flex-direction: column;
+   margin-top: 8%;
+    justify-content: space-between; 
+    width: 100%;
+    align-items: center;
+  }
+
+  
+
 }
