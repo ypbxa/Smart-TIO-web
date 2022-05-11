@@ -1593,7 +1593,9 @@ h6{
     flex-direction: row;
     align-items: baseline;
     justify-content: space-between;
-    padding: 4%;
+    padding-right: 4%;
+    padding-left: 4%;
+    padding-bottom: 4%;
   }
   #desktopnav{
     display: none;
@@ -1696,7 +1698,9 @@ h6{
     transform: translateX(0%);
   }
   
- 
+ .wearehereresponsive{
+   background-color: #684B7D;
+ }
 
   
 
