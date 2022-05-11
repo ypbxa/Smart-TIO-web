@@ -1582,6 +1582,19 @@ h6{
   #mapdesktop{
     display: block;
   }
+  #demoandtutorialresponsive{
+    display: none;
+  }
+  #demoandtutorialdesktop{
+    display: block;
+  }
+  #productresponsive{
+    display: none;
+  }
+  #productdesktop{
+    display: block;
+  }
+
 }
 @media only screen and (min-width: 416px){
   #movileresponsive{
@@ -1604,6 +1617,18 @@ h6{
   }
   #responsivenav{
     display: none;
+  }
+  #demoandtutorialresponsive{
+    display: none;
+  }
+  #demoandtutorialdesktop{
+    display: block;
+  }
+  #productresponsive{
+    display: none;
+  }
+  #productdesktop{
+    display: block;
   }
 }
 @media only screen and (max-width:415px){
@@ -2014,6 +2039,79 @@ button{
     align-items: center;
   }
 
-  
+ /*product*/ 
 
+ #demoandtutorialresponsive{
+  display: block;
+}
+#demoandtutorialdesktop{
+  display: none;
+}
+
+#productresponsive{
+  display: block;
+}
+#productdesktop{
+  display: none;
+}
+
+.demoandtutorials{
+  display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+width: auto;
+  height: auto;
+  padding:6%;
+  margin: 6%;
+}
+.demo{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+align-items: center;
+text-align: center;
+padding: 4%;
+background-color: #F7F7F7;
+}
+.trainings{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+align-items: center;
+text-align: center;
+padding: 4%;
+background-color: #ffffff;
+}
+.claimtwofocus{
+  font-family: 'SF-Pro';
+font-style: normal;
+font-weight: 110;
+font-size: 18px;
+line-height: 21px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.02em;
+color: #197C9B;
+}
+.morecardsproduct{
+  width: auto;
+height: auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+padding-left: 6%;
+padding-right: 6%;
+}
+.aboutproductmodulesproductone{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 16%;
+}
 }
