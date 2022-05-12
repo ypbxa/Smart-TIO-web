@@ -1594,7 +1594,19 @@ h6{
   #productdesktop{
     display: block;
   }
+  #indexresponsive{
+    display: none;
+  }
+  #indexdesktop{
+    display: block;
+  }
 
+  #tutorialresponsive{
+    display: none;
+  }
+  #tutorialdesktop{
+    display: block;
+  }
 }
 @media only screen and (min-width: 416px){
   #movileresponsive{
@@ -1628,6 +1640,19 @@ h6{
     display: none;
   }
   #productdesktop{
+    display: block;
+  }
+
+  #indexresponsive{
+    display: none;
+  }
+  #indexdesktop{
+    display: block;
+  }
+  #tutorialresponsive{
+    display: none;
+  }
+  #tutorialdesktop{
     display: block;
   }
 }
@@ -1756,10 +1781,13 @@ h6{
    background-color: #684B7D;
  }
 
-  
 
-
-  
+ #indexresponsive{
+  display: block;
+}
+#indexdesktop{
+  display: none;
+}
 
 
 
@@ -2114,4 +2142,47 @@ padding-right: 6%;
   text-align: center;
   margin-bottom: 16%;
 }
+.aboutproducttextandbutton{
+  display: flex;
+ flex-direction: column;
+ align-items: center;
+ height: auto;
+ margin-left: 2%;
+ margin-right: 2%;
+}
+
+/*training*/
+.methodologyandtutorials{
+  display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+height: auto;
+padding-top: 4%;
+padding-bottom: 4%;
+}
+.trainings{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+align-items: center;
+text-align: center;
+
+border-radius: 16px;
+margin: 4%;
+background-color: #ffffff;
+}
+#tutorialresponsive{
+  display: block;
+}
+#tutorialdesktop{
+  display: none;
+}
+
+
+
+
+
 }
