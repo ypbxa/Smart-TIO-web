@@ -2186,4 +2186,19 @@ margin: none;
 }
 /*Prueba segment control*/
 
+
+/*about us*/
+.aboutusheadertitlecopy{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 16%;
+}
+#logoay{
+  width: 28px;
+  height: 24.35px;
+  margin-right: 0%;
+}
+
 }
