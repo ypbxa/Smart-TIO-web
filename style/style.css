@@ -434,7 +434,9 @@ color: #2d2d2d;
 #space_less{
   padding-top: 4%;
 }
-
+#space_botton_less{
+  padding-bottom: none;
+}
 
 .valueproporsal{
   width: 100%;
@@ -2198,7 +2200,62 @@ margin: none;
 #logoay{
   width: 28px;
   height: 24.35px;
-  margin-right: 0%;
+  margin-right: 4px;
+}
+/*Idea de Pedro para intentar juntar la letra A*/
+.logofrase img { display: block; } 
+/**/
+.values{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  padding-left: 8%;
+  padding-right: 8%;
+  margin-top: 16%;
+  margin-bottom: 4%;
+  background-color: #F7F7F7;
+  height: auto;
+  width: 100%;
+}
+#space_botton_less{
+  padding-bottom: 16%;
 }
 
+.howweworkandvalueslist{
+  margin-top: 4%;
+  text-align: center;
+}
+.visitourweb{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  height: 24px;
+  margin-left: 8px;
+  margin-right: 8px;
+  /* Phantom button */
+
+background: rgba(212, 209, 233, 0.5);
+/* Bright Mode/ Shadow */
+
+box-shadow: 0px 2px 8px rgba(15, 15, 15, 0.16);
+border-radius: 3px;
+}
+.contactmapmargin{
+  display: flex;
+  flex-direction: row;
+ margin-top: 2%;
+  justify-content: space-between; 
+  width: 100%;
+  align-items: center;
+}
+.hereweare{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 8%;
+}
 }
