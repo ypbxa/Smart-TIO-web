@@ -811,6 +811,7 @@ justify-content: center;
 text-align: center;
 padding: 24px;
 }
+
 /*map section*/
 .contactmap{
   display: flex;
@@ -868,7 +869,6 @@ iframe{
   color: #775591;
   margin-right: 8px;
 }
-
 
 
 /*form*/
