@@ -832,13 +832,9 @@ padding: 24px;
   width: 100%;
   align-items: center;
 }
-.contactmapastro{
-  display: flex;
-  flex-direction: row;
- 
-  justify-content: space-between; 
-  width: 100%;
-  align-items: baseline;
+#contactmapastro{
+display: flex;
+flex-direction: row;
 }
 iframe{
   border-radius: 16px;
@@ -851,7 +847,7 @@ iframe{
 }
 .contenedor{
   position: relative;
-  display: inline-block;
+  
   text-align: center;
 }
 .centrado{
@@ -1459,7 +1455,11 @@ border-radius: 16px;
 margin-top: 6%;
 margin-right: 80px;
 }
-
+.squaretest{
+  width: 400;
+  height: auto;
+  background: #197C9B;
+}
 
 
 .tutorials{
