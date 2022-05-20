@@ -22,7 +22,9 @@ font-weight: 400;
 font-size: 14px;
 line-height: 17px;
   }
-  
+  .greencolor{
+    color: #197C9B;
+  }
   
   nav {
     display: flex;
@@ -801,6 +803,16 @@ display: flex;
   text-align: center;
   margin-top: 16%;
 }
+#faqcardrus{
+  width: 443px;
+height: auto;
+display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 8%;
+}
 #otherreason{
   width: 443px;
 height: auto;
@@ -1131,6 +1143,22 @@ Height: 443.14px;
   height: auto;
   width: 100%;
 }
+.valuesrus{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left: 16%;
+  padding-right: 16%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  background-color: #F7F7F7;
+  height: auto;
+  width: 100%;
+}
+
 .howweworkandvalues{
   display: flex;
   flex-direction: column;
@@ -1143,7 +1171,14 @@ Height: 443.14px;
 .onevalue{
   padding-top: 8px;
 }
-
+#marginrusvalues{
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+#marginrusvaluestwo{
+  margin-top: 8%;
+  margin-bottom: 2%;
+}
   /*span con class="purple". Al eliminar queda el agua marina
   .purple{
      color: #684B7D;
@@ -1154,6 +1189,12 @@ display: flex;
 flex-direction: column;
 align-items: center;
 }
+.ourvaluesrus{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F7F7F7;
+  }
 .weblink{
   font-weight: 700;
   font-size: 20px;
@@ -1230,6 +1271,14 @@ align-items: center;
   width: auto;
   height: auto;
 }
+.pricecardsru{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+  height: auto;
+}
 .pricecard{
   display: flex;
   flex-direction: column;
@@ -1237,6 +1286,15 @@ align-items: center;
   padding: 48px;
   margin-top: 24px;
   margin-bottom: 24px;
+}
+.pricecardru{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  width: 100%;
 }
 .usersoptions{
   display: flex;
