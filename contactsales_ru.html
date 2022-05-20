@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5MWRJTP');</script>
+  <!-- End Google Tag Manager -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart TIO</title>
+  <link rel="stylesheet" href="style/reset.css">
+  <link rel="stylesheet" href="style/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5MWRJTP"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <header>
+    <nav>
+      <a class="noline" href="index.html"> <img id="logo" src="images/Logo.png" alt="logo"> </a>
+      <div class="menu">
+        <a id="productnav" href="Product.html">Услуги</a>
+        <a id="trainingnav"  href="Trainings.html">Тренинги</a>
+        <a id="pricesnav" href="Prices.html">Цены</a>
+        <a id="aboutusnav" href="aboutus.html">О нас</a>
+        <a class="wearehere" href="Contact.html">Контакты</a>
+      </div>
+      <div class="lenguagenav">
+        <a id="lenguagerus" href="error.html">RUS</a>
+        <a id="lenguagegal" href="error.html">GAL</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="contactcards">
+      <div class="contactcardandbutton" id="contactcardandbuttonsales">
+        <div class="contactcard">
+          <h4>Sales</h4>
+          <img id="sales" src="images/sales.svg" alt="salesimg">
+          <p class="contactcardtext">Мы можем помочь вам выбрать лучший план, если вы все еще не знаете, какой из них
+            наиболее подходит для вас, предоставить демо-версию или приобрести Smart TIO напрямую.
+            Мы также предоставим вам всю информацию о счетах, лицензировании, ценах...</p>
+        </div>
+        <button onclick="location.href='Contactsales.html#formsection'"  class="contactcardandbutton-button"> Связаться с отделом продаж</button>
+      </div>
+      <div class="contactcardandbutton">
+        <div class="contactcard">
+          <h4>Support</h4>
+          <img id="support" src="images/support.svg" alt="salesimg">
+          <p class="contactcardtext">Нужна помощь? Мы будем рады предоставить вам решение. Наша команда
+            будет рада решить любые технические вопросы, которые у вас могут возникнуть.</p>
+        </div>
+        <button onclick="location.href='Contactsupport.html#formsection'" class="contactcardandbutton-button"> Связаться со службой поддержки</button>
+      </div>
+      <div class="contactcardandbutton" id="faqandotherreasons">
+        <div id="faqcard">
+          <h4>FAQs</h4>
+          <p class="black">Не забудьте проверить наш раздел часто задаваемых вопросов. Может быть, это как-то поможет вам</p>
+          <button onclick="location.href='Prices.html#faqseparator'" class="tertiary"> Перейти к часто задаваемым вопросам</button>
+        </div>
+        <div id="otherreason">
+          <h4>Other reason</h4>
+          <p>Не нашли решение в часто задаваемых вопросах?
+            У вас есть вопрос, который не касается продаж или технической поддержки? Свяжитесь с нами данным способом</p>
+          <button onclick="location.href='Contactother.html#formsection'" class="fourth"> Связаться </button>
+        </div>
+      </div>
+    </section>
+    <section class="formsection" id="formsection">
+      <div class="formtitle">
+        <h4>Отправить сообщение в отдел продаж</h4>
+        <p>Вы можете связаться с нами по любому вопросу. Мы будем рады Вам помочь. Будь то вопрос, предложение
+          или
+           консультацию, или если вы решили использовать Smart TIO среди своих рабочих инструментов (поздравляем 
+          с 
+          таким отличным решением), просто отправьте нам свое сообщение, и мы свяжемся с вами как можно скорее. </p>
+      </div>
+      <div class="formarea" id="formsection">
+        <img class="contactimg" src="images/contact_us_hedgehog 1.svg" alt="contactone">
+        <div>
+          <div class="contact_form">
+            <div class="formulario">
+              <form name="contactsales" netlify method="POST">
+                <label for="selector" class="selectorlabel">Как отдел продаж может вам помочь?
+                  <span class="obligatorio">*</span>
+                </label>
+                <div class="selector">
+
+                  <select name="selector" class="selectdropdown">
+                    <option selected value="0"> Выберите одну опцию</option>
+                      <option value="1">Информация</option>
+                      <option value="2"> Smart TIO покупки и обновления</option>
+                      <option value="3">Тренинги</option>
+                      <option value="4">Другое</option>
+                  </select>
+                </div>
+                <label for="nombre" class="colocar_nombre">Имя
+                  <span class="obligatorio">*</span>
+                </label>
+                <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+                  placeholder="Ex.: Paul Krugman" size="100">
+                <div id="emailformgroup">
+                  <div>
+                    <label for="email" class="enter_email">Электронная почта
+                      <span class="obligatorio">*</span>
+                    </label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio"
+                      placeholder="Ex.: Krugman@example.com" minlength="10" size="48">
+                  </div>
+                  <div>
+                    <label for="email" class="enter_email"> Повторить адрес электронной почты
+                      <span class="obligatorio">*</span>
+                    </label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio"
+                      placeholder="Ex.: Krugman@example.com" minlength="10" size="48">
+                  </div>
+                </div>
+                <div id="phoneandwebformgroup">
+                  <div>
+                    <label for="telefone" class="colocar_telefono">Номер телефона
+                    </label>
+                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Ex.: +34 67927XXX2"
+                      size="48">
+                  </div>
+                  <div>
+                    <label for="website" class="colocar_website">Веб-сайт
+                    </label>
+                    <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web"
+                      size="48">
+                  </div>
+                </div>
+                <label for="asunto" class="colocar_asunto">Почему вы хотите связаться с нами?
+                  <span class="obligatorio">*</span>
+                </label>
+                <input type="text" name="introducir_asunto" id="assunto" required="obligatorio"
+                  placeholder="Ex.: Info about Pro " size="100">
+                <label for="mensaje" class="colocar_mensaje">Дайте нам знать как можно больше пожалуйста
+                  <span class="obligatorio">*</span>
+                </label>
+                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
+                  placeholder="Ex: I am interested in learning more about Smart Tio, the training programs and modules available. In my department we are dedicated to..."></textarea>
+                <p class="aviso">
+                  <span class="obligatorio"> * </span>The information is mandatory.
+                </p>
+                <div class="radiobutton">
+                  <input type="radio" id="radiobuton" name="aceptlegal" value="aceptlegal" >
+                  <label for="radiobuton" class="radiobuttonlabel">В AYeconomics мы будем обрабатывать данные, которые вы нам предоставляете, 
+                    чтобы ответить на ваш запрос. Предоставленные данные будут храниться до тех пор, пока поддерживаются деловые отношения или в течение времени, 
+                    необходимого для соблюдения юридических обязательств. Информация может быть предоставлена операторам данных для обслуживания данного веб-сайта 
+                    или в случаях, когда существует юридическое обязательство. У вас есть право получить подтверждение об обработке ваших личных данных,
+                    исправить неточные данные или запросить их удаление, когда данные больше не нужны. 
+                    Вы можете получить доступ к дополнительной информации о том, как мы обрабатываем ваши данные, в разделе Политика конфиденциальности на этом веб-сайте.
+                  </label>
+                </div>
+                <button type="submit" name="enviar_formulario" id="enviar">
+                  <p>Send</p>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <img class="contactimg" src="images/contact_us_hedgehog 2.svg" alt="contacttwo">
+      </div>
+      </div>
+    </section>
+    <section class="contactmap">
+      <div class="hereweare">
+        <div id="maptitle">
+          <h4 id="purpletitle">Мы</h4>
+          <h4>здесь</h4>
+        </div>
+        <h5>AYeconomics Research Centre SL</h5>
+        <p>Edificio Emprendia<br>
+          Avenida do Mestre Mateo, 2, 15706 Santiago de Compostela, A Coruña</p>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2924.0220386839715!2d-8.565173584002713!3d42.87237897915583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2efe0d6c2f969d%3A0xaaf34985a0592025!2sEdificio%20Emprendia!5e0!3m2!1ses!2ses!4v1648496948265!5m2!1ses!2ses"
+        width="775" height="480" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
+  </main>
+  <footer>
+    <div class="rrssgroup">
+      <a href="https://instagram.com/smart_tio_ayeconomics?igshid=YmMyMTA2M2Y="> <img id="ig" src="images/ig.svg" alt="intagram"></a>
+      <a href="https://twitter.com/SmartTIO_AY" ><img id="twitter" src="images/twitter.svg" alt="twitter" ></a>
+      <a href="https://www.linkedin.com/showcase/smart-tio/" > <img id="linkedin" src="images/linkedin.svg" alt="linkedin" > </a>
+      <a href="https://www.facebook.com/Smart-TIO-105205065516002/" ><img id="facebook" src="images/facebook.svg" alt="facebook" ></a>
+    </div>
+    <div id="footertext">
+      <p id="rightsreservedtext">© 2017 AYeconomics Research Centre. All rights reserved</p>
+      <div id="legal">
+        <a href="https://ayeconomics.com/aviso-legal/">Legal</a>
+        <a href="https://ayeconomics.com/privacy-policy/">Privacy Policy</a>
+        <a href="https://ayeconomics.com/politica-de-cookies/">Cookies</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
