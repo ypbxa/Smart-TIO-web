@@ -64,6 +64,11 @@ top: 52px;
 #lenguagegal{
   height: 27px;
   font-size: 10px;
+  margin-left: 20%;
+}
+#login{
+  height: 27px;
+  margin-left: 50%;
 }
   .lenguagenav{
     font-family: "SF-Pro";
@@ -1101,7 +1106,7 @@ label{
   margin-top: 32px;
 }
 #logo{
-  height: 67px;
+  height: 28px;
   width: auto;
 }
 .aboutusheadertitle{
