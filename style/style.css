@@ -65,10 +65,13 @@ top: 52px;
   height: 27px;
   font-size: 10px;
   margin-left: 20%;
+<<<<<<< HEAD
+=======
 }
 #login{
   height: 27px;
   margin-left: 50%;
+>>>>>>> 9d0c0834df98acb519f31763d6a8fa85c9045ccf
 }
   .lenguagenav{
     font-family: "SF-Pro";
@@ -1105,9 +1108,14 @@ label{
   align-items: baseline;
   margin-top: 32px;
 }
+
 #logo{
   height: 28px;
   width: auto;
+}
+#login{
+  height: 27px;
+  margin-left: 50%;
 }
 .aboutusheadertitle{
   display: flex;
