@@ -38,6 +38,7 @@ line-height: 17px;
   z-index: 10000;
   background-color: #ffffff;
   }
+
   #lenguagerus:hover, #lenguagegal:hover, #contactnav:hover, #aboutusnav:hover, #pricesnav:hover, #productnav:hover, #trainingnav:hover, #lenguageen:hover{
     color: #684B7D;
     border-bottom: 1px solid #684B7D;
@@ -86,7 +87,14 @@ top: 52px;
   color:#197C9B;
   margin-bottom: 2%;
 }
-
+#header_img{
+width: 100%; /* You must set a specified height */
+height: auto;
+}
+#header_img_bg{
+  background-image: url("images/header_img.png");
+  
+}
 #topbgtwo{
   width: 682px;
   height: 259.5px;
