@@ -92,7 +92,7 @@ width: 100%; /* You must set a specified height */
 height: auto;
 }
 #header_img_bg{
-  background-image: url("images/header_img.png");
+  background-image: url("/images/header_img.png");
   
 }
 #topbgtwo{
@@ -872,17 +872,44 @@ iframe{
 }
 .contenedor{
   position: relative;
-  
   text-align: center;
+}
+.contenedorheader{
+  position: relative;
+  text-align: right;
+  width: 100%;
+  height: auto;
 }
 .centrado{
   position: absolute;
   top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
+}
+.centradoheader{
+  position: absolute;
+  top: 30%;
+  left: 65%;
+  transform: translate(-10%, -10%);
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  justify-content: center;
+  
 }
 .centradotext{
   color:#ffffff;
+}
+.centradotextheader{
+  color:#684B7D;
+}
+.centradotextsubheader{
+  color:#197C9B;
+}
+.centradotextsubsubheader{
+  color:#000000;
 }
 #maptitle{
   display: flex;
@@ -1267,6 +1294,7 @@ display: flex;
 flex-direction: row;
 align-items: center;
 }
+
 #oneyear{
   background-color: #F7F7F7;
 
@@ -1351,6 +1379,9 @@ align-items: center;
   display: flex;
   align-items: center;
   letter-spacing: -0.02em; 
+  text-align: center;
+  justify-content: center;
+  margin-top: 8%;
 }
 .pricecardtitletwo{
   font-family: 'SF-Pro';
