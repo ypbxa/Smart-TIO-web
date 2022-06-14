@@ -25,6 +25,12 @@ line-height: 17px;
   .greencolor{
     color: #197C9B;
   }
+  .black_greencolor{
+    color: #197C9B;
+    font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+  }
   
   nav {
     display: flex;
@@ -187,9 +193,17 @@ line-height: 24px;
 margin-top: 8px;
 font-family: "SF-Pro"
 }
-.black{font-weight: 700;
+.black
+{font-weight: 700;
 font-size: 14px;
 line-height: 17px;
+}
+.blackpurple{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+color: #775591;
 }
   button{
 justify-content: center;
@@ -347,10 +361,30 @@ border-radius: 3px;
 padding: 0px 0px;
 height: auto;
 width: auto;
-color: #000000;
+color: #684B7D;
+font-weight: 500;
 }
-
-
+.phantombutton:hover{
+  font-size: 14px;
+line-height: 24px;
+margin-top: 8px;
+font-family: "SF-Pro";
+background: rgba(212, 209, 233, 0.5);
+box-shadow: 0px 2px 8px rgba(15, 15, 15, 0.14);
+border-radius: 3px;
+padding: 0px 0px;
+height: auto;
+width: auto;
+color: #775591;
+border: none;
+font-weight: 500;
+}
+#dots{
+  color: #000000;
+}
+#more{
+  color: #000000;
+}
 
 
 
@@ -467,6 +501,16 @@ color: #2d2d2d;
 }
 #space_botton_less{
   padding-bottom: none;
+}
+#spacebetweenspace_less{
+  padding-top: 4%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+}
+#padding{
+  padding-left: 12%;
+  padding-right: 12%;
 }
 
 .valueproporsal{
@@ -1302,17 +1346,74 @@ padding-bottom: 4%;
 }
 .pricecard{
   width: auto;
+  min-width: 345px;
+  max-width: 345px;
 height: auto;
 display: flex;
 flex-direction: row;
 align-items: center;
+
+}
+.pricecardusers{
+  width: 100%;
+  max-width: 345px;
+  min-width: 345px;
+height: auto;
+display: flex;
+flex-direction: row;
+align-items: center;
+box-shadow: 0px 2px 8px rgba(15, 15, 15, 0.10);
+}
+#spacebetween{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.pricecardusersmodule{
+  width: 100%;
+  max-width: 228px;
+  min-width: 228px;
+height: auto;
+display: flex;
+flex-direction: row;
+align-items: center;
+box-shadow: 0px 2px 8px rgba(15, 15, 15, 0.10);
+justify-content: center;
+}
+.pricecardusersmodule:hover{
+  width: 100%;
+  max-width: 228px;
+  min-width: 228px;
+height: auto;
+display: flex;
+flex-direction: row;
+align-items: center;
+box-shadow: 0px 2px 8px rgba(15, 15, 15, 0.25);
+justify-content: center;
+color: #197C9B;
+}
+.pricecardusers:hover{
+  width: 100%;
+  max-width: 345px;
+  min-width: 345px;
+height: auto;
+display: flex;
+flex-direction: row;
+align-items: center;
+box-shadow: 0px 2px 8px rgba(15, 15, 15, 0.25);
+color: #197C9B;
 }
 
 #oneyear{
   background-color: #F7F7F7;
-
   border-radius: 16px;
 }
+#userbuton{
+  background-color: #Ffffff;
+  border-radius: 16px;
+  justify-content: center;
+}
+
 #twoyears{
   background-color: #ffffff;
   filter: drop-shadow(0px 2px 8px rgba(119, 85, 145, 0.16));
@@ -1327,6 +1428,16 @@ align-items: center;
   width: auto;
   height: auto;
 }
+.pricecardsbuttons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+  height: auto;
+  margin-bottom: 1%;
+}
+
 .pricecardsru{
   display: flex;
   flex-direction: column;
@@ -1339,15 +1450,24 @@ align-items: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 48px;
+  padding: 24px;
   margin-top: 24px;
   margin-bottom: 24px;
+}
+.pricecardmodule{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  max-width: 560px;
 }
 .pricecardru{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 48px;
+  padding: 24px;
   margin-top: 24px;
   margin-bottom: 24px;
   width: 100%;
@@ -1366,7 +1486,7 @@ align-items: center;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 24px;
+  padding: 12px;
 }
 .usersallowed{
   display: flex;
@@ -1394,7 +1514,7 @@ align-items: center;
   letter-spacing: -0.02em; 
   text-align: center;
   justify-content: center;
-  margin-top: 8%;
+  margin-top: 4%;
 }
 .pricecardtitletwo{
   font-family: 'SF-Pro';
@@ -1413,6 +1533,7 @@ align-items: center;
     line-height: 17px;
     color: #775591;
 }
+
 /*
 Para arreglar el/los fallos
 .test{
@@ -2050,6 +2171,7 @@ p{
 margin-top: 8px;
 font-family: "SF-Pro"
 }
+
 button{
   justify-content: center;
   align-items: center;

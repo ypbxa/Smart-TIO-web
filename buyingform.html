@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Google Tag Manager -->
+<script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+      'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-5MWRJTP');</script>
+<!-- End Google Tag Manager -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart TIO</title>
+  <link rel="stylesheet" href="style/reset.css">
+  <link rel="stylesheet" href="style/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5MWRJTP" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <header>
+    <nav>
+      <a class="noline" href="index.html"> <img id="logo" src="images/Logo.png" alt="logo"> </a>
+      <div class="menu">
+        <a id="productnav" href="Product.html">Product</a>
+        <a id="trainingnav" href="Trainings.html">Trainings</a>
+        <a id="pricesnav" href="Prices.html">Prices</a>
+        <a id="aboutusnav" href="aboutus.html">About us</a>
+        <a class="wearehere" href="Contact.html">Contact</a>
+      </div>
+      <div class="lenguagenav">
+        <a id="lenguagerus" href="error.html"><img src="images/Galego.svg" alt="GAL"></a>
+        <a id="lenguagegal" href="index_ru.html"><img src="images/RUSflag.svg" alt="RUS"></a>
+        <a id="signup" onclick="netlifyIdentity.open('signup');"><img src="images/user.svg" alt="sign up"> </a>
+      </div>
+    </nav>
+  </header>
+  <main>
+
+    <section class="formsection" >
+      <div class="formtitle">
+        <h4>Buying form</h4>
+        <p>We are happy that you have decided to use Smart TIO. Please fill in the information below and you will
+          receive an email from our team to know aditional info and instructions to download.</p>
+      </div>
+      <div class="formarea" id="spacebetween">
+
+        <div class="alignedcenter">
+          <p class="black_greencolor" id="spacebotton">Option chosen</p>
+          <p class="black">One year</p>
+          <div class="pricecardmodule" id="oneyear">
+            <div class="appoptions">
+              <p class="black"> Core + Modules</p>
+              <p> In addition of economic results add the social, eco or both modules for more sustainable
+                results. </p>
+            </div>
+          </div>
+          <h4>9750€</h4>
+        </div>
+
+        <div>
+          <div class="contact_form">
+            <div class="formulario">
+              <form name="contactsales" netlify method="POST">
+
+                <label for="selector" class="selectorlabel">Please select the maximum number of users who will use the
+                  software.
+                  <span class="obligatorio">*</span>
+                </label>
+                <div class="selector">
+
+                  <select name="selector" class="selectdropdown">
+                    <option selected value="0"> Select one option </option>
+                    <option value="1">Up to 3 users</option>
+                    <option value="2"> Up to 5 users</option>
+                  </select>
+                </div>
+
+
+                <label for="selector" class="selectorlabel">Please, select for how long you want to use smart TIO with
+                  this license.
+                  <span class="obligatorio">*</span>
+                </label>
+                <div class="selector">
+
+                  <select name="selector" class="selectdropdown">
+                    <option selected value="0"> Select one option </option>
+                    <option value="1">One year</option>
+                    <option value="2"> Two years</option>
+                  </select>
+                </div>
+
+
+                <div id="phoneandnameformgroup">
+                  <div>
+                    <label for="nombre" class="colocar_nombre">Name
+                      <span class="obligatorio">*</span>
+                    </label>
+                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+                      placeholder="Ex.: Paul Krugman" size="48">
+                  </div>
+                  <div>
+                    <label for="telefone" class="colocar_telefono">Phone number
+                    </label>
+                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Ex.: +34 67927XXX2"
+                      size="48">
+                  </div>
+                </div>
+
+                <div id="emailformgroup">
+                  <div>
+                    <label for="email" class="enter_email">Email
+                      <span class="obligatorio">*</span>
+                    </label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio"
+                      placeholder="Ex.: Krugman@example.com" minlength="10" size="48">
+                  </div>
+                  <div>
+                    <label for="email" class="enter_email"> Repeat email
+                      <span class="obligatorio">*</span>
+                    </label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio"
+                      placeholder="Ex.: Krugman@example.com" minlength="10" size="48">
+                  </div>
+                </div>
+
+
+                <!-- ELIMINADO DEL FORM
+
+    <label for="asunto" class="colocar_asunto">Why do you want to contact us?
+                  <span class="obligatorio">*</span>
+                </label>
+                <input type="text" name="introducir_asunto" id="assunto" required="obligatorio"
+                  placeholder="Ex.: Info about Pro " size="100">
+ -->
+
+
+
+                <label for="mensaje" class="colocar_mensaje">Do you need to tell us something?
+                  <span class="obligatorio">*</span>
+                </label>
+                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
+                  placeholder="Ex: I would like you to send me the invoice. My billing information is..."></textarea>
+                <p class="aviso">
+                  <span class="obligatorio"> * </span>The information is mandatory.
+                </p>
+                <div class="radiobutton">
+                  <input type="radio" id="radiobuton" name="aceptlegal" value="aceptlegal">
+                  <label for="radiobuton" class="radiobuttonlabel">At AYeconomics, we will process the data you provide
+                    to us in order to respond to your request. The data provided will be retained for as long as the
+                    business relationship is maintained or for the time necessary to comply with legal obligations. The
+                    information may be provided to data controllers for the maintenance of this website or in cases
+                    where there is a legal obligation. You have the right to obtain confirmation as to whether we are
+                    processing your personal data so you have the right to access your personal data, rectify inaccurate
+                    data or request its deletion when the data is no longer needed. You can access additional
+                    information about how we treat your data in the Privacy Policy section of this website.
+                  </label>
+                </div>
+                <button type="submit" name="enviar_formulario" id="enviar">
+                  <p>Send</p>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+      </div>
+    </section>
+    <section class="contactmap">
+      <div class="hereweare">
+        <div id="maptitle">
+          <h4 id="purpletitle">Here</h4>
+          <h4>we are</h4>
+        </div>
+        <h5>AYeconomics Research Centre SL</h5>
+        <p>Edificio Emprendia<br>
+          Avenida do Mestre Mateo, 2, 15706 Santiago de Compostela, A Coruña</p>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2924.0220386839715!2d-8.565173584002713!3d42.87237897915583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2efe0d6c2f969d%3A0xaaf34985a0592025!2sEdificio%20Emprendia!5e0!3m2!1ses!2ses!4v1648496948265!5m2!1ses!2ses"
+        width="775" height="480" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
+  </main>
+  <footer>
+    <div class="rrssgroup">
+      <a href="https://instagram.com/smart_tio_ayeconomics?igshid=YmMyMTA2M2Y="> <img id="ig" src="images/ig.svg"
+          alt="intagram"></a>
+      <a href="https://twitter.com/SmartTIO_AY"><img id="twitter" src="images/twitter.svg" alt="twitter"></a>
+      <a href="https://www.linkedin.com/showcase/smart-tio/"> <img id="linkedin" src="images/linkedin.svg"
+          alt="linkedin"> </a>
+      <a href="https://www.facebook.com/Smart-TIO-105205065516002/"><img id="facebook" src="images/facebook.svg"
+          alt="facebook"></a>
+    </div>
+    <div id="footertext">
+      <p id="rightsreservedtext">© 2017 AYeconomics Research Centre. All rights reserved</p>
+      <div id="legal">
+        <a href="https://ayeconomics.com/aviso-legal/">Legal</a>
+        <a href="https://ayeconomics.com/privacy-policy/">Privacy Policy</a>
+        <a href="https://ayeconomics.com/politica-de-cookies/">Cookies</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
