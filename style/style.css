@@ -379,6 +379,48 @@ color: #775591;
 border: none;
 font-weight: 500;
 }
+
+.phantombuttonvisitoutweb{
+  font-size: 20px;
+  font-weight: 700;
+line-height: 24px;
+margin-top: 8px;
+font-family: "SF-Pro";
+background: rgba(212, 209, 233, 0.5);
+box-shadow: 0px 2px 8px rgba(15, 15, 15, 0.10);
+border-radius: 3px;
+padding: 0px 0px;
+height: auto;
+width: auto;
+color: #684B7D;
+font-weight: 500;
+margin-left: 8px;
+margin-right: 8px;
+}
+.phantombuttonvisitoutweb:hover{
+  font-size: 20px;
+  font-weight: 700;
+line-height: 24px;
+margin-top: 8px;
+font-family: "SF-Pro";
+background: rgba(212, 209, 233, 0.5);
+box-shadow: 0px 2px 8px rgba(15, 15, 15, 0.14);
+border-radius: 3px;
+padding: 0px 0px;
+height: auto;
+width: auto;
+color: #775591;
+font-weight: 500;
+margin-left: 8px;
+margin-right: 8px;
+border: none;
+}
+.linkinmiddle{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
 #dots{
   color: #000000;
 }
@@ -1287,6 +1329,7 @@ Height: 443.14px;
 display: flex;
 flex-direction: column;
 align-items: center;
+justify-content: center;
 }
 .ourvaluesrus{
   display: flex;
@@ -1299,7 +1342,6 @@ align-items: center;
   font-size: 20px;
   line-height: 24px;
   height: 24px;
-  margin-bottom: 100px;
 }
 .visitourweb{
   font-weight: 700;
@@ -1813,7 +1855,11 @@ justify-content: space-between;
 }
 
 #problem_notseen{
-  margin-top: 20%;
+  padding-top: 8%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 /*cosas que pueden valerme para el futuro*/
 
