@@ -1,15 +1,4 @@
-
-$(".submenu").click(function(){
-    $(this).children("ul").slideToggle();
-  })
-  
-  $("ul").click(function(ev){
-    ev.stopPropagation();
-  })
-
-
-
-  $(".io-toggler").each(function(){
+$(".io-toggler").each(function(){
   
     var io = $(this).data("io"),
         $opts = $(this).find(".io-options"),
