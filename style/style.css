@@ -796,9 +796,10 @@ margin-top: 100px;}
 .contactcards{
   display: flex;
   flex-direction: row;
-  padding-top: 200px;
   width: 100%;
   justify-content: space-between;
+  align-content: center;
+  align-items: center;
 }
 .contactcardandbutton{
 display: flex;
@@ -1811,6 +1812,9 @@ justify-content: space-between;
   color:#006cff;
 }
 
+#problem_notseen{
+  margin-top: 20%;
+}
 /*cosas que pueden valerme para el futuro*/
 
 #me{
