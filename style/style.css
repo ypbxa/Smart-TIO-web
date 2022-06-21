@@ -1434,6 +1434,7 @@ box-shadow: 0px 2px 8px rgba(15, 15, 15, 0.25);
 justify-content: center;
 color: #197C9B;
 }
+
 .pricecardusers:hover{
   width: 100%;
   max-width: 345px;
@@ -1493,7 +1494,7 @@ color: #197C9B;
   flex-direction: column;
   align-items: center;
   padding: 24px;
-  margin-top: 24px;
+  margin-top: 16px;
   margin-bottom: 24px;
 }
 .pricecardmodule{
@@ -1501,7 +1502,7 @@ color: #197C9B;
   flex-direction: column;
   align-items: center;
   padding: 24px;
-  margin-top: 24px;
+
   margin-bottom: 24px;
   max-width: 560px;
 }
@@ -1821,20 +1822,6 @@ justify-content: space-between;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-/*cosas que pueden valerme para el futuro*/
-
-#me{
-  display: block;
-}
-#mechange{
-  display: none;
-}
-.photo:hover #me{
-  display:none
-}
-.photo:hover #mechange{
-  display: block;
 }
 
   
@@ -2588,9 +2575,19 @@ border-radius: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: none;
-margin: none;
+  padding: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
+
+.pricecardmodule{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  margin-bottom: 16px;
+}
+
 .usersoptions{
   display: flex;
   flex-direction: row;
@@ -2624,7 +2621,7 @@ margin: none;
   margin-left: 4%;
   box-shadow: 0px 2px 8px rgba(15, 15, 15, 0.16);
 }
-/*Prueba segment control*/
+
 
 
 /*about us*/
