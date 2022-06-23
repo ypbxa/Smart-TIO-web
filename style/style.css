@@ -554,7 +554,11 @@ color: #2d2d2d;
   padding-left: 12%;
   padding-right: 12%;
 }
-
+#spacebottonpluspadding{
+  padding-bottom: 4%;
+  padding-left: 4%;
+  padding-right: 4%;
+}
 .valueproporsal{
   width: 100%;
 align-items: center;
@@ -1039,6 +1043,14 @@ height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.formtitleresponsive{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
 }
 .contact_form{  
   width: 775px; 
