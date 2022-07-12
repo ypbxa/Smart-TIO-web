@@ -32,17 +32,18 @@
     <nav>
       <a id="noline" href="index.html"> <img id="logo" src="images/Logo.png" alt="logo"> </a>
       <div class="menu">
-        <a id="productnav" href="Product.html">Product</a>
-        <a class="wearehere" href="Trainings.html">Trainings</a>
-        <a id="pricesnav" href="Prices.html">Prices</a>
-        <a id="aboutusnav" href="aboutus.html">About us</a>
-        <a id="contactnav" href="Contact.html">Contact</a>
+        <a id="productnav" href="Product_esp.html">Producto</a>
+        <a class="wearehere" href="Trainings_esp.html">Aprendizaje</a>
+        <a id="pricesnav" href="Prices_esp.html">Planes</a>
+        <a id="aboutusnav" href="aboutus_esp.html">Sobre nosotros</a>
+        <a id="contactnav" href="Contact_esp.html">Contacto</a>
       </div>
       <div class="lenguagenav">
         <a id="lenguagerus" href="error.html"><img src="images/Galego.svg" alt="GAL"></a>
-                <a id="lenguagegal" href="trainings_ru.html"><img src="images/RUSflag.svg" alt="RUS"></a>
-                <a id="signup" onclick="netlifyIdentity.open('signup');"><img src="images/user.svg" alt="sign up"> </a>
-      </div>
+        <a id="lenguagegal" href="trainings_ru.html"><img src="images/RUSflag.svg" alt="RUS"></a>
+        <a id="lenguagegal" href="Trainings.html"><img src="images/GBflag.svg" alt="ENG"></a>
+        <a id="signup" onclick="netlifyIdentity.open('signup');"><img src="images/user.svg" alt="sign up"> </a>
+    </div>
     </nav>
   </header>
   <main>
@@ -53,14 +54,15 @@
         <label for="btn-menu"><i class="bi bi-list"></i></label>
         <nav class="menu">
           <ul>
-            <li><a href="Product.html">Product</a></li>
-            <li><a href="Trainings.html" class="wearehereresponsive">Trainings</a></li>
-            <li><a href="Prices.html">Prices</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Product_esp.html">Producto</a></li>
+            <li><a href="Trainings_esp.html" class="wearehereresponsive">Aprendizaje</a></li>
+            <li><a href="Prices_esp.html">Planes</a></li>
+            <li><a href="aboutus_esp.html">Sobre nosotros</a></li>
+            <li><a href="Contact_esp.html">Contacto</a></li>
             <li>-------------------</li>
             <li><a href="trainings_ru.html">RUS</a></li>
-            <li><a href="index_ru.html">GAL</a></li>
+            <li><a href="error.html">GAL</a></li>
+            <li><a href="Trainings.html">ENG</a></li>
             <!-- <li class="submenu"><a href="#">Language<i class="fa fa-caret-down"></i></a>
                 <ul>
                   <li><a href="index_ru.html">RUS</a></li>
@@ -78,41 +80,39 @@
 
     <section class="methodologyandtutorials" data-aos="zoom-in-up">
       <div class="trainings">
-        <h4>Methodology</h4>
+        <h4>Metodología</h4>
         <div class="demoandtutorialtext">
           <h5 class="claimtwo">PDF</h5>
-          <p>Download the methodology in PDF to read more details about the simulations Smart TIO performs:
-            impact demand and hypothetical extraction.
+          <p>Descarga la metodlogía en PDf para conocer más dealles sobre las simulaciones y cálculos de Smart TIO:demanda de impacto y extracción hipotética.
             <br>
-            PDF methodology includes also details about the databases used.
+            El PDF de metodlogía también incluye datos sobre las bases de datos usadas en Smart TIO. 
           </p>
         </div>
         <a href="pdfs/Smart_TIO_Methodology_EN.pdf" download target="_blank">
           <button class="secondarynomarginyestop">
-            Methodology PDF
+            Metodología PDF
           </button>
         </a>
 
       </div>
 
       <div class="trainings">
-        <h4>In-house trainings</h4>
+        <h4>Aprendizaje en casa</h4>
         <div class="demoandtutorialtext">
-          <h5 class="claimtwo">Smart TIO school</h5>
-          <p>We offer customised online and in-house trainings to build human capital capacity to exploit full potential
-            of Smart TIO.<br>
-            Contact us for more details.
+          <h5 class="claimtwo">Escuela Smart TIO</h5>
+          <p>Ofrecemos aprendizajes personalizados online para poder crear un capital humano capaz de explotar todo el potencial de Smart TIO.<br>
+            Contacte con nosotros para más detalles.
           </p>
         </div>
         <button onclick="location.href='Contactsales.html'" class="buttontraining">
-          Contact us
+          Contactar
         </button>
       </div>
     </section>
 
 
     <section class="tutorials" id="tutorialdesktop">
-      <h4 class="alignedcenter">Tutorials</h4>
+      <h4 class="alignedcenter">Tutoriales</h4>
 
        <!-- Read more. Eliminar cuando se consiga enlazar .js 
 <script>function myFunction() {
@@ -139,7 +139,7 @@
             controls></video>
           <div class="tutorialvideotext">
             <div class="tutorialvideotitle">
-              <h5> First time opening Smart TIO</h5>
+              <h5> Primera vez con Smart TIO</h5>
               <a href="video/iniciotutorial_2.mov" download="firstopening" id="noline">
                 <img id="downloadactive" class="downloadtutorial" src="images/Icondownload.svg"
                   href="video/iniciotutorial_2.mov" download>
@@ -147,8 +147,8 @@
                   href="video/iniciotutorial_2.mov" download>
               </a>
             </div>
-            <p> Go step by step throughout Smart TIO guide process and choose to run national or regional analysis.
-              As long as you choose the type of analysis you want to perform you will enter in the calculations display.
+            <p> Paso a paso Smart TIO nos guía. El primer paso es seleccionar entre realizar un analísis a nivel o regional. 
+              Tan pronto como selecciones el tipo de análisis que deseas realizar serás dirigido a la pantalla de cálculo.
             </p>
           </div>
         </div>
@@ -156,11 +156,11 @@
           <video class="videotutorialcss" src="video/IDtutorial_2.mov" poster="images/IDCtutorial.png" controls></video>
           <div class="tutorialvideotext">
             <div class="tutorialvideotitle">
-              <h5> Impact demand calculations</h5>
+              <h5> Cálculo de demanda de impacto</h5>
               <a href="video/IDtutorial_2.mov" download="Impact demand calcultion tutorial">
                 <img id="downloadactive" class="downloadtutorial" src="images/Icondownload.svg"
                   href="video/IDtutorial_2.mov" download>
-                <!-- why do they need to downlowad video? I dont think they need this option-->
+                
                 <img id="downloadhover" class="downloadtutorial" src="images/Icondownloadhover.svg"
                   href="video/IDtutorial_2.mov" download>
               </a>
@@ -169,7 +169,7 @@
               and indirect effects caused by <span id="dots">...</span><span id="more"> the changes in the production of the suppliers of interrelated sectors.At the calculation screen, you can type value manually or import values and change the demand component
               that you are interested in,such as households or government consumption, gross capital formation, exports and etc.</span> 
               <button  class="phantombutton" onclick="myFunction()" id="myBtn">Read more</button> 
-            </p>
+            </p> <!-- YOLANDA-->
               
 
           </div>
@@ -181,7 +181,7 @@
           <video class="videotutorialcss" src="video/HEtutorial_2.mov" poster="images/HEtutorial.png" controls></video>
           <div class="tutorialvideotext">
             <div class="tutorialvideotitle">
-              <h5> Hypothetical extraction calculations</h5>
+              <h5> Cálculos de extracción hipotética</h5>
               <a href="video/HEtutorial_2.mov" download="Hypothetical extraction calculation tutorial">
                 <img id="downloadactive" class="downloadtutorial" src="images/Icondownload.svg"
                   href="video/HEtutorial_2.mov" download>
@@ -189,12 +189,12 @@
                   href="video/HEtutorial_2.mov" download>
               </a>
             </div>
-            <p> Hypothetical extraction analysis estimates the importance of a particular sector in the economy and
+            <p> Los análisis de extracción hipotética estiman la importancia de un sector en particular de la economía. 
               quantifies
               how much the total output, taxes or employment would change (decrease), if this sector would disappear in
               the economy.
               In menu bar you can select a sector for estimation and results will be shown automatically. </p>
-          </div>
+          </div><!-- YOLANDA-->
         </div>
 
         <div class="tutorialvideo">
@@ -202,7 +202,7 @@
             controls></video>
           <div class="tutorialvideotext">
             <div class="tutorialvideotitle">
-              <h5> Export results </h5>
+              <h5> Exportar resutados </h5>
               <a href="video/Export_2.mov" download="Export tutorial">
                 <img id="downloadactive" class="downloadtutorial" src="images/Icondownload.svg"
                   href="video/Export_2.mov" download>
@@ -210,11 +210,8 @@
                   href="video/Export_2.mov" download>
               </a>
             </div>
-            <p> Results of your own estimations can be visualised and downloaded. The results can be provided by totals
-              or by sectors.
-              You can also generate and download a PDF report with the description of estimations and interpretations of
-              your
-              results. </p>
+            <p> Los resultados de los cálculos pueden ser visualizados y descargados. Los resultados se pueden visualizar por totales o por sectores. 
+              También es posible generar un PDF descargable con la descripción de las estimaciones y las interpretaciones de tus resultados. </p>
           </div>
         </div>
 
@@ -224,7 +221,7 @@
 
 
     <section class="tutorials" id="tutorialresponsive">
-      <h4 class="alignedcenter">Tutorials</h4>
+      <h4 class="alignedcenter">Tutoriales</h4>
 
       <div id="space"></div>
 
@@ -234,10 +231,10 @@
           controls></video>
         <div>
           <div>
-            <h5> First time opening Smart TIO</h5>
+            <h5> Primera vez con Smart TIO</h5>
           </div>
-          <p> Go step by step throughout Smart TIO guide process and choose to run national or regional analysis.
-            As long as you choose the type of analysis you want to perform you will enter in the calculations display.
+          <p> Paso a paso Smart TIO nos guía. El primer paso es seleccionar entre realizar un analísis a nivel o regional. 
+            Tan pronto como selecciones el tipo de análisis que deseas realizar serás dirigido a la pantalla de cálculo.
           </p>
         </div>
       </div>
@@ -287,14 +284,11 @@
         controls></video>
         <div>
           <div>
-            <h5>Export results</h5>
+            <h5> Exportar resutados </h5>
           </div>
-          <p> Results of your own estimations can be visualised and downloaded. The results can be provided by totals
-            or by sectors.
-            You can also generate and download a PDF report with the description of estimations and interpretations of
-            your
-            results.
-          </p>
+          <p> Los resultados de los cálculos pueden ser visualizados y descargados. Los resultados se pueden visualizar por totales o por sectores. 
+            También es posible generar un PDF descargable con la descripción de las estimaciones y las interpretaciones de tus resultados. </p>
+        </div>
         </div>
       </div>
 
