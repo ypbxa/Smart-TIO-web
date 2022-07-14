@@ -1,3 +1,4 @@
+  /*Segment control*/
 $(".io-toggler").each(function () {
     console.log("I've been called start");
 
