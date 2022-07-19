@@ -1,0 +1,31 @@
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Smart TIO</title>
+            <link rel="stylesheet" href="style/reset.css">
+            <link rel="stylesheet" href="style/style.css">
+            <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script type="text/javascript">
+            </script>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+          </head>
+          
+        <div class="alignedcenter">
+            <p class="black_greencolor" id="spacebotton">Option chosen</p>
+            <p class="black">One year</p>
+            <div class="pricecardmodule" id="oneyear">
+              <div class="appoptions">
+                <p class="black"> Core + Modules</p>
+                <p> In addition of economic results add the social, eco or both modules for more sustainable
+                  results. </p>
+              </div>
+            </div>
+            <div id="prices"></div>
+            <script type="text/javascript">
+            const urls= new URL(window.location.href).searchParams.get("p").toString();
+
+            document.getElementById("prices").innerHTML = '<h4>'+ urls+'€</h4>'
+            </script>
+          </div>
