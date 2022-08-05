@@ -1253,8 +1253,8 @@ label{
 }
 
 #logo{
+  max-height: 64px;
   
-  width: auto;
 }
 
 .aboutusheadertitle{
