@@ -13,6 +13,17 @@ const prices = {
     "52m":"12950",
     "52mm":"14950",
 };
+const modules={
+    "1":"Hypothetical extraction calculation. \n Impact demand calculation \n Export graphs and reports",
+    "m":"In addition of economic results add the social, eco or both modules for more sustainable results.",
+    "mm":"Provide locally relevant decisions for each of the regions.\n Reduce the spacial inequalities.",
+}
+
+const years={
+    "1":"One year",
+    "2":"Two years",
+},
+
 //?u=5&y=1&mod=1
 function parse(first){
 var doc = document.getElementById("numberUsers");
