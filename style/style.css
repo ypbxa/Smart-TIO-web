@@ -9,6 +9,10 @@
     src: url("../Font/SF-Pro-Italic.ttf");
     font-family: "SF-Pro-Italic";
   }
+  @font-face {
+    src: url("../Font/Antraste.ttf");
+    font-family: "Antraste";
+  }
 
   body {
       font-family: "SF-Pro";
@@ -993,7 +997,7 @@ iframe{
 }
 .centradoheader{
   position: absolute;
-  top: 30%;
+  top: 35%;
   left: 65%;
   transform: translate(-10%, -10%);
   text-align: center;
@@ -1007,6 +1011,10 @@ iframe{
 }
 .centradotextheader{
   color:#684B7D;
+  font-family: 'Antraste';
+  font-weight: 860;
+font-size: 64px;
+line-height: 115px;
 }
 .centradotextsubheader{
   color:#197C9B;
@@ -1253,8 +1261,8 @@ label{
 }
 
 #logo{
-  height: 28px;
-  width: auto;
+  max-height: 64px;
+  
 }
 
 .aboutusheadertitle{
@@ -1829,7 +1837,7 @@ justify-content: space-between;
 
 
 #problem_notseen{
-  padding-top: 8%;
+  padding-top: 10%;
   text-align: center;
   display: flex;
   flex-direction: column;
