@@ -13,7 +13,7 @@ const prices = {
     "52m":"12950",
     "52mm":"14950",
 };
-//?u=3&y=1&mod=1
+//?u=5&y=1&mod=1
 function parse(first){
 var doc = document.getElementById("numberUsers");
 var doc2 = document.getElementById("numberYears");
