@@ -13,6 +13,7 @@ const prices = {
     "52m":"12950",
     "52mm":"14950",
 };
+//?u=3&y=1&mod=1
 function parse(first){
 var doc = document.getElementById("numberUsers");
 var doc2 = document.getElementById("numberYears");
@@ -50,24 +51,25 @@ function change(){
 function load_anotherpage(first) {
     const urls= new URL(window.location.href);
     var pos = window.location.href.indexOf("?");
-    if (pos==-1){
-        if (document.getElementById("numberUsers")==null){
-            console.log("a");
-        }else{
-            parse(false);
 
-        }
-    document.getElementById("dynamic").innerHTML =
-        '<embed type="text/html" src="formdivided.html?p='+prices["311"]+'" width="100%" height="800" >';
-    }else{
     if (first==true){
+        if (pos==-1){
+            if (document.getElementById("numberUsers")==null){
+                console.log("a");
+            }else{
+                parse(false);
+    
+            }
+        document.getElementById("dynamic").innerHTML =
+            '<embed type="text/html" src="formdivided.html?p='+prices["311"]+'" width="100%" height="800" >';
+        }else{ 
         const urls= new URL(window.location.href);
         const value=urls.searchParams.get('u').toString();
         const value2= value.concat(urls.searchParams.get('y').toString());
         const value3= value2.concat(urls.searchParams.get('mod').toString());
     document.getElementById("dynamic").innerHTML =
       '<embed type="text/html" src="formdivided.html?p='+prices[value3]+'" width="100%" height="800" >';
-    }else{
+    }}else{
         const value = document.getElementById("numberUsers").value.toString();
         const value2 = value.concat(document.getElementById("numberYears").value.toString());
         const value3 = value2.concat(document.getElementById("numberCore").value.toString());
@@ -75,5 +77,5 @@ function load_anotherpage(first) {
         '<embed type="text/html" src="formdivided.html?p='+prices[value3]+'" width="100%" height="800" >';
 
     }
-    }
+    
 }
