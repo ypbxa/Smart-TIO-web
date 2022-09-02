@@ -14,18 +14,43 @@
           
         <div class="alignedcenter">
             <p class="black_greencolor" id="spacebotton">Option chosen</p>
-            <p class="black">One year</p>
+            <div id="years"></div>
             <div class="pricecardmodule" id="oneyear">
               <div class="appoptions">
-                <p class="black"> Core + Modules</p>
-                <p> In addition of economic results add the social, eco or both modules for more sustainable
-                  results. </p>
+                <div id="modules2"></div>
+                <div id="moduless"></div>
+
               </div>
             </div>
             <div id="prices"></div>
             <script type="text/javascript">
+            const modules={
+            "1":"Hypothetical extraction calculation. \n Impact demand calculation \n Export graphs and reports",
+            "m":"In addition of economic results add the social, eco or both modules for more sustainable results.",
+            "mm":"Provide locally relevant decisions for each of the regions.\n Reduce the spacial inequalities.",
+            };
+            const modules2={
+            "1":"Core",
+            "m":"Core + 1 Module",
+            "mm":"Core + 2 Modules",
+            };
+
+            const yearsdic={
+            "1":"One year",
+            "2":"Two years",
+            };
+            const yearss= new URL(window.location.href).searchParams.get("y").toString();
+            document.getElementById("years").innerHTML = '<p class="black">'+yearsdic[yearss] +'</p>';
+
+
+            const text= new URL(window.location.href).searchParams.get("mod").toString();
+            document.getElementById("moduless").innerHTML = '<p id="dic">'+modules[text] +'</p>';
+
+            const text2= new URL(window.location.href).searchParams.get("mod").toString();
+            document.getElementById("modules2").innerHTML = '<p class="black">'+modules2[text2] +'</p>';
+
             const urls= new URL(window.location.href).searchParams.get("p").toString();
-            document.getElementById("prices").innerHTML = '<h4 id="changePrice">'+ urls+'€</h4>'
+            document.getElementById("prices").innerHTML = '<h4 id="changePrice">'+ urls+'€</h4>';
             </script>
           </div>
           
