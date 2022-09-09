@@ -9,6 +9,10 @@
     src: url("../Font/SF-Pro-Italic.ttf");
     font-family: "SF-Pro-Italic";
   }
+  @font-face {
+    src: url("../Font/Antraste.ttf");
+    font-family: "Antraste";
+  }
 
   body {
       font-family: "SF-Pro";
@@ -25,6 +29,12 @@ line-height: 17px;
   .greencolor{
     color: #197C9B;
   }
+  .black_greencolor{
+    color: #197C9B;
+    font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+  }
   
   nav {
     display: flex;
@@ -38,6 +48,7 @@ line-height: 17px;
   z-index: 10000;
   background-color: #ffffff;
   }
+
   #lenguagerus:hover, #lenguagegal:hover, #contactnav:hover, #aboutusnav:hover, #pricesnav:hover, #productnav:hover, #trainingnav:hover, #lenguageen:hover{
     color: #684B7D;
     border-bottom: 1px solid #684B7D;
@@ -86,7 +97,14 @@ top: 52px;
   color:#197C9B;
   margin-bottom: 2%;
 }
-
+#header_img{
+width: 100%; /* You must set a specified height */
+height: auto;
+}
+#header_img_bg{
+  background-image: url("/images/header_img.png");
+  
+}
 #topbgtwo{
   width: 682px;
   height: 259.5px;
@@ -179,9 +197,17 @@ line-height: 24px;
 margin-top: 8px;
 font-family: "SF-Pro"
 }
-.black{font-weight: 700;
+.black
+{font-weight: 700;
 font-size: 14px;
 line-height: 17px;
+}
+.blackpurple{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+color: #775591;
 }
   button{
 justify-content: center;
@@ -328,8 +354,83 @@ box-shadow: 0px 2px 8px rgba(15, 15, 15, 0.16);
 border-radius: 16px;
 width: auto;
 }
+.phantombutton{
+  font-size: 14px;
+line-height: 24px;
+margin-top: 8px;
+font-family: "SF-Pro";
+background: rgba(212, 209, 233, 0.5);
+box-shadow: 0px 2px 8px rgba(15, 15, 15, 0.10);
+border-radius: 3px;
+padding: 0px 0px;
+height: auto;
+width: auto;
+color: #684B7D;
+font-weight: 500;
+}
+.phantombutton:hover{
+  font-size: 14px;
+line-height: 24px;
+margin-top: 8px;
+font-family: "SF-Pro";
+background: rgba(212, 209, 233, 0.5);
+box-shadow: 0px 2px 8px rgba(15, 15, 15, 0.14);
+border-radius: 3px;
+padding: 0px 0px;
+height: auto;
+width: auto;
+color: #775591;
+border: none;
+font-weight: 500;
+}
 
+.phantombuttonvisitoutweb{
+  font-size: 20px;
+  font-weight: 700;
+line-height: 24px;
+margin-top: 8px;
+font-family: "SF-Pro";
+background: rgba(212, 209, 233, 0.5);
+box-shadow: 0px 2px 8px rgba(15, 15, 15, 0.10);
+border-radius: 3px;
+padding: 0px 0px;
+height: auto;
+width: auto;
+color: #684B7D;
+font-weight: 500;
+margin-left: 8px;
+margin-right: 8px;
+}
+.phantombuttonvisitoutweb:hover{
+  font-size: 20px;
+  font-weight: 700;
+line-height: 24px;
+margin-top: 8px;
+font-family: "SF-Pro";
+background: rgba(212, 209, 233, 0.5);
+box-shadow: 0px 2px 8px rgba(15, 15, 15, 0.14);
+border-radius: 3px;
+padding: 0px 0px;
+height: auto;
+width: auto;
+color: #775591;
+font-weight: 500;
+margin-left: 8px;
+margin-right: 8px;
+border: none;
+}
+.linkinmiddle{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
 
+#dots{
+  color: #000000;
+}
+#more{
+  color: #000000;
+}
 
 
 
@@ -447,7 +548,21 @@ color: #2d2d2d;
 #space_botton_less{
   padding-bottom: none;
 }
-
+#spacebetweenspace_less{
+  padding-top: 4%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+}
+#padding{
+  padding-left: 12%;
+  padding-right: 12%;
+}
+#spacebottonpluspadding{
+  padding-bottom: 4%;
+  padding-left: 4%;
+  padding-right: 4%;
+}
 .valueproporsal{
   width: 100%;
 align-items: center;
@@ -731,9 +846,10 @@ margin-top: 100px;}
 .contactcards{
   display: flex;
   flex-direction: row;
-  padding-top: 200px;
   width: 100%;
   justify-content: space-between;
+  align-content: center;
+  align-items: center;
 }
 .contactcardandbutton{
 display: flex;
@@ -806,7 +922,7 @@ display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-top: 16%;
+
 }
 #faqcardrus{
   width: 443px;
@@ -864,17 +980,47 @@ iframe{
 }
 .contenedor{
   position: relative;
-  
   text-align: center;
+}
+.contenedorheader{
+  position: relative;
+  text-align: right;
+  width: 100%;
+  height: auto;
 }
 .centrado{
   position: absolute;
   top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
+}
+.centradoheader{
+  position: absolute;
+  top: 35%;
+  left: 65%;
+  transform: translate(-10%, -10%);
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  justify-content: center;
 }
 .centradotext{
   color:#ffffff;
+}
+.centradotextheader{
+  color:#684B7D;
+  font-family: 'Antraste';
+  font-weight: 860;
+font-size: 64px;
+line-height: 115px;
+}
+.centradotextsubheader{
+  color:#197C9B;
+}
+.centradotextsubsubheader{
+  color:#000000;
 }
 #maptitle{
   display: flex;
@@ -889,7 +1035,7 @@ iframe{
 
 /*form*/
 .formsection{
-  padding-top: 100px;
+  padding-top: 164px;
   
 }
 .formarea{
@@ -905,6 +1051,14 @@ height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.formtitleresponsive{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
 }
 .contact_form{  
   width: 775px; 
@@ -1107,8 +1261,8 @@ label{
 }
 
 #logo{
-  height: 28px;
-  width: auto;
+  max-height: 64px;
+  
 }
 
 .aboutusheadertitle{
@@ -1195,6 +1349,7 @@ Height: 443.14px;
 display: flex;
 flex-direction: column;
 align-items: center;
+justify-content: center;
 }
 .ourvaluesrus{
   display: flex;
@@ -1207,7 +1362,6 @@ align-items: center;
   font-size: 20px;
   line-height: 24px;
   height: 24px;
-  margin-bottom: 100px;
 }
 .visitourweb{
   font-weight: 700;
@@ -1228,7 +1382,7 @@ text-shadow: none;
 }
 .linkintext:hover{
   color: #684B7D;
-  text-shadow: 0px 2px 8px rgba(15, 15, 15, 0.25);/*bajar*/
+  text-shadow: 0px 2px 8px rgba(15, 15, 15, 0.18);/*bajar*/
   border-bottom: none;
 }
 
@@ -1254,20 +1408,79 @@ padding-bottom: 4%;
 }
 .pricecard{
   width: auto;
+  min-width: 345px;
+  max-width: 345px;
 height: auto;
 display: flex;
 flex-direction: row;
 align-items: center;
+
 }
+.pricecardusers{
+  width: 100%;
+  max-width: 345px;
+  min-width: 345px;
+height: auto;
+display: flex;
+flex-direction: row;
+align-items: center;
+box-shadow: 0px 2px 8px rgba(15, 15, 15, 0.10);
+}
+#spacebetween{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.pricecardusersmodule{
+  width: 100%;
+  max-width: 228px;
+  min-width: 228px;
+height: auto;
+display: flex;
+flex-direction: row;
+align-items: center;
+box-shadow: 0px 2px 8px rgba(15, 15, 15, 0.10);
+justify-content: center;
+}
+.pricecardusersmodule:hover{
+  width: 100%;
+  max-width: 228px;
+  min-width: 228px;
+height: auto;
+display: flex;
+flex-direction: row;
+align-items: center;
+box-shadow: 0px 2px 8px rgba(15, 15, 15, 0.25);
+justify-content: center;
+color: #197C9B;
+}
+
+.pricecardusers:hover{
+  width: 100%;
+  max-width: 345px;
+  min-width: 345px;
+height: auto;
+display: flex;
+flex-direction: row;
+align-items: center;
+box-shadow: 0px 2px 8px rgba(15, 15, 15, 0.25);
+color: #197C9B;
+}
+
 #oneyear{
   background-color: #F7F7F7;
-
   border-radius: 16px;
 }
+#userbuton{
+  background-color: #Ffffff;
+  border-radius: 16px;
+  justify-content: center;
+}
+
+
 #twoyears{
   background-color: #ffffff;
   filter: drop-shadow(0px 2px 8px rgba(119, 85, 145, 0.16));
-
   border-radius: 16px;
 }
 .pricecards{
@@ -1278,6 +1491,16 @@ align-items: center;
   width: auto;
   height: auto;
 }
+.pricecardsbuttons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+  height: auto;
+  margin-bottom: 1%;
+}
+
 .pricecardsru{
   display: flex;
   flex-direction: column;
@@ -1290,15 +1513,25 @@ align-items: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 48px;
-  margin-top: 24px;
+  padding: 24px;
+  margin-top: 16px;
   margin-bottom: 24px;
 }
+.pricecardmodule{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+
+  margin-bottom: 24px;
+  max-width: 560px;
+}
+
 .pricecardru{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 48px;
+  padding: 24px;
   margin-top: 24px;
   margin-bottom: 24px;
   width: 100%;
@@ -1317,7 +1550,7 @@ align-items: center;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 24px;
+  padding: 12px;
 }
 .usersallowed{
   display: flex;
@@ -1343,6 +1576,9 @@ align-items: center;
   display: flex;
   align-items: center;
   letter-spacing: -0.02em; 
+  text-align: center;
+  justify-content: center;
+  margin-top: 4%;
 }
 .pricecardtitletwo{
   font-family: 'SF-Pro';
@@ -1361,6 +1597,7 @@ align-items: center;
     line-height: 17px;
     color: #775591;
 }
+
 /*
 Para arreglar el/los fallos
 .test{
@@ -1578,6 +1815,7 @@ flex-direction: row;
 align-items: center;
 justify-content: space-between;  
 }
+#more {display: none;}
 #downloadhover{
     display:none;
     filter: drop-shadow(0px 2px 8px rgba(15, 15, 15, 0.25));
@@ -1598,19 +1836,12 @@ justify-content: space-between;
 }
 
 
-/*cosas que pueden valerme para el futuro*/
-
-#me{
-  display: block;
-}
-#mechange{
-  display: none;
-}
-.photo:hover #me{
-  display:none
-}
-.photo:hover #mechange{
-  display: block;
+#problem_notseen{
+  padding-top: 10%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
   
@@ -1760,12 +1991,13 @@ h6{
   #responsivenav{
     display: block;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: baseline;
     justify-content: space-between;
-    padding-right: 4%;
+    padding-right: 0%;
     padding-left: 4%;
     padding-bottom: 4%;
+    
   }
   #desktopnav{
     display: none;
@@ -1809,7 +2041,7 @@ h6{
   
   .menu a {
     display: block;
-    padding: 15px 20px;
+    padding: 16px 16px;
     color: #FFF;
     text-decoration: none;
     line-height: 32px;
@@ -1834,7 +2066,7 @@ h6{
   header label {
     display: block;
     padding-top: 16px;
-    padding-right: 16px;
+    padding-right: 0px;
     transition: all 0.4s ease;
   }
   .menu {
@@ -1862,7 +2094,7 @@ h6{
   }
   
   #btn-menu:checked ~ .menu {
-    transform: translateX(0%);
+    transform: translateX(120%); /*En 100 se queda un trocito sin pegar a la pared pero no encuentro el margin */
   }
   #lan-menu:checked ~ .menu {
     transform: translateX(0%);
@@ -1997,6 +2229,7 @@ p{
 margin-top: 8px;
 font-family: "SF-Pro"
 }
+
 button{
   justify-content: center;
   align-items: center;
@@ -2012,6 +2245,20 @@ button{
   font-weight: 590;
   font-size: 20px;
   }
+
+  .centradoheader{
+    position: absolute;
+    top: 75%;
+    left: 65%;
+    transform: translate(-70%, -50%);
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    
+  }
+
   .top{
     display: flex;
     flex-direction: column;
@@ -2111,6 +2358,29 @@ button{
   background-color: #f7f7f777;
   border-radius: 16px;
   box-shadow: none;
+}
+
+
+/*New prices*/
+.pricecardmodule{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    max-width: 345px;
+}
+.pricecardusersmodule{
+  width: 100%;
+  max-width: 147px;
+  min-width: 147px;
+height: auto;
+display: flex;
+flex-direction: row;
+align-items: center;
+box-shadow: 0px 2px 8px rgba(15, 15, 15, 0.10);
+justify-content: center;
 }
 /*contact*/
 
@@ -2325,9 +2595,19 @@ border-radius: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: none;
-margin: none;
+  padding: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
+
+.pricecardmodule{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  margin-bottom: 16px;
+}
+
 .usersoptions{
   display: flex;
   flex-direction: row;
@@ -2361,7 +2641,7 @@ margin: none;
   margin-left: 4%;
   box-shadow: 0px 2px 8px rgba(15, 15, 15, 0.16);
 }
-/*Prueba segment control*/
+
 
 
 /*about us*/

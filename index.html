@@ -1,4 +1,4 @@
-<!
+
 <!DOCTYPE html>
 <html lang="en">
 <!-- Google Tag Manager -->
@@ -47,7 +47,7 @@
 
     <header id="desktopnav">
         <nav>
-            <a class="noline" href="index.html"> <img id="logo" src="images/Logo.png" alt="logo"> </a>
+            <a class="noline" href="index.html"> <img id="logo" src="images/Logo_light.png" alt="logo"> </a>
             <div class="menu">
 
                 <a id="productnav" href="Product.html">Product</a>
@@ -59,7 +59,7 @@
             <div class="lenguagenav">
                 <a id="lenguagerus" href="error.html"><img src="images/Galego.svg" alt="GAL"></a>
                 <a id="lenguagegal" href="index_ru.html"><img src="images/RUSflag.svg" alt="RUS"></a>
-                <!--<a id="login" onclick="netlifyIdentity.open('login');"><img src="images/user.svg" alt="log in"> </a><!-- PEDRO: Poner aquí el enlace de netlify  BY Sara-->
+                
                 <a id="signup" onclick="netlifyIdentity.open('signup');"><img src="images/user.svg" alt="sign up"> </a><!-- PEDRO: Poner aquí el enlace de netlify  BY Sara-->
             </div>
         </nav>
@@ -95,7 +95,7 @@
                 </ul>
         </div>
 
-        <a class="noline" href="index.html"> <img id="logo" src="images/Logo.png" alt="logo"> </a>
+        <a class="noline" href="index.html"> <img id="logo" src="images/Logo_light.png" alt="logo"> </a>
 
         </nav>
     </header>
@@ -105,22 +105,47 @@
     <main>
 
 
-        <section class="openingsection">
-            <div class="top">
-                <img id="topbgtwo" src="images/topbgtwo.png" alt="topbg">
-                <div class="alignedcenter" class="animation-target">
-                    <h1>Smart TIO</h1>
-                    <h2 class="claimtwo">More Smart, more TIO</h2>
+        <section id="indexdesktop">
+            
+            <div>
+                <div class="contenedorheader">
+                  <img src="images/header_img.png"/>
+                  <div class="centradoheader">
+                    <h1 class="centradotextheader">Smart TIO</h1>
+                    <p class="centradotextsubheader">More Smart, more IO</p>
+                    <p class="centradotextsubsubheader" id="spacebotton">Calculate economic, labour and environmental impacts in an easy way</p>
+                    <div id="space">
+                        <button onclick="location.href='Prices.html'">See plans</button>
+                        <button onclick="location.href='Product.html'" class="secondarynomarginyestop">Know more</button> 
+                      </div>  
                 </div>
-
-            </div>
-            </div>
-            <div class="valueproporsal">
-                <h5 class="indexvalueproporsal"> Calculate economic, labour and environmental impacts in an easy way </h5>
-                <button onclick="location.href='Prices.html'">See plans</button>
-                <button class="secondarylessmargin" onclick="location.href='Product.html'">Know more</button>
-            </div>
+                  
+                </div>
+              </div>
         </section>
+
+
+
+        <section id="indexresponsive">
+            
+            <div>
+                <div class="contenedorheader">
+                  <img src="images/header_img_responsive.png"/>
+                  <div class="centradoheader">
+                    <h1 class="centradotextheader">Smart TIO</h1>
+                    <p class="centradotextsubheader">More Smart, more IO</p>
+                    <p class="centradotextsubsubheader" id="spacebotton">Calculate economic, labour and environmental impacts in an easy way</p>
+                    <div id="space">
+                        <button onclick="location.href='Prices.html'">See plans</button>
+                        <button onclick="location.href='Product.html'" class="secondarynomarginyestop">Know more</button> 
+                      </div>  
+                </div>
+                  
+                </div>
+              </div>
+        </section>
+
+
 
         <div id="indexdesktop">
             <section id="aboutproducsection">
@@ -138,21 +163,24 @@
                                 You can select different demand vectors to anyalyse the precise impact you are interested in.
                             </p>
                             <p>
-                                Reduce your time performing calculations and take decision based on direct and indirect impacts taken into
+                                Saving time performing calculations and take decision based on direct and indirect impacts taking into
                                 account
                                 sectors interrelations of economy.
                             </p>
                         </div>
                         <button onclick="location.href='Prices.html'">See plans</button>
-                        <a href="https://ayeconomics.com/wp-content/uploads/2022/09/SMART-TIO.zip">
-                            <button class="secondary">
-                                Download demo
-                            </button>
-                        </a>
+                        <div id="spacebetweenspace_less">
+                            <a href="https://ayeconomics.com/wp-content/uploads/2022/09/SMART-TIO.zip" class="linkintext">
+                              Download for Windows
+                            </a>
+                            <a  href="https://ayeconomics.com/wp-content/uploads/2022/09/Smart-TIOmac.zip" class="linkintext">
+                              Download for macOS
+                            </a>
+                          </div>
                     </div>
                     <div>
                         <video class="video" autoplay loop>
-                            <source src="video/frame1.mp4" type="video/mp4">
+                            <source src="video/data.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
@@ -243,7 +271,7 @@
                     </div>
                     <div>
                         <video class="video" autoplay loop>
-                            <source src="video/frame1.mp4" type="video/mp4">
+                            <source src="video/data.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
@@ -307,7 +335,7 @@
 
 
         <section class="moresmartmoretiosection">
-            <h4 class="alignedcenter">More Smart, More TIO</h4>
+            <h4 class="alignedcenter">More Smart, More IO</h4>
             <div class="morecards">
                 <div class="aboutproductmodules">
                     <div id="protitle">

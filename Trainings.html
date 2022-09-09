@@ -20,6 +20,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <script type = "text/javascript" src="readmore.js"> </script>
 </head>
 
 <body>
@@ -29,7 +30,7 @@
   <!-- End Google Tag Manager (noscript) -->
   <header id="desktopnav">
     <nav>
-      <a id="noline" href="index.html"> <img id="logo" src="images/Logo.png" alt="logo"> </a>
+      <a id="noline" href="index.html"> <img id="logo" src="images/Logo_light.png" alt="logo"> </a>
       <div class="menu">
         <a id="productnav" href="Product.html">Product</a>
         <a class="wearehere" href="Trainings.html">Trainings</a>
@@ -69,7 +70,7 @@
           </ul>
       </div>
 
-      <a class="noline" href="index.html"> <img id="logo" src="images/Logo.png" alt="logo"> </a>
+      <a class="noline" href="index.html"> <img id="logo" src="images/Logo_light.png" alt="logo"> </a>
 
       </nav>
     </header>
@@ -113,19 +114,37 @@
     <section class="tutorials" id="tutorialdesktop">
       <h4 class="alignedcenter">Tutorials</h4>
 
+       <!-- Read more. Eliminar cuando se consiga enlazar .js 
+<script>function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}</script>
+ Read more fin codigo -->
+
 
       <div class="row">
         <div class="tutorialvideo">
-          <video class="videotutorialcss" src="video/iniciotutorial_2.mov" poster="images/posterfirststep.png"
+          <video class="videotutorialcss" src="video/welcome_new.mp4" poster="images/posterfirststep.png"
             controls></video>
           <div class="tutorialvideotext">
             <div class="tutorialvideotitle">
               <h5> First time opening Smart TIO</h5>
-              <a href="video/iniciotutorial_2.mov" download="firstopening" id="noline">
+              <a href="video/welcome_new.mp4" download="firstopening" id="noline">
                 <img id="downloadactive" class="downloadtutorial" src="images/Icondownload.svg"
-                  href="video/iniciotutorial_2.mov" download>
+                  href="video/welcome_new.mp4" download>
                 <img id="downloadhover" class="downloadtutorial" src="images/Icondownloadhover.svg"
-                  href="video/iniciotutorial_2.mov" download>
+                  href="video/welcome_new.mp4" download>
               </a>
             </div>
             <p> Go step by step throughout Smart TIO guide process and choose to run national or regional analysis.
@@ -134,39 +153,40 @@
           </div>
         </div>
         <div class="tutorialvideo">
-          <video class="videotutorialcss" src="video/IDtutorial_2.mov" poster="images/IDCtutorial.png" controls></video>
+          <video class="videotutorialcss" src="video/impact_demand_new.mp4" poster="images/IDCtutorial.png" controls></video>
           <div class="tutorialvideotext">
             <div class="tutorialvideotitle">
               <h5> Impact demand calculations</h5>
-              <a href="video/IDtutorial_2.mov" download="Impact demand calcultion tutorial">
+              <a href="video/impact_demand_new.mp4" download="Impact demand calcultion tutorial">
                 <img id="downloadactive" class="downloadtutorial" src="images/Icondownload.svg"
-                  href="video/IDtutorial_2.mov" download>
+                  href="video/impact_demand_new.mp4" download>
                 <!-- why do they need to downlowad video? I dont think they need this option-->
                 <img id="downloadhover" class="downloadtutorial" src="images/Icondownloadhover.svg"
-                  href="video/IDtutorial_2.mov" download>
+                  href="video/impact_demand_new.mp4" download>
               </a>
             </div>
             <p> The impact demand analysis provides estimations on direct economics effects from changes in final demand
-              and
-              indirect effects caused by the changes in the production of the suppliers of interrelated sectors.
-              At the calculation screen, you can type value manually or import values and change the demand component
-              that you are interested in,
-              such as households or government consumption, gross capital formation, exports and etc. </p>
+              and indirect effects caused by <span id="dots">...</span><span id="more"> the changes in the production of the suppliers of interrelated sectors.At the calculation screen, you can type value manually or import values and change the demand component
+              that you are interested in,such as households or government consumption, gross capital formation, exports and etc.</span> 
+              <button  class="phantombutton" onclick="myFunction()" id="myBtn">Read more</button> 
+            </p>
+              
+
           </div>
         </div>
       </div>
 
       <div class="row">
         <div class="tutorialvideo">
-          <video class="videotutorialcss" src="video/HEtutorial_2.mov" poster="images/HEtutorial.png" controls></video>
+          <video class="videotutorialcss" src="video/HP_new.mp4" poster="images/HEtutorial.png" controls></video>
           <div class="tutorialvideotext">
             <div class="tutorialvideotitle">
               <h5> Hypothetical extraction calculations</h5>
-              <a href="video/HEtutorial_2.mov" download="Hypothetical extraction calculation tutorial">
+              <a href="video/HP_new.mp4" download="Hypothetical extraction calculation tutorial">
                 <img id="downloadactive" class="downloadtutorial" src="images/Icondownload.svg"
-                  href="video/HEtutorial_2.mov" download>
+                  href="video/HP_new.mp4" download>
                 <img id="downloadhover" class="downloadtutorial" src="images/Icondownloadhover.svg"
-                  href="video/HEtutorial_2.mov" download>
+                  href="video/HP_new.mp4" download>
               </a>
             </div>
             <p> Hypothetical extraction analysis estimates the importance of a particular sector in the economy and
@@ -178,16 +198,16 @@
         </div>
 
         <div class="tutorialvideo">
-          <video video class="videotutorialcss" src="video/Export_2.mov" poster="images/Exporttutorial_2.png"
+          <video video class="videotutorialcss" src="video/Export_new.mp4" poster="images/Exporttutorial_2.png"
             controls></video>
           <div class="tutorialvideotext">
             <div class="tutorialvideotitle">
               <h5> Export results </h5>
-              <a href="video/Export_2.mov" download="Export tutorial">
+              <a href="video/Export_new.mp4" download="Export tutorial">
                 <img id="downloadactive" class="downloadtutorial" src="images/Icondownload.svg"
-                  href="video/Export_2.mov" download>
+                  href="video/Export_new.mp4" download>
                 <img id="downloadhover" class="downloadtutorial" src="images/Icondownloadhover.svg"
-                  href="video/Export_2.mov" download>
+                  href="video/Export_new.mp4" download>
               </a>
             </div>
             <p> Results of your own estimations can be visualised and downloaded. The results can be provided by totals
@@ -210,7 +230,7 @@
 
 
       <div class="tutorialvideo">
-        <video class="videotutorialcss" src="video/iniciotutorial_2.mov" poster="images/posterfirststep.png"
+        <video class="videotutorialcss" src="video/welcome_new.mp4" poster="images/posterfirststep.png"
           controls></video>
         <div>
           <div>
@@ -225,7 +245,7 @@
 
       <div id="space_less"></div>
       <div class="tutorialvideo">
-        <video class="videotutorialcss" src="video/IDtutorial_2.mov" poster="images/IDCtutorial.png" controls></video>
+        <video class="videotutorialcss" src="video/impact_demand_new.mp4" poster="images/IDCtutorial.png" controls></video>
         <div>
           <div>
             <h5>Impact demand calculations</h5>
@@ -245,7 +265,7 @@
 
       <div id="space_less"></div>
       <div class="tutorialvideo">
-        <video class="videotutorialcss" src="video/HEtutorial_2.mov" poster="images/HEtutorial.png" controls></video>
+        <video class="videotutorialcss" src="video/HP_new.mp4" poster="images/HEtutorial.png" controls></video>
         <div>
           <div>
             <h5> Hypothetical extraction calculations</h5>
@@ -263,7 +283,7 @@
 
       <div id="space_less"></div>
       <div class="tutorialvideo">
-        <video class="videotutorialcss" src="video/Export_2.mov" poster="images/Exporttutorial_2.png"
+        <video class="videotutorialcss" src="video/Export_new.mp4" poster="images/Exporttutorial_2.png"
         controls></video>
         <div>
           <div>

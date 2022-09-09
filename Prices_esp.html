@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Google Tag Manager -->
+<script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-5MWRJTP');</script>
+<!-- End Google Tag Manager -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart TIO</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style2.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+
+
+    <script src="https://kit.fontawesome.com/1c2c2462bf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5MWRJTP" height="0" width="0"
+                style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header id="desktopnav">
+        <nav>
+            <a class="noline" href="index.html"> <img id="logo" src="images/Logo_light.png" alt="logo"> </a>
+            <div class="menu">
+                <a id="productnav" href="Product_esp.html">Producto</a>
+                <a id="trainingnav" href="Trainings_esp.html">Aprendizaje</a>
+                <a class="wearehere" href="Prices_esp.html">Planes</a>
+                <a id="aboutusnav" href="aboutus_esp.html">Sobre nosotros</a>
+                <a id="contactnav" href="Contact_esp.html">Contacto</a>
+            </div>
+            <div class="lenguagenav">
+                <a id="lenguagerus" href="error.html"><img src="images/Galego.svg" alt="GAL"></a>
+                <a id="lenguagegal" href="prices_ru.html"><img src="images/RUSflag.svg" alt="RUS"></a>
+                <a id="lenguagegal" href="Prices.html"><img src="images/GBflag.svg" alt="ENG"></a>
+                <a id="signup" onclick="netlifyIdentity.open('signup');"><img src="images/user.svg" alt="sign up"> </a>
+            </div>
+        </nav>
+    </header>
+
+    <link src="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <header id="responsivenav">
+        <div>
+            <input type="checkbox" id="btn-menu" />
+            <label for="btn-menu"><i class="bi bi-list"></i></label>
+            <nav class="menu">
+                <ul>
+                    <li><a href="Product_esp.html">Producto</a></li>
+                    <li><a href="Trainings_esp.html">Aprendizaje</a></li>
+                    <li><a class="wearehereresponsive" href="Prices_esp.html">Planes</a></li>
+                    <li><a href="aboutus_esp.html">Sobre nosotros</a></li>
+                    <li><a href="Contact_esp.html">Contacto</a></li>
+                    <li>-------------------</li>
+                    <li><a href="prices_ru.html">RUS</a></li>
+                    <li><a href="error.html">GAL</a></li>
+                    <li><a href="Prices.html">ENG</a></li>
+                    <!-- <li class="submenu"><a href="#">Language<i class="fa fa-caret-down"></i></a>
+                        <ul>
+                          <li><a href="index_ru.html">RUS</a></li>
+                          <li><a href="index_gal.html">GAL</a></li>
+                        </ul> -->
+                    </li>
+                </ul>
+        </div>
+
+        <a class="noline" href="index.html"> <img id="logo" src="images/Logo_light.png" alt="logo"> </a>
+
+        </nav>
+    </header>
+
+    <main class="alignedcenter">
+
+        <section class="pricessection" id="productresponsive">
+            <h4 id="spacebotton" class="alignedcenter">Planes Smart TIO</h4>
+
+
+
+            <!--
+                $(".submenu").click(function(){
+                $(this).children("ul").slideToggle();
+                })
+
+                $("ul").click(function(ev){
+                ev.stopPropagation();
+                })
+            <-->
+
+
+            <span id="toggle" class="io-toggler" data-io="0">
+
+                <span class="io-options ">
+                    <span>Un año</span>
+                    <span>Dos años</span>
+                </span>
+            </span>
+            <br><br>
+            <div id="text">
+              <h4 class="pricecardtitleone">Un año</h4>
+            <!-- Opciones -->
+            <div class="pricecards">
+
+                <div class="pricecard">
+                    <div class="pricecard" id="oneyear">
+                        <div class="appoptions">
+                            <p class="black"> Core</p>
+                            <p> Hypothetical extraction calculation.</p>
+                            <p> Impact demand calculation</p>
+                            <p>Exporta gráficos y crea reportes</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a onclick="location.href='buyingform.html'">
+                            <!-- Cambiar destino-->
+                            <div class="pricecardusers" id="userbuton">
+                                <div class="appoptions">
+                                    <p id="pricebutton" class="blackpurple"> Hasta 5 usuarios</p>
+                                    <p> 6750€</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="space_less">
+                        <a onclick="location.href='buyingform.html'">
+                            <!-- Cambiar destino-->
+                            <div class="pricecardusers" id="userbuton">
+                                <div class="appoptions">
+                                    <p id="pricebutton" class="blackpurple"> Hasta 3 usuarios</p>
+                                    <p> 4550€</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="pricecardmodule" id="oneyear">
+                        <div class="appoptions">
+                            <p class="black"> Core + Modules</p>
+                            <p>
+                               Además de resultados económicos añade resultados medioambientales, sociales, o ambos, para resultados más sostenibles.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="row" id="padding">
+                            <p class="black">Un módulo</p>
+                            <p class="black">Dos módulos</p>
+                        </div>
+                    </div>
+                    <div id="spacebetweenspace_less">
+
+                        <a onclick="location.href='buyingform.html'">
+                            <!-- Cambiar destino-->
+                            <div class="pricecardusersmodule" id="userbuton">
+                                <div class="appoptions">
+                                    <p class="blackpurple"> Hasta 5 usuarios</p>
+                                    <p> 9750€</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a onclick="location.href='buyingform.html'">
+                            <div class="pricecardusersmodule" id="userbuton">
+                                <div class="appoptions">
+                                    <p class="blackpurple"> Hasta 3 usuarios</p>
+                                    <p> 7550€</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div id="spacebetweenspace_less">
+                        <a onclick="location.href='buyingform.html'">
+                            <div class="pricecardusersmodule" id="userbuton">
+                                <div class="appoptions">
+                                    <p class="blackpurple"> Hasta 5 usuarios</p>
+                                    <p> 11750€</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a onclick="location.href='buyingform.html'">
+                            <div class="pricecardusersmodule" id="userbuton">
+                                <div class="appoptions">
+                                    <p class="blackpurple"> Hasta 3 usuarios</p>
+                                    <p> 9550€</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+
+
+                <div class="pricecard">
+                    <div class="pricecard" id="oneyear">
+                        <div class="appoptions">
+                            <p class="black"> Smart TIO Regional</p>
+                            <p>Proveé decisiones relavantes para cada una de las regiones. </p>
+                            <p>Reduce las desigualdes provocadas por localización</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a onclick="location.href='buyingform.html'">
+                            <!-- Cambiar destino-->
+                            <div class="pricecardusers" id="userbuton">
+                                <div class="appoptions">
+                                    <p id="pricebutton" class="blackpurple"> Hasta 5 usuarios</p>
+                                    <p> Solicitar info</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="space_less">
+                        <a onclick="location.href='buyingform.html'">
+                            <!-- Cambiar destino-->
+                            <div class="pricecardusers" id="userbuton">
+                                <div class="appoptions">
+                                    <p id="pricebutton" class="blackpurple"> Hasta 3 usuarios</p>
+                                    <p> Solicitar info</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div id="text2" hidden>
+              <h4 class="pricecardtitleone">Dos años</h4>
+            <!-- Opciones -->
+            <div class="pricecards">
+
+                <div class="pricecard">
+                    <div class="pricecard" id="oneyear">
+                        <div class="appoptions">
+                            <p class="black"> Core</p>
+                            <p> Hypothetical extraction calculation.</p>
+                            <p> Impact demand calculation</p>
+                            <p>Export graphs and reports</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a onclick="location.href='buyingform.html'">
+                            <!-- Cambiar destino-->
+                            <div class="pricecardusers" id="userbuton">
+                                <div class="appoptions">
+                                    <p id="pricebutton" class="blackpurple"> Hasta 5 usuarios</p>
+                                    <p> 9950€</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="space_less">
+                        <a onclick="location.href='buyingform.html'">
+                            <!-- Cambiar destino-->
+                            <div class="pricecardusers" id="userbuton">
+                                <div class="appoptions">
+                                    <p id="pricebutton" class="blackpurple"> Hasta 3 usuarios</p>
+                                    <p> 6650€</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div >
+                    <div class="pricecardmodule" id="oneyear">
+                        <div class="appoptions">
+                            <p class="black"> Core + Modules</p>
+                            <p>
+                                Además de resultados económicos añade resultados medioambientales, sociales, o ambos, para resultados más sostenibles.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="row" id="padding">
+                            <p class="black">Un módulo</p>
+                            <p class="black">Dos módulos</p>
+                        </div>
+                    </div>
+                    <div id="spacebetweenspace_less">
+
+                        <a onclick="location.href='buyingform.html'">
+                            <!-- Cambiar destino-->
+                            <div class="pricecardusersmodule" id="userbuton">
+                                <div class="appoptions">
+                                    <p class="blackpurple"> Hasta 5 usuarios</p>
+                                    <p> 12950€</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a onclick="location.href='buyingform.html'">
+                            <div class="pricecardusersmodule" id="userbuton">
+                                <div class="appoptions">
+                                    <p class="blackpurple"> Hasta 3 usuarios</p>
+                                    <p> 9650€</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div id="spacebetweenspace_less">
+                        <a onclick="location.href='buyingform.html'">
+                            <div class="pricecardusersmodule" id="userbuton">
+                                <div class="appoptions">
+                                    <p class="blackpurple"> Hasta 5 usuarios</p>
+                                    <p> 14950€</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a onclick="location.href='buyingform.html'">
+                            <div class="pricecardusersmodule" id="userbuton">
+                                <div class="appoptions">
+                                    <p class="blackpurple"> Hasta 3 usuarios</p>
+                                    <p> 11650€</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+
+
+                <div class="pricecard">
+                    <div class="pricecard" id="oneyear">
+                        <div class="appoptions">
+                            <p class="black"> Smart TIO Regional</p>
+                            <p>Proveé decisiones relavantes para cada una de las regiones. </p>
+                            <p>Reduce las desigualdes provocadas por localización</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a onclick="location.href='buyingform.html'">
+                            <!-- Cambiar destino-->
+                            <div class="pricecardusers" id="userbuton">
+                                <div class="appoptions">
+                                    <p id="pricebutton" class="blackpurple"> Hasta 5 usuarios</p>
+                                    <p> Solicitar info</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="space_less">
+                        <a onclick="location.href='buyingform.html'">
+                            <!-- Cambiar destino-->
+                            <div class="pricecardusers" id="userbuton">
+                                <div class="appoptions">
+                                    <p id="pricebutton" class="blackpurple"> Hasta 3 usuarios</p>
+                                    <p> Solicitar info</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+
+            <div class="pricesbuttons">
+                <button class="secondarynomargin">PDF de producto</button>
+                <button onclick="location.href='Contactsales.html#formsection'">Contactar</button>
+            </div>
+        </section>
+
+
+
+        <section class="pricessection" id="pricesdesktop">
+            <h4 class="alignedcenter">Planes Smart TIO</h4>
+
+
+            <h4 class="pricecardtitleone">Un año</h4>
+            <!-- Opciones -->
+            <div class="pricecards">
+
+                <div class="pricecard">
+                    <div class="pricecard" id="oneyear">
+                        <div class="appoptions">
+                            <p class="black"> Core</p>
+                            <p> Hypothetical extraction calculation.</p>
+                            <p> Impact demand calculation</p>
+                            <p>Exporta gráficas y reportes</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a onclick="location.href='buyingform.html'">
+                            <!-- Cambiar destino-->
+                            <div class="pricecardusers" id="userbuton">
+                                <div class="appoptions">
+                                    <p id="pricebutton" class="blackpurple"> Hasta 5 usuarios</p>
+                                    <p> 6750€</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="space_less">
+                        <a onclick="location.href='buyingform.html'">
+                            <!-- Cambiar destino-->
+                            <div class="pricecardusers" id="userbuton">
+                                <div class="appoptions">
+                                    <p id="pricebutton" class="blackpurple">  Hasta 3 usuarios</p>
+                                    <p> 4550€</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="pricecardmodule" id="oneyear">
+                        <div class="appoptions">
+                            <p class="black"> Core + Modules</p>
+                            <p>
+                                Además de resultados económicos añade resultados medioambientales, sociales, o ambos, para resultados más sostenibles..
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="row" id="padding">
+                            <p class="black">Un módulo</p>
+                            <p class="black">Dos módulos</p>
+                        </div>
+                    </div>
+                    <div id="spacebetweenspace_less">
+
+                        <a onclick="location.href='buyingform.html'">
+                            <!-- Cambiar destino-->
+                            <div class="pricecardusersmodule" id="userbuton">
+                                <div class="appoptions">
+                                    <p class="blackpurple"> Hasta 5 usuarios</p>
+                                    <p> 9750€</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a onclick="location.href='buyingform.html'">
+                            <div class="pricecardusersmodule" id="userbuton">
+                                <div class="appoptions">
+                                    <p class="blackpurple">Hasta 3 usuarios</p>
+                                    <p> 7750€</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div id="spacebetweenspace_less">
+                        <a onclick="location.href='buyingform.html'">
+                            <div class="pricecardusersmodule" id="userbuton">
+                                <div class="appoptions">
+                                    <p class="blackpurple">Hasta 5 usuarios</p>
+                                    <p> 11750€</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a onclick="location.href='buyingform.html'">
+                            <div class="pricecardusersmodule" id="userbuton">
+                                <div class="appoptions">
+                                    <p class="blackpurple">Hasta 3 usuarios</p>
+                                    <p> 9550€</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+
+
+                <div class="pricecard">
+                    <div class="pricecard" id="oneyear">
+                        <div class="appoptions">
+                            <p class="black"> Smart TIO Regional</p>
+                            <p>Proveé decisiones relavantes para cada una de las regiones. </p>
+                            <p>Reduce las desigualdes provocadas por localización</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a onclick="location.href='buyingform.html'">
+                            <!-- Cambiar destino-->
+                            <div class="pricecardusers" id="userbuton">
+                                <div class="appoptions">
+                                    <p id="pricebutton" class="blackpurple"> Hasta 5 usuarios</p>
+                                    <p>Solicitar info</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="space_less">
+                        <a onclick="location.href='buyingform.html'">
+                            <!-- Cambiar destino-->
+                            <div class="pricecardusers" id="userbuton">
+                                <div class="appoptions">
+                                    <p id="pricebutton" class="blackpurple">Hasta 3 usuarios</p>
+                                    <p> Resquest info</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <h4 class="pricecardtitleone">Two years</h4>
+            <!-- Opciones -->
+            <div class="pricecards">
+
+                <div class="pricecard">
+                    <div class="pricecard" id="oneyear">
+                        <div class="appoptions">
+                            <p class="black"> Core</p>
+                            <p> Hypothetical extraction calculation.</p>
+                            <p> Impact demand calculation</p>
+                            <p>Exporta gráficas y reportes</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a onclick="location.href='buyingform.html'">
+                            <!-- Cambiar destino-->
+                            <div class="pricecardusers" id="userbuton">
+                                <div class="appoptions">
+                                    <p id="pricebutton" class="blackpurple"> Hasta 5 usuarios</p>
+                                    <p> 9950€</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="space_less">
+                        <a onclick="location.href='buyingform.html'">
+                            <!-- Cambiar destino-->
+                            <div class="pricecardusers" id="userbuton">
+                                <div class="appoptions">
+                                    <p id="pricebutton" class="blackpurple">Hasta 3 usuarios</p>
+                                    <p> 6650€</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="pricecardmodule" id="oneyear">
+                        <div class="appoptions">
+                            <p class="black"> Core + Modules</p>
+                            <p>
+                                Además de resultados económicos añade resultados medioambientales, sociales, o ambos, para resultados más sostenibles.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="row" id="padding">
+                            <p class="black">One module</p>
+                            <p class="black">Two modules</p>
+                        </div>
+                    </div>
+                    <div id="spacebetweenspace_less">
+
+                        <a onclick="location.href='buyingform.html'">
+                            <!-- Cambiar destino-->
+                            <div class="pricecardusersmodule" id="userbuton">
+                                <div class="appoptions">
+                                    <p class="blackpurple">Hasta 5 usuarios</p>
+                                    <p> 12950€</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a onclick="location.href='buyingform.html'">
+                            <div class="pricecardusersmodule" id="userbuton">
+                                <div class="appoptions">
+                                    <p class="blackpurple">Hasta 3 usuarios</p>
+                                    <p> 9650€</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div id="spacebetweenspace_less">
+                        <a onclick="location.href='buyingform.html'">
+                            <div class="pricecardusersmodule" id="userbuton">
+                                <div class="appoptions">
+                                    <p class="blackpurple"> Hasta 5 usuarios</p>
+                                    <p> 14950€</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a onclick="location.href='buyingform.html'">
+                            <div class="pricecardusersmodule" id="userbuton">
+                                <div class="appoptions">
+                                    <p class="blackpurple"> Hasta 3 usuarios</p>
+                                    <p> 11650€</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+
+
+                <div class="pricecard">
+                    <div class="pricecard" id="oneyear">
+                        <div class="appoptions">
+                            <p class="black"> Smart TIO Regional</p>
+                            <p>Proveé decisiones relavantes para cada una de las regiones. </p>
+                            <p>Reduce las desigualdes provocadas por localización</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a onclick="location.href='buyingform.html'">
+                            <!-- Cambiar destino-->
+                            <div class="pricecardusers" id="userbuton">
+                                <div class="appoptions">
+                                    <p id="pricebutton" class="blackpurple">Hasta 5 usuarios</p>
+                                    <p>Solicitar info</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="space_less">
+                        <a onclick="location.href='buyingform.html'">
+                            <!-- Cambiar destino-->
+                            <div class="pricecardusers" id="userbuton">
+                                <div class="appoptions">
+                                    <p id="pricebutton" class="blackpurple">Hasta 3 usuarios</p>
+                                    <p>Solicitar info</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <div class="pricesbuttons">
+                <button class="secondarynomargin">PDF de producto</button>
+                <button onclick="location.href='Contactsales.html#formsection'">Contactar</button>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+        <section class="alignedcenter" id="faqseparator">
+
+            <div class="alignedcenter">
+                <h4>FAQs</h4>
+                <p>
+                   Hemos creado un apartado de preguntas frecuentes que quizás te ayuden. Si tu duda no está contemplada en este apartado no dudes en <a><button class="phantombutton"> Contactar con nosotros</button> </a>
+                </p>
+            </div>
+
+            <div id="faqaccordeon">
+
+                <div class="faqseparator">
+                    <details>
+                        <summary>
+                           <p>¿Qué software se necesita para usar Smart TIO?</p> 
+                        </summary>
+                        <div>
+                            <p>Smart TIO funciona sin problemas en Windows 10 y superior. No podemos garantizar que Smart TIO funcione en versiones inferiores de Windows.
+                            <br>Si tienes alguna duda tras , <a class="linkintext" href="https://ayeconomics.com/wp-content/uploads/2022/05/SMART-TIOinstaller.zip"><button class="phantombutton"> descargar nuestra demo</button></a> siempre puedes <a><button class="phantombutton"> contactar</button></a> con nuestro equipo.</p>
+                           <p class="greencolor"> La versión para Mac estará dispoible muy pronto.</p>
+                        </div>
+                    </details>
+                </div>
+
+                <details>
+                    <summary>
+                      <p>  ¿Está disponible Smart TIO en mi país?</p>
+                    </summary>
+                    <div>
+                        <p>Hemos creado un listado de paises en los que Smart TIO está actualemente disponible. Puedes descargarlo<a href="/pdfs/info_dossier_EN.pdf" class="linkintext"><button class="phantombutton"> aquí</button> </a> Este PDF también contiene información sobre los datos que estamos utilizando para cada módulo. <br>
+                            Si no encuentra su país, póngase en contacto con nosotros y comprobaremos la disponibilidad de datos para su país. Después, le informaremos sobre los posibles ajustes necesarios y el precio de Smart TIO para su país.
+                        Continuamos trabajando para llegar cada día más lejos.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>
+                      <p> ¿Durante cuánto tiempo puedo usar Smart TIO una vez lo compre?</p> 
+                    </summary>
+                    <div>
+                     <p>  Actualmente tenemos licencias para el uso de máximo dos años pero si lo necesitas podremos ampliar tu licencia o incluso hacerla permanente.<br> 
+                        <a href="Contact_esp.html" class="linkintext"><button class="phantombutton">Contacta</button></a> con nosotros</p> 
+                    </div>
+                </details>
+
+                <details>
+                    <summary>
+                      <p> Una vez realice el pago, ¿Qué debo hacer?</p> 
+                    </summary>
+                    <div>
+                       <p> Nuestro equipo le enviará un código de activación así como un enlace para descargar el paquete de instalación. Con este código podrá utilizar Smart TIO para todos los usuarios para los que haya adquirido la aplicación.</p> 
+                    </div>
+                </details>
+
+                <details>
+                    <summary>
+                        <p>Me gustaría poder disponer de más usuarios ¿Qué debo hacer?</p> 
+                    </summary>
+                    <div>
+                       <p>El equipo de ventas estará encantado de proponerle una oferta lo más ajustada posible a sus necesidades. <a class="linkintext" href="Contact_esp.html"><button class="phantombuttom">Contacta</button> con nuestro equipo de ventas </a></p> 
+                    </div>
+                </details>
+
+                <details>
+                    <summary>
+                     <p>  ¿Qué pasa si descargo Smart TIO pero no funciona en mi dispositivo?</p> 
+                    </summary>
+                    <div>
+                      <p>Lo primero prueba a <a> <button class="phantombutton"  href="https://ayeconomics.com/wp-content/uploads/2022/05/SMART-TIOinstaller.zip"> descargar nuestra demo</button></a>. Asíevitaremos problemas de conpatibilidad futuros. 
+                        
+                        <!-- I think there is mistake in the hyperlink and it has to highlighted in purple-->
+                        Si ya has realizado el pago, <a> <button href="Contactsales.html" class="phantombutton"> contacta</button></a> con nuestro equipo de ventas.</p>  
+
+                    </div>
+                </details>
+
+                <details>
+                    <summary>
+                     <p>  ¿Necesito internet para poder trabajar con Smart TIO?</p> 
+                    </summary>
+                    <div>
+                      <p> Aunque no es necesario tener conexión a internet para utilizar Smart TIO, si lo es para descargarlo e instalarlo.</p> 
+                    </div>
+                </details>
+
+                <details>
+                    <summary>
+                     <p>  ¿Puede AYeconomics tener acceso a los datos de mi simulación?</p> 
+                    </summary>
+                    <div>
+                      <p> AYeconomics no puede acceder a los datos ya sean de la versión demo o de las versiones completas de Smart TIO.</p> 
+                    </div>
+                </details>
+
+                <details>
+                    <summary>
+                      <p> ¿Se realizan acualizaciones en Smart TIO?</p> 
+                    </summary>
+                    <div>
+                      <p> Se realizan actualizaciones cada vez que se encuentren errores o se realicen mejoras así como cada vez que ls datos sean actualizados. Se os enviará información de como llevar a cabo las actualizaciones así como de los cambios y mejoras realizadas.</p> 
+                    </div>
+                </details>
+
+                <details>
+                    <summary>
+                      <p> ¿Cada cuanto tiempo se realiza una actualización?</p> 
+                    </summary>
+                    <div>
+                      <p> Está previsto una actulización anual que incluya nuevas funcioanlidades, cálculos y mejoras. 
+                        El equipo enviará infomación sobre las ventajas de la nueva versión y los precios para las nuevas verisones si esto fuera preciso.</p> 
+                    </div>
+                </details>
+
+            </div>
+
+            <p class="black">
+              <p> No encuestras la información que necesitabas? Necesitas más infomración sobre algún aspecto? <a><button class="phantombuttom"
+                href="Contact.html" > Contacta</button> </a> con nosotros</p> 
+            </p>
+
+        </section>
+
+
+    </main>
+    <footer>
+        <div class="rrssgroup">
+            <a href="https://instagram.com/smart_tio_ayeconomics?igshid=YmMyMTA2M2Y=">
+                <img id="ig" src="images/ig.svg"
+                     alt="intagram">
+            </a>
+            <a href="https://twitter.com/SmartTIO_AY"><img id="twitter" src="images/twitter.svg" alt="twitter"></a>
+            <a href="https://www.linkedin.com/showcase/smart-tio/">
+                <img id="linkedin" src="images/linkedin.svg"
+                     alt="linkedin">
+            </a>
+            <a href="https://www.facebook.com/Smart-TIO-105205065516002/">
+                <img id="facebook" src="images/facebook.svg"
+                     alt="facebook">
+            </a>
+        </div>
+        <div id="footertext">
+            <p id="rightsreservedtext">© 2017 AYeconomics Research Centre. All rights reserved</p>
+            <div id="legal">
+                <a href="https://ayeconomics.com/aviso-legal/">Legal</a>
+                <a href="https://ayeconomics.com/privacy-policy/">Privacy Policy</a>
+                <a href="https://ayeconomics.com/politica-de-cookies/">Cookies</a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    AOS.init();
+</script>
+
+<script src="./script.js" type="text/javascript"></script>
+
+</html>
