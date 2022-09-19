@@ -1,305 +1,447 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-5MWRJTP');</script>
-  <!-- End Google Tag Manager -->
+<script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-5MWRJTP');</script>
+<!-- End Google Tag Manager -->
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Smart TIO</title>
-  <link rel="stylesheet" href="style/reset.css">
-  <link rel="stylesheet" href="style/style.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart TIO</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="tryjs.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Other menu hamburguesa icon class="fas fa-bars"
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    -->
+    <!-- Menu hamburguesa galeria bootstrap:
+    -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 </head>
 
-<body >
-  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5MWRJTP"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <header id="desktopnav">
-    
-    <nav>
-      <a class="noline" href="index_ru.html"> <img id="logo" src="images/Logo_light.png" alt="logo"> </a>
-      <div class="menu">
-        <a id="productnav" href="product_ru.html">Услуги</a>
-        <a id="trainingnav"  href="trainings_ru.html">Тренинги</a>
-        <a id="pricesnav" href="prices_ru.html">Цены</a>
-        <a id="aboutusnav" href="aboutus_ru.html">О нас</a>
-        <a id="contactnav" href="contact_ru.html">Контакты</a>
-      </div>
-      <div class="lenguagenav">
-        <a id="lenguagerus" href="error.html"><img src="images/Galego.svg" alt="GAL"></a>
-                <a id="lenguagegal" href="index.html"><img src="images/GBflag.svg" alt="ENG"></a>
+
+
+
+
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5MWRJTP" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header id="desktopnav">
+        <nav>
+            <a class="noline" href="index.html"> <img id="logo" src="images/Logo_light.png" alt="logo"> </a>
+            <div class="menu">
+
+                <a id="productnav" href="product_ru.html">Услуги</a>
+                <a id="trainingnav" href="trainings_ru.html">Тренинги</a>
+                <a id="pricesnav" href="prices_ru.html">Цены</a>
+                <a id="aboutusnav" href="aboutus_ru.html">О нас</a>
+                <a id="contactnav" href="contact_ru.html">Контакты</a>
+
+            </div>
+            <div class="lenguagenav">
+                <a id="lenguagerus" href="error.html"><img src="images/Galego.svg" alt="GAL"></a>
+                <a id="lenguagegal" href="index_ru.html"><img src="images/RUSflag.svg" alt="RUS"></a>
+
                 <a id="signup" onclick="netlifyIdentity.open('signup');"><img src="images/user.svg" alt="sign up"> </a>
-      </div>
-    </nav>
-  </header>
-  <header id="responsivenav">
-    <div>
-        <input type="checkbox" id="btn-menu" />
-        <label for="btn-menu"><i class="bi bi-list"></i></label>
-        <nav class="menu">
-            <ul>
-                <li><a href="Product.html">Услуги</a></li>
-                <li><a href="Trainings.html">Тренинги</a></li>
-                <li><a href="Prices.html">Цены</a></li>
-                <li><a href="aboutus.html">О нас</a></li>
-                <li><a href="Contact.html">Контакты</a></li>
-                <li>-------------------</li>
-                <li><a href="index_ru.html">RUS</a></li>
-                <li><a href="index_ru.html">GAL</a></li>
-                <li>-------------------</li>
-                <li><a href="Login.html">Log In</a></li>
-                
-                <!--<div data-netlify-identity-button></div> PEDRO: Poner aquí el enlace de netlify  BY Sara-->
-                <!-- <li class="submenu"><a href="#">Language<i class="fa fa-caret-down"></i></a>
-    <ul>
-      <li><a href="index_ru.html">RUS</a></li>
-      <li><a href="index_gal.html">GAL</a></li>
-    </ul> -->
-                </li>
-            </ul>
-    </div>
 
-    <a class="noline" href="index.html"> <img id="logo" src="images/Logo_light.png" alt="logo"> </a>
-
-    </nav>
-</header>
-  <main>
-
-
-    <section id="indexdesktop">
-            
-      <div>
-          <div class="contenedorheader">
-            <img src="images/header_img.png"/>
-            <div class="centradoheader">
-              <h1 class="centradotextheader">Smart TIO</h1>
-              <p class="centradotextsubheader">More Smart, more IO</p>
-              <p class="centradotextsubsubheader" id="spacebottonpluspadding">Расчет экономических, социальных и экологических последствий принимаемых решений</p>
-              <div id="space">
-                  <button onclick="location.href='prices_ru.html'">Посмотреть планы</button>
-                  <button onclick="location.href='product_ru.html'" class="secondarynomarginyestop">Узнать больше</button> 
-                </div>  
-          </div>
-            
-          </div>
-        </div>
-  </section>
-
-
-
-  <section id="indexresponsive">
-      
-      <div>
-          <div class="contenedorheader">
-            <img src="images/header_img_responsive.png"/>
-            <div class="centradoheader">
-              <h1 class="centradotextheader">Smart TIO</h1>
-              <p class="centradotextsubheader">More Smart, more IO</p>
-              <p class="centradotextsubsubheader" id="spacebotton">Расчет экономических, социальных и экологических последствий принимаемых решений</p>
-              <div id="space">
-                  <button onclick="location.href='prices_ru.html'">Посмотреть планы</button>
-                  <button onclick="location.href='product_ru.html'" class="secondarynomarginyestop">Узнать больше</button> 
-                </div>  
-          </div>
-            
-          </div>
-        </div>
-  </section>
-
-    <section id="aboutproducsection">
-      <div id="aboutproductone" data-aos="zoom-in-up">
-        <div class="aboutproducttextandbutton">
-          <div class="aboutproducttextone">
-            <h4>
-              Импортируйте свои данные и оцените их влияние на вашу экономику
-            </h4>
-            <p>
-             Импортируйте данные из файла (csv, xlsx) или введите свои значения для симуляции.<!-- whta doesn mean "type values" and I am not sure if format info is so important-->
-            </p>
-            <p>
-             Вы можете выбрать различные векторы спроса, чтобы точно проанализировать интересующее вас воздействие.
-            </p>
-            <p>
-             Сократите время на выполнение расчетов и принимайте решения на основе прямых и косвенных воздействий с учетом взаимосвязей между секторами экономики.
-            </p>
-          </div>
-          <button onclick="location.href='Prices.html'">Посмотреть планы</button>
-          <a href="https://ayeconomics.com/wp-content/uploads/2022/05/SMART-TIOinstaller.zip"></a>
-            <button class="secondary">
-            Скачать демоверсию
-          </button>
-        </div>
-        <div>
-          <video class="video" autoplay loop>
-            <source src="video/frame1.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <div id="aboutproducttwo" data-aos="zoom-in-up">
-        <div>
-          <video class="video" autoplay loop>
-            <source src="video/frame2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="aboutproducttextandbutton">
-          <div class="aboutproducttexttwo">
-            <div id="protitle">
-              <div id="protext">
-                <h3>
-                 Более одного типа симуляций
-                </h3>
-              </div>
             </div>
-            <p>
-              Рассчитать гипотетическую экстракцию.
-            </p>
-            <p>
-            Выберите сектор и посмотрите его вес в экономике.
-            </p>
-            <p>
-           Вы можете легко оценить важность того или иного сектора в экономике и его прямое и косвенное влияние.
-            </p>
-          </div>
-          <button onclick="location.href='Product.html'">Узнать больше</button>
-        </div>
-      </div>
+        </nav>
 
-      <div id="aboutproducttwo" data-aos="zoom-in-up">
+    </header>
+
+
+
+    <header id="responsivenav">
         <div>
-          <video class="video" autoplay loop>
-            <source src="video/frame3.mp4" type="video/mp4">
-          </video>
+            <input type="checkbox" id="btn-menu" />
+            <label for="btn-menu"><i class="bi bi-list"></i></label>
+            <nav class="menu">
+                <ul>
+
+                    <li><a href="Product.html">Услуги</a></li>
+                    <li><a href="Trainings.html">Тренинги</a></li>
+                    <li><a href="Prices.html">Цены</a></li>
+                    <li><a href="aboutus.html">О нас</a></li>
+                    <li><a href="Contact.html">Контакты</a></li>
+                    <li>-------------------</li>
+                    <li><a href="index.html">ENG</a></li>
+                    <li><a href="index_gal.html">GAL</a></li>
+                    <li>-------------------</li>
+                    <li><a href="Login.html">Логин</a></li>
+
+                    <!--<div data-netlify-identity-button></div> PEDRO: Poner aquí el enlace de netlify  BY Sara-->
+                    <!-- <li class="submenu"><a href="#">Language<i class="fa fa-caret-down"></i></a>
+        <ul>
+          <li><a href="index_ru.html">RUS</a></li>
+          <li><a href="index_gal.html">GAL</a></li>
+        </ul> -->
+                    </li>
+                </ul>
         </div>
-        <div class="aboutproducttextandbutton">
-          <div class="aboutproducttexttwo">
-            <div id="protitle">
-              <div id="protext">
-                <h4>
-                   Понятные, простые и точные результаты
-                </h4>
-              </div>
+
+        <a class="noline" href="index.html"> <img id="logo" src="images/Logo_light.png" alt="logo"> </a>
+
+        </nav>
+    </header>
+
+
+
+    <main>
+
+
+        <section id="indexdesktop">
+
+            <div>
+                <div class="contenedorheader">
+                    <img src="images/header_img.png" />
+                    <div class="centradoheader">
+                        <h1 class="centradotextheader">Smart TIO</h1>
+                        <p class="centradotextsubheader">More Smart, more IO</p>
+                        <p class="centradotextsubsubheader" id="spacebottonpluspadding">Расчет экономических, социальных
+                            и экологических последствий принимаемых решений</p>
+                        <div id="space">
+                            <button onclick="location.href='prices_ru.html'">Посмотреть планы</button>
+                            <button onclick="location.href='product_ru.html'" class="secondarynomarginyestop">Узнать
+                                больше</button>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <p>
-              Визуализируйте и загружайте результаты в виде графиков с итоговыми значениями или результатами по секторам.
-            </p>
-            <p>
-            Автоматизируйте отчетность и экономьте свое время.
-            </p>
-          </div>
-          <button onclick="location.href='Product.html'">Узнать больше</button>
+        </section>
+
+
+
+        <section id="indexresponsive">
+
+            <div>
+                <div class="contenedorheader">
+                    <img src="images/header_img_responsive.png" />
+                    <div class="centradoheader">
+                        <h1 class="centradotextheader">Smart TIO</h1>
+                        <p class="centradotextsubheader">More Smart, more IO</p>
+                        <p class="centradotextsubsubheader" id="spacebotton">Расчет экономических, социальных и
+                            экологических последствий принимаемых решений</p>
+                        <div id="space">
+                            <button onclick="location.href='prices_ru.html'">Посмотреть планы</button>
+                            <button onclick="location.href='product_ru.html'" class="secondarynomarginyestop">Узнать
+                                больше</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </section>
+
+
+
+        <div id="indexdesktop">
+            <section id="aboutproducsection">
+                <div id="aboutproductone" data-aos="zoom-in-up">
+                    <div class="aboutproducttextandbutton">
+                        <div class="aboutproducttextone">
+                            <h4>
+                                Импортируйте свои данные и оцените их влияние на вашу экономику
+                            </h4>
+                            <p>
+                                Импортируйте данные из файла (csv, xlsx) или введите свои значения для симуляции.<!-- whta doesn mean "type values" and I am not sure if format info is so important-->
+                               </p>
+                               <p>
+                                Вы можете выбрать различные векторы спроса, чтобы точно проанализировать интересующее вас воздействие.
+                               </p>
+                               <p>
+                                Сократите время на выполнение расчетов и принимайте решения на основе прямых и косвенных воздействий с учетом взаимосвязей между секторами экономики.
+                               </p>
+                        </div>
+                        <button onclick="location.href='Prices.html'">Посмотреть планы</button>
+                        <div id="spacebetweenspace_less">
+                            <a href="https://ayeconomics.com/wp-content/uploads/2022/09/SMART-TIO.zip"
+                                class="linkintext">
+                                Демо для Windows
+                            </a>
+                            <a href="https://ayeconomics.com/wp-content/uploads/2022/09/Smart-TIOmac.zip"
+                                class="linkintext">
+                                Демо для MacOs
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <video class="video" autoplay loop>
+                            <source src="video/data.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div id="aboutproducttwo" data-aos="zoom-in-up">
+                    <div>
+                        <video class="video" autoplay loop>
+                            <source src="video/frame2.mov" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="aboutproducttextandbutton">
+                        <div class="aboutproducttexttwo">
+                            <div id="protitle">
+                                <div id="protext">
+                                    <h3>
+                                        Более одного типа симуляций
+                                    </h3>
+                                </div>
+                            </div>
+                            <p>
+                                Рассчитать гипотетическую экстракцию.
+                              </p>
+                              <p>
+                              Выберите сектор и посмотрите его вес в экономике.
+                              </p>
+                              <p>
+                             Вы можете легко оценить важность того или иного сектора в экономике и его прямое и косвенное влияние.
+                              </p>
+                        </div>
+                        <button onclick="location.href='product_ru.html'">Узнать больше</button>
+                    </div>
+                </div>
+
+                <div id="aboutproducttwo" data-aos="zoom-in-up">
+                    <div>
+                        <video class="video" autoplay loop>
+                            <source src="video/frame3.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="aboutproducttextandbutton">
+                        <div class="aboutproducttexttwo">
+                            <div id="protitle">
+                                <div id="protext">
+                                    <h4>
+                                        Понятные, простые и точные результаты
+                                    </h4>
+                                </div>
+                            </div>
+                            <p>
+                                Визуализируйте и загружайте результаты в виде графиков с итоговыми значениями или результатами по секторам.
+                              </p>
+                              <p>
+                              Автоматизируйте отчетность и экономьте свое время.
+                              </p>
+                        </div>
+                        <button onclick="location.href='product_ru.html'">Узнать больше</button>
+                    </div>
+                </div>
+            </section>
         </div>
-      </div>
-    </section>
-
-    
-    
-
-   <!-- Intento de solucionar problema de enlace:(e paso traduczo cosas que faltan)-->
-
-    <section class="moresmartmoretiosection">
-      <h4 class="alignedcenter">More Smart, More IO</h4>
-      <div class="morecards">
-          <div class="aboutproductmodules">
-              <div id="protitle">
-                  <div id="protext" class="bottomseparator">
-                      <h4>
-                        Модули
-                      </h4>
-                      <p>
-                        Помимо экономических результатов, Smart TIO предлагает <br>возможность получения экологических и трудовых результатов.
-                      </p>
-
-                  </div>
-
-                  <div class="alignedcenter">
-                      <h4 id="modules">
-                        Эко
-                      </h4>
-                      <h5 class="claimtwo">
-                          More green, more ECO
-                      </h5>
-                      <p class="bottomseparator">
-                        С помощью Smart TIO ECO вы можете учитывать экологические <br> переменные при принятии решений.
-                      </p>
-                  </div>
-
-                  <div class="alignedcenter">
-                      <h4 id="social">
-                        Социальный
-                      </h4>
-                      <h5 class="claimtwo">
-                          More labour, more inclusive
-                      </h5>
-                      <p class="forresponsive">
-                        Решения по созданию более устойчивой экономики должны принимать во внимание <br>не только экономические и экологические результаты, но и социальные последствия.
-                      </p>
-                  </div>
-              </div>
-          </div>
-
-          <div class="morecard">
-              <div class="aboutproductmodules">
-                  <div id="protitle">
-                      <div id="protext">
-                          <h4>
-                              Smart TIO
-                          </h4>
-                          <h4 id="regional">
-                            Региональный
-                          </h4>
-                      </div>
-                      <h5 class="claimtwo">
-                          More local, more nearby
-                      </h5>
-                  </div>
-                  <p>
-                    Последствия воздействия различаются в зависимости от региона.
-                  </p>
-                  <p>
-                    Выберите "Smart TIO региональный" и рассчитайте влияние для каждого региона.
-                  </p>
-              </div>
-          </div>
-      </div>
-      <div class="pricesbuttons">
-          <button class="secondarynomargin" onclick="location.href='product_ru.html'">Узнать больше</button>
-          <button onclick="location.href='prices_ru.html'">Посмотреть планы</button>
-      </div>
-  </section>
 
 
+        <div id="indexresponsive">
+            <section id="aboutproducsection">
+                <div id="hugespace"></div>
+                <div id="aboutproductone" data-aos="zoom-in-up">
+                    <div class="aboutproducttextandbutton">
+                        <div class="aboutproducttextone">
+                            <h4>
+                                Импортируйте свои данные и оцените их влияние на вашу экономику
+                            </h4>
+                            <p>
+                                Импортируйте данные из файла (csv, xlsx) или введите свои значения для симуляции.<!-- whta doesn mean "type values" and I am not sure if format info is so important-->
+                               </p>
+                               <p>
+                                Вы можете выбрать различные векторы спроса, чтобы точно проанализировать интересующее вас воздействие.
+                               </p>
+                               <p>
+                                Сократите время на выполнение расчетов и принимайте решения на основе прямых и косвенных воздействий с учетом взаимосвязей между секторами экономики.
+                               </p>
+                        </div>
+                        <button onclick="location.href='prices_ru.html'">Посмотреть планы</button>
+                        <p class="claimtwofocus">
+                            Демо доступно для загрузки с рабочего стола
+                        </p>
+                    </div>
+                    <div>
+                        <img class="imgvideoresponsive" src="images/table_close.png">
+
+                    </div>
+                </div>
+                <div id="aboutproducttwo" data-aos="zoom-in-up">
+                    <div>
+                        <img class="imgvideoresponsive" src="images/rus_Impact_demand_calculation.png">
+
+                    </div>
+                    <div class="aboutproducttextandbutton">
+                        <div class="aboutproducttexttwo">
+                            <div id="protitle">
+                                <div id="protext">
+                                    <h3>
+                                        Более одного типа симуляций
+                                       </h3>
+                                     </div>
+                                   </div>
+                                   <p>
+                                     Рассчитать гипотетическую экстракцию.
+                                   </p>
+                                   <p>
+                                   Выберите сектор и посмотрите его вес в экономике.
+                                   </p>
+                                   <p>
+                                  Вы можете легко оценить важность того или иного сектора в экономике и его прямое и косвенное влияние.
+                                   </p>
+                        </div>
+                        <button onclick="location.href='product_ru.html'">Узнать больше</button>
+                    </div>
+                </div>
+
+                <div id="aboutproducttwo" data-aos="zoom-in-up">
+                    <div>
+                        <img class="imgvideoresponsive" src="images/results.png">
+                    </div>
+                    <div class="aboutproducttextandbutton">
+                        <div class="aboutproducttexttwo">
+                            <div id="protitle">
+                                <div id="protext">
+                                    <h4>
+                                        Понятные, простые и точные результаты
+                                     </h4>
+                                   </div>
+                                 </div>
+                                 <p>
+                                   Визуализируйте и загружайте результаты в виде графиков с итоговыми значениями или результатами по секторам.
+                                 </p>
+                                 <p>
+                                 Автоматизируйте отчетность и экономьте свое время.
+                                 </p>
+                        </div>
+                        <button onclick="location.href='product_ru.html'">Узнать больше</button>
+                    </div>
+                </div>
+            </section>
+        </div>
 
 
-  </main>
-  <footer>
-    <div class="rrssgroup">
-      <a href="https://instagram.com/smart_tio_ayeconomics?igshid=YmMyMTA2M2Y="> <img id="ig" src="images/ig.svg" alt="intagram"></a>
-      <a href="https://twitter.com/SmartTIO_AY" ><img id="twitter" src="images/twitter.svg" alt="twitter" ></a>
-      <a href="https://www.linkedin.com/showcase/smart-tio/" > <img id="linkedin" src="images/linkedin.svg" alt="linkedin" > </a>
-      <a href="https://www.facebook.com/Smart-TIO-105205065516002/" ><img id="facebook" src="images/facebook.svg" alt="facebook" ></a>
-    </div>
-    <div id="footertext">
-      <p id="rightsreservedtext">© 2017 AYeconomics Research Centre. All rights reserved</p> 
-      <div id="legal">
-        <a href="https://ayeconomics.com/aviso-legal/">Legal</a>
-        <a href="https://ayeconomics.com/privacy-policy/">Privacy Policy</a>
-        <a href="https://ayeconomics.com/politica-de-cookies/">Cookies</a>
-      </div>
-    </div>
-  </footer>
+        <section class="moresmartmoretiosection">
+            <h4 class="alignedcenter">More Smart, More IO</h4>
+            <div class="morecards">
+                <div class="aboutproductmodules">
+                    <div id="protitle">
+                        <div id="protext" class="bottomseparator">
+                            <h4>
+                                Modules
+                            </h4>
+                            <p>
+                                In addition of economic results, Smart TIO offers <br>the possibility of getting
+                                environmental and
+                                labour results.
+                            </p>
+
+                        </div>
+
+                        <div class="alignedcenter">
+                            <h4 id="modules">
+                                Eco
+                            </h4>
+                            <h5 class="claimtwo">
+                                More green, more ECO
+                            </h5>
+                            <p class="bottomseparator">
+                                With the Smart TIO ECO, you can incorporate environmental <br> variables in your the
+                                decisions.
+                            </p>
+                        </div>
+
+                        <div class="alignedcenter">
+                            <h4 id="social">
+                                Social
+                            </h4>
+                            <h5 class="claimtwo">
+                                More labour, more inclusive
+                            </h5>
+                            <p class="forresponsive">
+                                Decisions to a more sustainable economy should take into considerations <br>not only
+                                economic and
+                                environmental results but also social effects.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="morecard">
+                    <div class="aboutproductmodules">
+                        <div id="protitle">
+                            <div id="protext">
+                                <h4>
+                                    Smart TIO
+                                </h4>
+                                <h4 id="regional">
+                                    Regional
+                                </h4>
+                            </div>
+                            <h5 class="claimtwo">
+                                More local, more nearby
+                            </h5>
+                        </div>
+                        <p>
+                            Impact effects are not equal by region.
+                        </p>
+                        <p>
+                            Choose Smart TIO regional and calculate impact for each region
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="pricesbuttons">
+                <button class="secondarynomargin" onclick="location.href='Product.html'">Know more</button>
+                <button onclick="location.href='Prices.html'">See plans</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="rrssgroup">
+            <a href="https://instagram.com/smart_tio_ayeconomics?igshid=YmMyMTA2M2Y=">
+                <img id="ig" src="images/ig.svg" alt="intagram">
+            </a>
+            <a href="https://twitter.com/SmartTIO_AY"><img id="twitter" src="images/twitter.svg" alt="twitter"></a>
+            <a href="https://www.linkedin.com/showcase/smart-tio/">
+                <img id="linkedin" src="images/linkedin.svg" alt="linkedin">
+            </a>
+            <a href="https://www.facebook.com/Smart-TIO-105205065516002/">
+                <img id="facebook" src="images/facebook.svg" alt="facebook">
+            </a>
+        </div>
+        <div id="footertext">
+            <p id="rightsreservedtext">© 2017 AYeconomics Research Centre. All rights reserved</p>
+            <div id="legal">
+                <a href="https://ayeconomics.com/aviso-legal/">Legal</a>
+                <a href="https://ayeconomics.com/privacy-policy/">Privacy Policy</a>
+                <a href="https://ayeconomics.com/politica-de-cookies/">Cookies</a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
+
+
 <script>
-  AOS.init();
+    $('.navbar-collapse ul li a').click(function () {
+        $('.navbar-toggle:visible').click();
+    });</script>
+
+<script>
+    AOS.init();
 </script>
 
 </html>
