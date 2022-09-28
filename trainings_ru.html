@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-5MWRJTP');</script>
-  <!-- End Google Tag Manager -->
+<script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+      'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-5MWRJTP');</script>
+<!-- End Google Tag Manager -->
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,16 +19,18 @@
   <link rel="stylesheet" href="style/style.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <script type = "text/javascript" src="readmore.js"> </script>
 </head>
 
 <body>
   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5MWRJTP"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5MWRJTP" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   <header id="desktopnav">
     <nav>
-      <a id="noline" href="index_ru.html"><img id="logo" src="images/Logo_light.png" alt="logo"> </a>
+      <a id="noline" href="index.html"> <img id="logo" src="images/Logo_light.png" alt="logo"> </a>
       <div class="menu">
         <a id="productnav" href="product_ru.html">Услуги</a>
         <a class="wearehere"  href="trainings_ru.html">Тренинги</a>
@@ -36,55 +42,56 @@
         <a id="lenguagerus" href="error.html"><img src="images/Galego.svg" alt="GAL"></a>
         <a id="lenguagegal" href="Trainings.html"><img src="images/GBflag.svg" alt="ENG"></a>
         <a id="signup" onclick="netlifyIdentity.open('signup');"><img src="images/user.svg" alt="sign up"> </a>
-      </div>
-    </nav>
-  </header>
-  <header id="responsivenav">
-    <div>
-      <input type="checkbox" id="btn-menu" />
-      <label for="btn-menu"><i class="bi bi-list"></i></label>
-      <nav class="menu">
-        <ul>
-          <li><a href="Product.html">Услуги</a></li>
-          <li><a href="Trainings.html" class="wearehereresponsive">Тренинги</a></li>
-          <li><a href="Prices.html">Цены</a></li>
-          <li><a href="aboutus.html">О нас</a></li>
-          <li><a href="Contact.html">Контакты</a></li>
-          <li>-------------------</li>
-          <li><a href="trainings_ru.html">RUS</a></li>
-          <li><a href="index_ru.html">GAL</a></li>
-          <!-- <li class="submenu"><a href="#">Language<i class="fa fa-caret-down"></i></a>
-              <ul>
-                <li><a href="index_ru.html">RUS</a></li>
-                <li><a href="index_gal.html">GAL</a></li>
-              </ul> -->
-          </li>
-        </ul>
     </div>
-
-    <a class="noline" href="index.html"> <img id="logo" src="images/Logo_light.png" alt="logo"></a>
-
     </nav>
   </header>
   <main>
 
+    <header id="responsivenav">
+      <div>
+        <input type="checkbox" id="btn-menu" />
+        <label for="btn-menu"><i class="bi bi-list"></i></label>
+        <nav class="menu">
+          <ul>
+            <li><a href="Product.html">Услуги</a></li>
+            <li><a href="Trainings.html" class="wearehereresponsive">Тренинги</a></li>
+            <li><a href="Prices.html">Цены</a></li>
+            <li><a href="aboutus.html">О нас</a></li>
+            <li><a href="Contact.html">Контакты</a></li>
+            <li>-------------------</li>
+            <li><a href="trainings.html">ENG</a></li>
+            <li><a href="Trainings_gal.html">GAL</a></li>
+            <!-- <li class="submenu"><a href="#">Language<i class="fa fa-caret-down"></i></a>
+                <ul>
+                  <li><a href="index_ru.html">RUS</a></li>
+                  <li><a href="index_gal.html">GAL</a></li>
+                </ul> -->
+            </li>
+          </ul>
+      </div>
+
+      <a class="noline" href="index.html"> <img id="logo" src="images/Logo_light.png" alt="logo"></a>
+
+      </nav>
+    </header>
+
 
     <section class="methodologyandtutorials" data-aos="zoom-in-up">
-      <div class="methodology">
-        <h4>Методология</h4> 
+      <div class="trainings">
+        <h4>Методология</h4>
         <div class="demoandtutorialtext">
           <h5 class="claimtwo">PDF</h5>
           <p>Скачайте методологию в формате PDF, чтобы узнать больше о моделировании, которое выполняет Smart TIO: 
             влияние спроса и гипотетического извлечения.
             <br>
             Методология PDF включает также подробную информацию об используемых базах данных.</p>
-        </div >
-       <a href="pdfs/Smart_TIO_Methodology_EN.pdf" download target="_blank">
-         <button class="secondarynomarginyestop">
-          Методология PDF
-        </button>
-      </a>
-      
+        </div>
+        <a href="pdfs/Smart_TIO_Methodology_RUS.pdf" download target="_blank">
+          <button class="secondarynomarginyestop">
+            Методология PDF
+          </button>
+        </a>
+
       </div>
 
       <div class="trainings">
@@ -92,33 +99,55 @@
         <div class="demoandtutorialtext">
           <h5 class="claimtwo">Школа Smart TIO</h5>
           <p>Мы предлагаем индивидуальные онлайн-обучения и тренинги внутри компании, чтобы наращивать человеческий капитал и использовать весь потенциал Smart TIO.<br>
-          Свяжитесь с нами, чтобы получить более подробную информацию. 
-          </p>
+            Свяжитесь с нами, чтобы получить более подробную информацию. 
+            </p>
         </div>
-        <button onclick="location.href='contactsales_ru.html'" class="buttontraining">
+        <button onclick="location.href='Contactsales.html'" class="buttontraining">
           Свяжитесь с нами
         </button>
       </div>
     </section>
 
 
-    <section class="tutorials">
+    <section class="tutorials" id="tutorialdesktop">
       <h4 class="alignedcenter">Руководство</h4>
-     
-     
+
+       <!-- Read more. Eliminar cuando se consiga enlazar .js 
+<script>function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}</script>
+ Read more fin codigo -->
+
+
       <div class="row">
-        <div class="tutorialvideo"> 
-          <video class="videotutorialcss" src="video/iniciotutorial_2.mov" poster="images/posterfirststep.png" controls></video>
+        <div class="tutorialvideo">
+          <video class="videotutorialcss" src="video/iniciotutorial_2.mov" poster="images/posterfirststep.png"
+            controls></video>
           <div class="tutorialvideotext">
             <div class="tutorialvideotitle">
-              <h5>Первый раз открываю Smart TIO</h5> 
-              <a href="video/iniciotutorial_2.mov" download="firstopening" id="noline">
-              <img id="downloadactive" class="downloadtutorial" src="images/Icondownload.svg" href="video/iniciotutorial_2.mov" download>
-              <img id="downloadhover" class="downloadtutorial" src="images/Icondownloadhover.svg" href="video/iniciotutorial_2.mov" download>
-            </a>
+              <h5>  Первый раз открываю Smart TIO</h5>
+              <a href="video/iniciotutorial_new.mp4" download="firstopening" id="noline">
+                <img id="downloadactive" class="downloadtutorial" src="images/Icondownload.svg"
+                  href="video/iniciotutorial_new.mp4" download>
+                <img id="downloadhover" class="downloadtutorial" src="images/Icondownloadhover.svg"
+                  href="video/iniciotutorial_new.mp4" download>
+              </a>
             </div>
             <p> Шаг за шагом пройдите весь процесс руководства Smart TIO и выберите национальный или региональный анализ. 
-            Пока вы выбираете тип анализа, который хотите выполнить, вы будете вводить его на дисплее расчетов. </p>
+              Пока вы выбираете тип анализа, который хотите выполнить, вы будете вводить его на дисплее расчетов.
+            </p>
           </div>
         </div>
         <div class="tutorialvideo">
@@ -126,15 +155,22 @@
           <div class="tutorialvideotext">
             <div class="tutorialvideotitle">
               <h5> Расчеты влияния на спрос</h5>
-              <a href="video/IDtutorial_2.mov" скачать="Impact demand calcultion tutorial">
-                <img id="downloadactive" class="downloadtutorial" src="images/Icondownload.svg" href="video/IDtutorial_2.mov" download>                                                                                                                    
-                <img id="downloadhover" class="downloadtutorial" src="images/Icondownloadhover.svg" href="video/IDtutorial_2.mov" download>
+              <a href="video/IDtutorial_2.mov" download="Impact demand calcultion tutorial">
+                <img id="downloadactive" class="downloadtutorial" src="images/Icondownload.svg"
+                  href="video/IDtutorial_2.mov" download>
+                
+                <img id="downloadhover" class="downloadtutorial" src="images/Icondownloadhover.svg"
+                  href="video/IDtutorial_2.mov" download>
               </a>
             </div>
             <p> Анализ воздействия на спрос дает оценки прямых экономических эффектов от изменений в конечном спросе и
-             косвенные эффекты, вызванные изменениями в производстве поставщиков взаимосвязанных отраслей. 
-             На экране расчета вы можете ввести значение вручную или импортировать значения и изменить интересующий вас компонент спроса,
-                такие как потребление домохозяйств или государства, валовое накопление капитала, экспорт и т. д. </p>
+              косвенные эффекты, вызванные <span id="dots">...</span><span id="more"> изменениями в производстве поставщиков взаимосвязанных отраслей. 
+                На экране расчета вы можете ввести значение вручную или импортировать значения и изменить интересующий вас компонент спроса,
+                   такие как потребление домохозяйств или государства, валовое накопление капитала, экспорт и т. д.</span> 
+              <button  class="phantombutton" onclick="myFunction()" id="myBtn">Читать далее</button> 
+            </p> <!-- YOLANDA-->
+              
+
           </div>
         </div>
       </div>
@@ -145,24 +181,30 @@
           <div class="tutorialvideotext">
             <div class="tutorialvideotitle">
               <h5> Расчеты гипотетического извлечения</h5>
-              <a href="video/HEtutorial_2.mov" download="Hypothetical extraction calculation tutorial" >
-                <img id="downloadactive" class="downloadtutorial" src="images/Icondownload.svg" href="video/HEtutorial_2.mov" download>
-                <img id="downloadhover" class="downloadtutorial" src="images/Icondownloadhover.svg" href="video/HEtutorial_2.mov" download>
+              <a href="video/HP_new.mp4" download="Hypothetical extraction calculation tutorial">
+                <img id="downloadactive" class="downloadtutorial" src="images/Icondownload.svg"
+                  href="video/HP_new.mp4" download>
+                <img id="downloadhover" class="downloadtutorial" src="images/Icondownloadhover.svg"
+                  href="video/HP_new.mp4" download>
               </a>
             </div>
             <p> Гипотетический анализ извлечения оценивает важность определенного сектора в экономике и дает количественную оценку
-               насколько изменится (уменьшится) общий объем производства, налоги или занятость, если этот сектор исчезнет из экономики. 
-               В строке меню вы можете выбрать сектор для оценки, и результаты будут показаны автоматически. </p>
-          </div>
+              насколько изменится (уменьшится) общий объем производства, налоги или занятость, если этот сектор исчезнет из экономики. 
+              В строке меню вы можете выбрать сектор для оценки, и результаты будут показаны автоматически. </p>
+          </div><!-- YOLANDA-->
         </div>
+
         <div class="tutorialvideo">
-          <video video class="videotutorialcss" src="video/Export_2.mov" poster="images/Exporttutorial.png" controls></video>
+          <video video class="videotutorialcss" src="video/Export_2.mov" poster="images/Exporttutorial_2.png"
+            controls></video>
           <div class="tutorialvideotext">
             <div class="tutorialvideotitle">
-              <h5> Экспортировать результаты </h5>
-              <a href="video/Export_2.mov" download="Export tutorial" >
-                <img id="downloadactive" class="downloadtutorial" src="images/Icondownload.svg" href="video/Export_2.mov" download>
-                <img id="downloadhover" class="downloadtutorial" src="images/Icondownloadhover.svg" href="video/Export_2.mov" download>
+              <h5>  Экспортировать результаты  </h5>
+              <a href="video/Export_2.mov" download="Export tutorial">
+                <img id="downloadactive" class="downloadtutorial" src="images/Icondownload.svg"
+                  href="video/Export_2.mov" download>
+                <img id="downloadhover" class="downloadtutorial" src="images/Icondownloadhover.svg"
+                  href="video/Export_2.mov" download>
               </a>
             </div>
             <p> Результаты ваших собственных оценок могут быть визуализированы и загружены. Результаты могут быть представлены по итогам или по секторам.
@@ -170,24 +212,110 @@
               результатов. </p>
           </div>
         </div>
+
+
+      </div>
+    </section>
+
+
+    <section class="tutorials" id="tutorialresponsive">
+      <h4 class="alignedcenter">Руководство</h4>
+
+      <div id="space"></div>
+
+
+      <div class="tutorialvideo">
+        <video class="videotutorialcss" src="video/iniciotutorial_2.mov" poster="images/posterfirststep.png"
+          controls></video>
+        <div>
+          <div>
+            <h5> Первый раз открываю Smart TIO</h5>
+          </div>
+          <p> Шаг за шагом пройдите весь процесс руководства Smart TIO и выберите национальный или региональный анализ. 
+            Пока вы выбираете тип анализа, который хотите выполнить, вы будете вводить его на дисплее расчетов. 
+          </p>
+        </div>
       </div>
 
 
+      <div id="space_less"></div>
+      <div class="tutorialvideo">
+        <video class="videotutorialcss" src="video/IDtutorial_2.mov" poster="images/IDCtutorial.png" controls></video>
+        <div>
+          <div>
+            <h5>Расчеты влияния на спрос</h5>
+          </div>
+          <p> Анализ воздействия на спрос дает оценки прямых экономических эффектов от изменений в конечном спросе и
+            косвенные эффекты, вызванные изменениями в производстве поставщиков взаимосвязанных отраслей. 
+            На экране расчета вы можете ввести значение вручную или импортировать значения и изменить интересующий вас компонент спроса,
+               такие как потребление домохозяйств или государства, валовое накопление капитала, экспорт и т. д.
+          </p>
+        </div>
+      </div>
+
+
+
+
+      <div id="space_less"></div>
+      <div class="tutorialvideo">
+        <video class="videotutorialcss" src="video/HEtutorial_2.mov" poster="images/HEtutorial.png" controls></video>
+        <div>
+          <div>
+            <h5> Расчеты гипотетического извлечения</h5>
+          </div>
+          <p> Гипотетический анализ извлечения оценивает важность определенного сектора в экономике и дает количественную оценку
+            насколько изменится (уменьшится) общий объем производства, налоги или занятость, если этот сектор исчезнет из экономики. 
+            В строке меню вы можете выбрать сектор для оценки, и результаты будут показаны автоматически.  </p>
+        </div>
+      </div>
+
+
+
+
+      <div id="space_less"></div>
+      <div class="tutorialvideo">
+        <video class="videotutorialcss" src="video/Export_2.mov" poster="images/Exporttutorial_2.png"
+        controls></video>
+        <div>
+          <div>
+            <h5> Экспортировать результаты </h5>
+          </div>
+          <p> Результаты ваших собственных оценок могут быть визуализированы и загружены. Результаты могут быть представлены по итогам или по секторам.
+            Вы также можете создать и загрузить отчет в формате PDF с описанием оценок и интерпретаций ваших 
+            результатов. 
+          </p>
+        </div>
+        </div>
+      </div>
+
+
+
+
+
     </section>
+
+
+
+
+
+
   </main>
   <footer>
     <div class="rrssgroup">
-      <a href="https://instagram.com/smart_tio_ayeconomics?igshid=YmMyMTA2M2Y="> <img id="ig" src="images/ig.svg" alt="intagram"></a>
-      <a href="https://twitter.com/SmartTIO_AY" ><img id="twitter" src="images/twitter.svg" alt="twitter" ></a>
-      <a href="https://www.linkedin.com/showcase/smart-tio/" > <img id="linkedin" src="images/linkedin.svg" alt="linkedin" > </a>
-      <a href="https://www.facebook.com/Smart-TIO-105205065516002/" ><img id="facebook" src="images/facebook.svg" alt="facebook" ></a>
+      <a href="https://instagram.com/smart_tio_ayeconomics?igshid=YmMyMTA2M2Y="> <img id="ig" src="images/ig.svg"
+          alt="intagram"></a>
+      <a href="https://twitter.com/SmartTIO_AY"><img id="twitter" src="images/twitter.svg" alt="twitter"></a>
+      <a href="https://www.linkedin.com/showcase/smart-tio/"> <img id="linkedin" src="images/linkedin.svg"
+          alt="linkedin"> </a>
+      <a href="https://www.facebook.com/Smart-TIO-105205065516002/"><img id="facebook" src="images/facebook.svg"
+          alt="facebook"></a>
     </div>
     <div id="footertext">
-      <p id="rightsreservedtext">© 2017 AYeconomics Research Centre. All rights reserved</p>
+      <p id="rightsreservedtext">© 2017 Исследовательский центр AYeconomics. Все права защищены</p>
       <div id="legal">
-        <a href="https://ayeconomics.com/aviso-legal/">Legal</a>
-        <a href="https://ayeconomics.com/privacy-policy/">Privacy Policy</a>
-        <a href="https://ayeconomics.com/politica-de-cookies/">Cookies</a>
+        <a href="https://ayeconomics.com/aviso-legal/">Юридический</a>
+        <a href="https://ayeconomics.com/privacy-policy/">Политика конфиденциальности</a>
+        <a href="https://ayeconomics.com/politica-de-cookies/">Данные cookie</a>
       </div>
     </div>
   </footer>
