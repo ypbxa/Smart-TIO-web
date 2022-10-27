@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-5MWRJTP');</script>
-  <!-- End Google Tag Manager -->
+<script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+      'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-5MWRJTP');</script>
+<!-- End Google Tag Manager -->
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,30 +19,32 @@
   <link rel="stylesheet" href="style/style.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 </head>
 
 <body>
   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5MWRJTP"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5MWRJTP" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   <header id="desktopnav">
     <nav>
-      <a class="noline" href="index_ru.html"> <img id="logo" src="images/Logo_light.png" alt="logo"></a>
+      <a class="noline" href="index.html"> <img id="logo" src="images/Logo_light.png" alt="logo"> </a>
       <div class="menu">
         <a class="wearehere" href="product_ru.html">Услуги</a>
-        <a id="trainingnav"  href="trainings_ru.html">Тренинги</a>
+        <a id="trainingnav" href="trainings_ru.html">Тренинги</a>
         <a id="pricesnav" href="prices_ru.html">Цены</a>
         <a id="aboutusnav" href="aboutus_ru.html">О нас</a>
         <a id="contactnav" href="contact_ru.html">Контакты</a>
       </div>
       <div class="lenguagenav">
         <a id="lenguagerus" href="error.html"><img src="images/Galego.svg" alt="GAL"></a>
-                <a id="lenguagegal" href="Product.html"><img src="images/GBflag.svg" alt="ENG"></a>
-                <a id="signup" onclick="netlifyIdentity.open('signup');"><img src="images/user.svg" alt="sign up"> </a>
+        <a id="lenguagegal" href="product.html"><img src="images/GBflag.svg" alt="ENG"></a>
+        <a id="signup" onclick="netlifyIdentity.open('signup');"><img src="images/user.svg" alt="sign up"> </a>
       </div>
     </nav>
   </header>
+
   <header id="responsivenav">
     <div>
       <input type="checkbox" id="btn-menu" />
@@ -51,8 +57,8 @@
           <li><a href="aboutus.html">О нас</a></li>
           <li><a href="Contact.html">Контакты</a></li>
           <li>-------------------</li>
-          <li><a href="product_ru.html">RUS</a></li>
-          <li><a href="index_ru.html">GAL</a></li>
+          <li><a href="product.html">ENG</a></li>
+          <li><a href="error.html">GAL</a></li>
           <!-- <li class="submenu"><a href="#">Language<i class="fa fa-caret-down"></i></a>
               <ul>
                 <li><a href="index_ru.html">RUS</a></li>
@@ -66,177 +72,359 @@
 
     </nav>
   </header>
+
+
+
   <main>
-    
-    <section id="space">
+
+    <div id="productdesktop">
+      <section id="space">
+        <div id="aboutproductone" data-aos="zoom-in-up">
+          <div class="aboutproducttextandbutton">
+            <div class="aboutproducttextone">
+              <h4>
+                Smart TIO
+              </h4>
+              <p class="claimtwo">
+                Предлагайте решения, основанные на данных
+              </p>
+              <p id="space_less">
+                Smart TIO — это инструмент экономящий время, быстро оценивая результаты моделирования
+              социально-экономических и экологических последствий принимаемых решений и генерируя автоматические отчеты.
+              Программное обеспечение основано на национальных или региональных моделях «затраты-выпуск» вашей страны и
+              предлагает оценки, актуальные для местных условий.
+              Smart TIO имитирует введение новой политики (отраслевые субсидии, налоговые симуляции, меры занятости,
+              экологическая политика) или влияние глобальных тенденций (covid-19, война и т. д.)
+
+              Smart TIO включает в себя экономические, трудовые и экологические переменные, обеспечивающие более
+              рациональные решения.
+
+              </p>
+            </div>
+            <button onclick="location.href='Prices.html'">Посмотреть планы</button>
+
+
+            <div id="spacebetweenspace_less">
+              <a href="https://ayeconomics.com/wp-content/uploads/2022/09/SMART-TIO.zip" class="linkintext">
+                Демо для Windows
+              </a>
+              <a href="https://ayeconomics.com/wp-content/uploads/2022/09/Smart-TIOmac.zip" class="linkintext">
+                Демо для MacOS
+              </a>
+            </div>
+
+          </div>
+          <div>
+            <video class="video" autoplay loop>
+              <source src="video/producto.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+
+
+        <section class="moresmartmoretiosection">
+          <div class="morecardsproduct">
+            <div class="aboutproductmodulesproductone">
+              <div id="protitle">
+                <div id="protext" class="alignedcenter">
+                  <h4>
+                    Smart TIO
+                  </h4>
+                  <h4 id="modules">
+                    Эко
+                  </h4>
+                </div>
+                <h5 class="claimtwo">
+                  More green, more eco
+                </h5>
+              </div>
+              <p id="space_less">
+                Добавьте экологический модуль в Smart TIO и получайте экологические результаты в дополнение к
+                экономическим результатам.
+                Эко-модель включает выбросы углерода по секторам, а также использование энергии для различных типов
+                возобновляемых и невозобновляемых источников энергии, таких как уголь, нефтепродукты и другие.
+                Это мощный инструмент для поддержки экономических решений, направленных на снижение ущерба окружающей
+                среде и повышение общего благосостояния.
+              </p>
+              <p>Принятие во внимание заботы об окружающей среде при принятии решений улучшает здоровье населения и
+                сохраняет природные ресурсы, повышая долгосрочное благосостояние.
+              </p>
+            </div>
+            <div class="morecard">
+              <div class="aboutproductmodulesproducttwo">
+                <div id="protitle" class="alignedcenter">
+                  <div id="protext">
+                    <h4>
+                      Smart TIO
+                    </h4>
+                    <h4 id="social">
+                      Социальный
+                    </h4>
+                  </div>
+                  <h5 class="claimtwo">
+                    More social, more inclusive
+                  </h5>
+                </div>
+                <p id="space_less">
+                  Добавьте социальный модуль в Smart TIO, чтобы учитывать влияние моделирования политики на рабочую силу.
+                  На пути к инклюзивной и устойчивой экономике подразумевается, что учитываются не только экономические и
+                  экологические, но и социальные последствия.
+                  Модуль Social Smart TIO обеспечивает прямое и косвенное влияние реализации новой политики на результаты
+                  рынка труда, такие как количество созданных или ликвидированных рабочих мест.
+  
+                </p>
+                <p>
+                  Включите индикаторы рынка труда в процесс принятия решений, чтобы продемонстрировать социальное
+                  воздействие введения политики. </p>
+              </div>
+            </div>
+          </div>
+
+        </section>
+    </div>
+
+
+    <div id="productresponsive">
+      <section id="space">
+        <div id="aboutproductone" data-aos="zoom-in-up">
+          <div class="aboutproducttextandbutton">
+            <div class="aboutproducttextone">
+              <h4>
+                Smart TIO
+              </h4>
+              <p class="claimtwo">
+                Предлагайте решения, основанные на данных
+              </p>
+              <p id="space_less">
+                Smart TIO — это инструмент экономящий время, быстро оценивая результаты моделирования
+              социально-экономических и экологических последствий принимаемых решений и генерируя автоматические отчеты.
+              Программное обеспечение основано на национальных или региональных моделях «затраты-выпуск» вашей страны и
+              предлагает оценки, актуальные для местных условий.
+              Smart TIO имитирует введение новой политики (отраслевые субсидии, налоговые симуляции, меры занятости,
+              экологическая политика) или влияние глобальных тенденций (covid-19, война и т. д.)
+
+              Smart TIO включает в себя экономические, трудовые и экологические переменные, обеспечивающие более
+              рациональные решения.
+
+              </p>
+            </div>
+            <button onclick="location.href='Prices.html'">Посмотреть планы</button>
+            <p class="claimtwofocus">
+              Demo available for download from desktop device
+            </p>
+          </div>
+          <div>
+            <video class="video" autoplay loop>
+              <source src="video/producto.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+
+
+        <section class="moresmartmoretiosection">
+
+          <div class="morecardsproduct">
+            <div class="aboutproductmodulesproductone">
+              <div id="protitle">
+                <div id="protext" class="alignedcenter">
+                  <h4>
+                    Smart TIO
+                  </h4>
+                  <h4 id="modules">
+                    Эко
+                  </h4>
+                </div>
+                <h5 class="claimtwo">
+                  More green, more eco
+                </h5>
+              </div>
+              <p id="space_less">
+                Добавьте экологический модуль в Smart TIO и получайте экологические результаты в дополнение к
+                экономическим результатам.
+                Эко-модель включает выбросы углерода по секторам, а также использование энергии для различных типов
+                возобновляемых и невозобновляемых источников энергии, таких как уголь, нефтепродукты и другие.
+                Это мощный инструмент для поддержки экономических решений, направленных на снижение ущерба окружающей
+                среде и повышение общего благосостояния.
+              </p>
+              <p>Принятие во внимание заботы об окружающей среде при принятии решений улучшает здоровье населения и
+                сохраняет природные ресурсы, повышая долгосрочное благосостояние.
+              </p>
+            </div>
+            <div class="morecard">
+              <div class="aboutproductmodulesproducttwo">
+                <div id="protitle" class="alignedcenter">
+                  <div id="protext">
+                    <h4>
+                      Smart TIO
+                    </h4>
+                    <h4 id="social">
+                      Социальный
+                    </h4>
+                  </div>
+                  <h5 class="claimtwo">
+                    More social, more inclusive
+                  </h5>
+                </div>
+                <p id="space_less">
+                  Добавьте социальный модуль в Smart TIO, чтобы учитывать влияние моделирования политики на рабочую силу.
+                  На пути к инклюзивной и устойчивой экономике подразумевается, что учитываются не только экономические и
+                  экологические, но и социальные последствия.
+                  Модуль Social Smart TIO обеспечивает прямое и косвенное влияние реализации новой политики на результаты
+                  рынка труда, такие как количество созданных или ликвидированных рабочих мест.
+  
+                </p>
+                <p>
+                  Включите индикаторы рынка труда в процесс принятия решений, чтобы продемонстрировать социальное
+                  воздействие введения политики. </p>
+              </div>
+            </div>
+          </div>
+
+        </section>
+    </div>
+
+
+
+    <div id="aboutproducttwo" data-aos="zoom-in-up">
+      <div>
+        <video class="video" autoplay loop>
+          <source src="video/regional.mov" type="video/mp4">
+        </video>
+      </div>
+      <div class="aboutproducttextandbutton">
+        <div class="aboutproducttexttwo">
+          <div id="protitle">
+            <div id="protext">
+              <h4>
+                Smart Tio
+              </h4>
+              <h4 id="regional">
+                Региональный
+              </h4>
+            </div>
+            <h5 class="claimtwo">
+              More local, more nearby
+            </h5>
+          </div>
+          <p>
+            Применяйте региональный Smart TIO для принятия решений, актуальных для каждого региона.
+            Регионы специализируются на разных продуктах и секторах, и, как следствие, моделирование спроса будет
+            иметь различный эффект в зависимости от региона.
+          </p>
+          <p>
+            Учитывайте региональные аспекты и уменьшайте пространственное неравенство. 
+          </p>
+        </div>
+        <button onclick="location.href='prices_ru.html'">Посмотреть планы</button>
+      </div>
+    </div>
+
+
+
+    <div id="demoandtutorialdesktop">
+      <section class="demoandtutorials" data-aos="zoom-in-up">
+
+        <div class="trainings">
+          <h4>Тренинги</h4>
+          <div class="demoandtutorialtext">
+            <p>Мы предлагаем индивидуальные онлайн и офлайн тренинги, чтобы полностью раскрыть потенциал Smart TIO.
+              Свяжитесь с нами, чтобы мы могли разработать тренинги, соответствующие потребностям вашего учреждения.</p>
+          </div>
+          <button onclick="location.href='trainings_ru.html'" class="buttontraining">
+            Перейти к тренингам
+          </button>
+        </div>
+
+        <div class="demo">
+          <h4>Демоверсия</h4>
+          <div class="demoandtutorialtext">
+            <h5 class="claimtwo">Enjoy Smart TIO</h5>
+            <p class="claimtwofocus">
+              Демо доступно для загрузки с рабочего стола
+            </p>
+            <p>Протестируйте Smart TIO, загрузив демоверсию для Windows (скоро появится версия для Mac). Демоверсия
+              основана на имитации данных небольшого хозяйства с некоторой корректировкой, где вы можете протестировать
+              все функции Smart TIO и выбрать наиболее подходящие варианты.</p>
+
+          </div>
+          <div id="spacebetweenspace_less">
+            <a href="https://ayeconomics.com/wp-content/uploads/2022/09/SMART-TIO.zip" class="linkintext">
+              Демо для Windows
+            </a>
+            <a href="https://ayeconomics.com/wp-content/uploads/2022/09/Smart-TIOmac.zip" class="linkintext">
+              Демо для MacOS
+            </a>
+          </div>
+        </div>
+
+
+      </section>
+    </div>
+
+    <div id="demoandtutorialresponsive">
       <div id="aboutproductone" data-aos="zoom-in-up">
         <div class="aboutproducttextandbutton">
           <div class="aboutproducttextone">
             <h4>
-              Smart TIO
+              Демоверсия
             </h4>
             <p class="claimtwo">
-Предлагайте решения, основанные на данных            </p>
+              Enjoy Smart TIO
+            <p class="claimtwofocus">
+              Демо доступно для загрузки с рабочего стола
+            </p>
+            </p>
             <p id="space_less">
-Smart TIO — это инструмент экономящий время, быстро оценивая результаты моделирования социально-экономических и экологических последствий принимаемых решений и генерируя автоматические отчеты.
-Программное обеспечение основано на национальных или региональных моделях «затраты-выпуск» вашей страны и предлагает оценки, актуальные для местных условий.
-             Smart TIO имитирует введение новой политики (отраслевые субсидии, налоговые симуляции, меры занятости, экологическая политика) или влияние глобальных тенденций (covid-19, война и т. д.)
-             
-             Smart TIO включает в себя экономические, трудовые и экологические переменные, обеспечивающие более рациональные решения.
-              
+              Протестируйте Smart TIO, загрузив демоверсию для Windows (скоро появится версия для Mac). Демоверсия
+              основана на имитации данных небольшого хозяйства с некоторой корректировкой, где вы можете протестировать
+              все функции Smart TIO и выбрать наиболее подходящие варианты.
             </p>
           </div>
-          <button onclick="location.href='Prices.html'">Посмотреть планы</button>
-         
-          <a href="https://ayeconomics.com/wp-content/uploads/2022/09/SMART-TIO.zip" >
-            <button class="secondarynomarginyestop">
-              Скачать демоверсию
-            </button>
-          </a>
-
-
         </div>
         <div>
-          <video class="video"  autoplay loop>
-            <source src="video/product_video_web.mp4" type="video/mp4">
-          </video>
         </div>
-      </div>
-      
-
-
-      <section class="moresmartmoretiosection">
-        <div class="morecardsproduct">
-          <div class="aboutproductmodulesproductone">
-            <div id="protitle">
-              <div id="protext" class="alignedcenter">
-                <h4>
-                  Smart TIO
-                </h4>
-                <h4 id="modules">
-                  Эко
-                </h4>
-              </div>
-              <h5 class="claimtwo">
-                More green, more eco
-              </h5>
-            </div>
-            <p id="space_less">
-             Добавьте экологический модуль в Smart TIO и получайте экологические результаты в дополнение к экономическим результатам.
-              Эко-модель включает выбросы углерода по секторам, а также использование энергии для различных типов
-              возобновляемых и невозобновляемых источников энергии, таких как уголь, нефтепродукты и другие. 
-              Это мощный инструмент для поддержки экономических решений, направленных на снижение ущерба окружающей среде и повышение общего благосостояния.
-            </p>
-              <p>Принятие во внимание заботы об окружающей среде при принятии решений улучшает здоровье населения и сохраняет природные ресурсы, повышая долгосрочное благосостояние.
-              </p>
-          </div>
-          <div class="morecard">
-            <div class="aboutproductmodulesproducttwo">
-              <div id="protitle" class="alignedcenter">
-                <div id="protext">
-                  <h4>
-                    Smart TIO
-                  </h4>
-                  <h4 id="social">
-                    Социальный
-                  </h4>
-                </div>
-                <h5 class="claimtwo">
-                  More social, more inclusive
-                </h5>
-              </div>
-              <p id="space_less">
-              Добавьте социальный модуль в Smart TIO, чтобы учитывать влияние моделирования политики на рабочую силу.
-                На пути к инклюзивной и устойчивой экономике подразумевается, что учитываются не только экономические и экологические, но и социальные последствия.
-               Модуль Social Smart TIO обеспечивает прямое и косвенное влияние реализации новой политики на результаты рынка труда, такие как количество созданных или ликвидированных рабочих мест. 
-                 
-              </p>
-              <p>
-Включите индикаторы рынка труда в процесс принятия решений, чтобы продемонстрировать социальное воздействие введения политики.              </p>
-            </div>
-          </div>
-        </div>
-      
-      </section>
-      
-
-      
-      <div id="aboutproducttwo" data-aos="zoom-in-up">
-        <div>
-          <video class="video"  autoplay loop>
-            <source src="video/regional.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="aboutproducttextandbutton">
-          <div class="aboutproducttexttwo">
-            <div id="protitle">
-              <div id="protext">
-                <h4>
-                  Smart TIO
-                </h4>
-                <h4 id="regional">
-                  Региональный
-                </h4>
-              </div>
-              <h5 class="claimtwo">
-                More local, more nearby
-              </h5>
-            </div>
-            <p>
-Применяйте региональный Smart TIO для принятия решений, актуальных для каждого региона.
-        Регионы специализируются на разных продуктах и секторах, и, как следствие, моделирование спроса будет иметь различный эффект в зависимости от региона.
-            </p>
-            <p>
-Учитывайте региональные аспекты и уменьшайте пространственное неравенство.            </p>
-          </div>
-          <button onclick="location.href='Prices.html'">Посмотреть планы</button>
-        </div>
-      </div>
-      
-
-
-    
-    <section class="demoandtutorials" data-aos="zoom-in-up">
-      <div class="demo">
-        <h4>Демоверсия</h4>
-        <div class="demoandtutorialtext">
-          <h5 class="claimtwo">Наслаждайтесь Smart TIO</h5>
-          <p>Протестируйте Smart TIO, загрузив демоверсию для Windows (скоро появится версия для Mac). Демоверсия основана на имитации данных небольшого хозяйства с некоторой корректировкой, где вы можете протестировать все функции Smart TIO и выбрать наиболее подходящие варианты.</p>
-        </div>
-        <a href="https://ayeconomics.com/wp-content/uploads/2022/09/SMART-TIO.zip" >
-          <button class="secondarynomarginyestop">
-            Скачать демоверсию
-          </button>
-        </a>
-      </a>
       </div>
 
       <div class="trainings">
         <h4>Тренинги</h4>
         <div class="demoandtutorialtext">
-          <p>Мы предлагаем индивидуальные онлайн и офлайн тренинги, чтобы полностью раскрыть потенциал Smart TIO. 
+          <p>Мы предлагаем индивидуальные онлайн и офлайн тренинги, чтобы полностью раскрыть потенциал Smart TIO.
             Свяжитесь с нами, чтобы мы могли разработать тренинги, соответствующие потребностям вашего учреждения.</p>
         </div>
-        <button onclick="location.href='Trainings.html'" class="buttontraining">
+        <button onclick="location.href='trainings_ru.html'" class="buttontraining">
           Перейти к тренингам
         </button>
       </div>
-    </section>
+      </section>
+    </div>
+    <div class="alignedcenter">
+      <img src="images/DP-azul 1.png" id="space">
+      <div class="alignedcenter">
+        <img src="images/CDTI_responsive.png" id="space">
+        <p> Smart TIO is a software funded by CDTI & GAIN”</p>
+      </div>
+    </div>
 
   </main>
   <footer>
+
     <div class="rrssgroup">
-      <a href="https://instagram.com/smart_tio_ayeconomics?igshid=YmMyMTA2M2Y="> <img id="ig" src="images/ig.svg" alt="intagram"></a>
-      <a href="https://twitter.com/SmartTIO_AY" ><img id="twitter" src="images/twitter.svg" alt="twitter" ></a>
-      <a href="https://www.linkedin.com/showcase/smart-tio/" > <img id="linkedin" src="images/linkedin.svg" alt="linkedin" > </a>
-      <a href="https://www.facebook.com/Smart-TIO-105205065516002/" ><img id="facebook" src="images/facebook.svg" alt="facebook" ></a>
+      <a href="https://instagram.com/smart_tio_ayeconomics?igshid=YmMyMTA2M2Y="> <img id="ig" src="images/ig.svg"
+          alt="intagram"></a>
+      <a href="https://twitter.com/SmartTIO_AY"><img id="twitter" src="images/twitter.svg" alt="twitter"></a>
+      <a href="https://www.linkedin.com/showcase/smart-tio/"> <img id="linkedin" src="images/linkedin.svg"
+          alt="linkedin"> </a>
+      <a href="https://www.facebook.com/Smart-TIO-105205065516002/"><img id="facebook" src="images/facebook.svg"
+          alt="facebook"></a>
     </div>
     <div id="footertext">
-      <p id="rightsreservedtext">© 2017 AYeconomics Research Centre. All rights reserved</p>
+      <p id="rightsreservedtext">© 2017 Исследовательский центр AYeconomics. Все права защищены</p>
       <div id="legal">
-        <a href="https://ayeconomics.com/aviso-legal/">Legal</a>
-        <a href="https://ayeconomics.com/privacy-policy/">Privacy Policy</a>
-        <a href="https://ayeconomics.com/politica-de-cookies/">Cookies</a>
+        <a href="https://ayeconomics.com/aviso-legal/">Юридический</a>
+        <a href="https://ayeconomics.com/privacy-policy/">Политика конфиденциальности</a>
+        <a href="https://ayeconomics.com/politica-de-cookies/">Данные cookie</a>
       </div>
     </div>
   </footer>
