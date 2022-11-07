@@ -1143,7 +1143,6 @@ span{
  }
  ::-webkit-textarea-placeholder {
   color: #C0C0C0;
-  padding: 16px;
  }
  .formulario option:focus{
    outline:0;
@@ -2732,7 +2731,6 @@ border-radius: 3px;
   align-items: center;
   text-align: center;
   margin-bottom: 8%;
-  margin-top: 8%;
 }
 .tutorialvideo{
 width: 100%;
