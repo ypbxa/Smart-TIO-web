@@ -19,11 +19,11 @@
   <link rel="stylesheet" href="style/style.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="form.js">
-  </script>
-  <script type="text/javascript">
-  </script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>  
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+  <script src="./form.js" type="text/javascript"></script>
+
 </head>
 
 <body>
@@ -33,20 +33,19 @@
   <!-- End Google Tag Manager (noscript) -->
   <header id="desktopnav">
     <nav>
-      <a class="noline" href="index.html"> <img id="logo" src="images/Logo_light.png" alt="logo"> </a>
+      <a class="noline" href="index.html"> <img id="logo" src="images/Logo_light.png" alt="logo"></a>
       <div class="menu">
-        <a id="productnav" href="Product_esp.html">Producto</a>
-        <a id="trainingnav" href="Trainings_esp.html">Aprendizaje</a>
-        <a id="pricesnav" href="Prices_esp.html">Planes</a>
-        <a id="aboutusnav" href="aboutus_esp.html">Sobre nosotros</a>
-        <a class="wearehere" href="Contact_esp.html">Contacto</a>
+        <a id="productnav" href="Product.html">Product</a>
+        <a id="trainingnav" href="Trainings.html">Trainings</a>
+        <a id="pricesnav" href="Prices.html">Prices</a>
+        <a id="aboutusnav" href="aboutus.html">About us</a>
+        <a class="wearehere" href="Contact.html">Contact</a>
       </div>
       <div class="lenguagenav">
         <a id="lenguagerus" href="error.html"><img src="images/Galego.svg" alt="GAL"></a>
-        <a id="lenguagegal" href="buyingform_ru.html"><img src="images/RUSflag.svg" alt="RUS"></a>
-        <a id="lenguagegal" href="buyingform.html"><img src="images/GBflag.svg" alt="ENG"></a>
+        <a id="lenguagegal" href="contact_ru.html"><img src="images/RUSflag.svg" alt="RUS"></a>
         <a id="signup" onclick="netlifyIdentity.open('signup');"><img src="images/user.svg" alt="sign up"> </a>
-    </div>
+      </div>
       
     </nav>
   </header>
@@ -57,15 +56,14 @@
       <label for="btn-menu"><i class="bi bi-list"></i></label>
       <nav class="menu">
         <ul>
-          <li><a href="Product_esp.html">Producto</a></li>
-          <li><a href="Trainings_esp.html">Aprendizaje</a></li>
-          <li><a href="Prices_esp.html">Planes</a></li>
-          <li><a href="aboutus_esp.html">Sobre nosotros</a></li>
-          <li><a href="Contact_esp.html" class="wearehereresponsive">Contacto</a></li>
+          <li><a href="Product.html">Product</a></li>
+          <li><a href="Trainings.html">Trainings</a></li>
+          <li><a href="Prices.html">Prices</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="Contact.html" class="wearehereresponsive">Contact</a></li>
           <li>-------------------</li>
-          <li><a href="buyingform_ru.html">RUS</a></li>
-                    <li><a href="error.html">GAL</a></li>
-                    <li><a href="buyingform.html">ENG</a></li>
+          <li><a href="index_ru.html">RUS</a></li>
+          <li><a href="index_ru.html">GAL</a></li>
           <!-- <li class="submenu"><a href="#">Language<i class="fa fa-caret-down"></i></a>
               <ul>
                 <li><a href="index_ru.html">RUS</a></li>
@@ -75,7 +73,7 @@
         </ul>
     </div>
 
-    <a class="noline" href="index.html"> <img id="logo" src="images/Logo_light.png" alt="logo"></a>
+    <a class="noline" href="index.html"> <img id="logo" src="images/Logo_light.png" alt="logo"> </a>
 
     </nav>
   </header>
@@ -83,64 +81,69 @@
 
     <section class="formsection" >
       <div class="formtitle">
-        <h4>Formulario de contacto</h4>
-        <p>Estamos felices de que hayas elegido trabajar con Smart TIO. Porfavor rellena la información y pronto  recibirás un email de nuestro equipo con la información de descarga adicional. </p>
+        <h4>Buying form</h4>
+        <p>We are happy that you have decided to use Smart TIO. Please fill in the information below and you will
+          receive an email from our team to know aditional info and instructions to download.</p>
       </div>
       <div class="formarea" id="spacebetween">
-
-        <div class="alignedcenter">
-          <p class="black_greencolor" id="spacebotton">Opción elegida</p>
-          <p class="black">Un año</p>
-          <div class="pricecardmodule" id="oneyear">
-            <div class="appoptions">
-              <p class="black"> Core + Modulos</p>
-              <p> Además de resultados económicos añada social, eco y/o ambos modulos para resultados más sostenibles. </p>
-            </div>
-          </div>
-          <h4>9750€</h4>
-        </div>
+      <div id="dynamic"> </div>
+      <script>load_anotherpage(true);</script>
+      <!--<input type="text" id="show_selected"> </input>-->
 
         <div>
           <div class="contact_form">
             <div class="formulario">
               <form name="contactsales" netlify method="POST">
 
-                <label for="selector" class="selectorlabel">Porfavor, selecciona el máximo número de usuarios que usarán Smart TIO.
+                <label for="selector" class="selectorlabel">Please select the maximum number of users who will use the
+                  software.
                   <span class="obligatorio">*</span>
                 </label>
                 <div class="selector">
 
-                  <select name="selector" class="selectdropdown">
-                    <option selected value="0"> Seleccione una opción </option>
-                    <option value="1">Hasta 3 usuarios</option>
-                    <option value="2"> Hasta 5 usuarios</option>
+                  <select id="numberUsers"name="selector" class="selectdropdown">
+                    <!--<option value="0"> Select one option </option>-->
+                    <option value="3">Up to 3 users</option>
+                    <option value="5"> Up to 5 users</option>
                   </select>
                 </div>
 
 
-                <label for="selector" class="selectorlabel">Porfavor, seleccione durante cuanto tiempo desea usar Smart TIO con esta licencia. 
+                <label for="selector" class="selectorlabel">Please, select for how long you want to use smart TIO with
+                  this license.
                   <span class="obligatorio">*</span>
                 </label>
                 <div class="selector">
 
-                  <select name="selector" class="selectdropdown">
-                    <option selected value="0"> Seleccione una opción </option>
-                    <option value="1">Un año</option>
-                    <option value="2"> Dos años</option>
+                  <select id="numberYears" name="selector" class="selectdropdown">
+                    <!--<option value="0"> Select one option </option>-->
+                    <option value="1">One year</option>
+                    <option value="2"> Two years</option>
                   </select>
                 </div>
 
+                <label for="selector" class="selectorlabel">Please select which version do you want.
+                  <span class="obligatorio">*</span>
+                </label>
+                <div class="selector">
 
+                  <select id="numberCore" name="selector" class="selectdropdown">
+                    <!--<option selected value="0"> Select one option </option>-->
+                    <option  value="1"> Core </option>
+                    <option value="m">Core + 1 module</option>
+                    <option value="mm"> Core + 2 modules</option>
+                  </select>
+                </div>
                 <div id="phoneandnameformgroup">
                   <div>
-                    <label for="nombre" class="colocar_nombre">Nombre
+                    <label for="nombre" class="colocar_nombre">Name
                       <span class="obligatorio">*</span>
                     </label>
                     <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
                       placeholder="Ex.: Paul Krugman" size="48">
                   </div>
                   <div>
-                    <label for="telefone" class="colocar_telefono">Número de teléfono
+                    <label for="telefone" class="colocar_telefono">Phone number
                     </label>
                     <input type="tel" name="introducir_telefono" id="telefono" placeholder="Ex.: +34 67927XXX2"
                       size="48">
@@ -156,7 +159,7 @@
                       placeholder="Ex.: Krugman@example.com" minlength="10" size="48">
                   </div>
                   <div>
-                    <label for="email" class="enter_email"> Repetir email
+                    <label for="email" class="enter_email"> Repeat email
                       <span class="obligatorio">*</span>
                     </label>
                     <input type="email" name="introducir_email" id="email" required="obligatorio"
@@ -166,21 +169,28 @@
 
 
 
-                <label for="mensaje" class="colocar_mensaje">¿Necesitas contarnos algo?
+                <label for="mensaje" class="colocar_mensaje">Do you need to tell us something?
                   <span class="obligatorio">*</span>
                 </label>
                 <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
-                  placeholder="Ej.: Me gustaría que se me envie la factura.La información para esto es..."></textarea>
+                  placeholder="Ex: I would like you to send me the invoice. My billing information is..."></textarea>
                 <p class="aviso">
-                  <span class="obligatorio"> * </span>información obligatoria.
+                  <span class="obligatorio"> * </span>The information is mandatory.
                 </p>
                 <div class="radiobutton">
                   <input type="radio" id="radiobuton" name="aceptlegal" value="aceptlegal">
-                  <label for="radiobuton" class="radiobuttonlabel">Ayeconomics procesará los datos que nos proporciona para poder responder a su solicitud. Si desea saber más puede acceder al apartado de Política de Privacidad que se contempla al final de esta web.
+                  <label for="radiobuton" class="radiobuttonlabel">At AYeconomics, we will process the data you provide
+                    to us in order to respond to your request. The data provided will be retained for as long as the
+                    business relationship is maintained or for the time necessary to comply with legal obligations. The
+                    information may be provided to data controllers for the maintenance of this website or in cases
+                    where there is a legal obligation. You have the right to obtain confirmation as to whether we are
+                    processing your personal data so you have the right to access your personal data, rectify inaccurate
+                    data or request its deletion when the data is no longer needed. You can access additional
+                    information about how we treat your data in the Privacy Policy section of this website.
                   </label>
                 </div>
                 <button type="submit" name="enviar_formulario" id="enviar">
-                  <p>Envíar</p>
+                  <p>Send</p>
                 </button>
               </form>
             </div>
@@ -195,8 +205,8 @@
     <section class="contactmap">
       <div class="hereweare">
         <div id="maptitle">
-          <h4 id="purpletitle">Estamos</h4>
-          <h4>aquí</h4>
+          <h4 id="purpletitle">Here</h4>
+          <h4>we are</h4>
         </div>
         <h5>AYeconomics Research Centre SL</h5>
         <p>Edificio Emprendia<br>
@@ -218,8 +228,9 @@
 
     <section class="formsection" >
       <div class="formtitleresponsive">
-        <h4>Formulario de compra</h4>
-        <p>Estamos felices de que hayas elegido trabajar con Smart TIO. Porfavor rellena la información y pronto  recibirás un email de nuestro equipo con la información de descarga adicional. </p>
+        <h4>Buying form</h4>
+        <p>We are happy that you have decided to use Smart TIO. Please fill in the information below and you will
+          receive an email from our team to know aditional info and instructions to download.</p>
       </div>
       <div class="formarea">
 
@@ -228,41 +239,44 @@
             <div class="formulario">
               <form name="contactsales" netlify method="POST">
 
-                <label for="selector" class="selectorlabel">Porfavor, selecciona el máximo número de usuarios que usarán Smart TIO.
+                <label for="selector" class="selectorlabel">Please select the maximum number of users who will use the
+                  software.
                   <span class="obligatorio">*</span>
                 </label>
                 <div class="selector">
 
                   <select name="selector" class="selectdropdown">
-                    <option selected value="0"> Seleccione una opción </option>
-                    <option value="1">Hasta 3 usuarios</option>
-                    <option value="2"> Hasta 5 usuarios</option>
+                    <option selected value="0"> Select one option </option>
+                    <option value="1">Up to 3 users</option>
+                    <option value="2"> Up to 5 users</option>
                   </select>
                 </div>
 
 
-                <label for="selector" class="selectorlabel">Porfavor, seleccione durante cuanto tiempo desea usar Smart TIO con esta licencia.
+                <label for="selector" class="selectorlabel">Please, select for how long you want to use smart TIO with
+                  this license.
                   <span class="obligatorio">*</span>
                 </label>
                 <div class="selector">
 
                   <select name="selector" class="selectdropdown">
-                    <option selected value="0"> Seleccione una opción </option>
-                    <option value="1">Un año</option>
-                    <option value="2"> Dos años</option>
+                    <option selected value="0"> Select one option </option>
+                    <option value="1">One year</option>
+                    <option value="2"> Two years</option>
                   </select>
                 </div>
+
 
 
                 <div>
-                  <label for="nombre" class="colocar_nombre">Nombre
+                  <label for="nombre" class="colocar_nombre">Name
                     <span class="obligatorio">*</span>
                   </label>
                   <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
                     placeholder="Ex.: Paul Krugman" size="48">
                 </div>
                 <div>
-                  <label for="telefone" class="colocar_telefono">Teléfono
+                  <label for="telefone" class="colocar_telefono">Phone number
                   </label>
                   <input type="tel" name="introducir_telefono" id="telefono" placeholder="Ex.: +34 67927XXX2" size="48">
                 </div>
@@ -277,7 +291,7 @@
                     placeholder="Ex.: Krugman@example.com" minlength="10" size="48">
                 </div>
                 <div>
-                  <label for="email" class="enter_email"> Repetir email
+                  <label for="email" class="enter_email"> Repeat email
                     <span class="obligatorio">*</span>
                   </label>
                   <input type="email" name="introducir_email" id="email" required="obligatorio"
@@ -286,21 +300,22 @@
 
 
 
-                <label for="mensaje" class="colocar_mensaje">¿Necesitas contarnos algo?
+                <label for="mensaje" class="colocar_mensaje">Do you need to tell us something?
                   <span class="obligatorio">*</span>
                 </label>
                 <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
-                  placeholder="Ej.: Me gustaría que se me envie la factura.La información para esto es..."></textarea>
+                  placeholder="Ex: I would like you to send me the invoice. My billing information is..."></textarea>
                 <p class="aviso">
-                  <span class="obligatorio"> * </span>Información obligatoria.
+                  <span class="obligatorio"> * </span>The information is mandatory.
                 </p>
 
                 <div class="alignedcenter">
                   <div class="pricecardmodule" id="oneyear">
                     <div class="appoptions">
-                      <p class="black_greencolor" >Seleccione una opción</p>
-                      <p class="black"> Un año / Core + Modulos</p>
-                      <p>Además de resultados económicos añada social, eco y/o ambos modulos para resultados más sostenibles. </p>
+                      <p class="black_greencolor" >Option chosen</p>
+                      <p class="black"> One year / Core + Modules</p>
+                      <p> In addition of economic results add the social, eco or both modules for more sustainable
+                        results. </p>
                         <h5 id="space_less">9750€</h5>
                     </div>
                   </div>
@@ -309,7 +324,9 @@
 
                 <div class="radiobutton">
                   <input type="radio" id="radiobuton" name="aceptlegal" value="aceptlegal">
-                  <label for="radiobuton" class="radiobuttonlabel">Ayeconomics procesará los datos que nos proporciona para poder responder a su solicitud. Si desea saber más puede acceder al apartado de Política de Privacidad que se contempla al final de esta web.
+                  <label for="radiobuton" class="radiobuttonlabel">At AYeconomics we will treat the data you provide us
+                    to respond to your request. You can access additional information about how we treat your data in
+                    the “Privacy Policy”section, of this website.
                   </label>
                 </div>
                 <button type="submit" name="enviar_formulario" id="enviar">
@@ -329,8 +346,8 @@
       <section class="contactmapmargin" data-aos="zoom-in-up">
         <div class="hereweare">
           <div id="maptitle">
-            <h4 id="purpletitle">Estamos</h4>
-            <h4>aquí</h4>
+            <h4 id="purpletitle">Here</h4>
+            <h4>we are</h4>
           </div>
           <h5>AYeconomics Research Centre SL</h5>
           <p>Edificio Emprendia<br>
@@ -370,5 +387,6 @@
     </div>
   </footer>
 </body>
-
+<script>parse(true);</script>
+<script>change();</script>
 </html>
